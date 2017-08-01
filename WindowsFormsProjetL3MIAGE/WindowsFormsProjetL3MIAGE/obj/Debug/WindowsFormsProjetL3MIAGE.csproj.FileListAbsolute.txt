@@ -1,0 +1,4 @@
+C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.csprojResolveAssemblyReference.cache
+C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.Accueil.resources
+C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.Properties.Resources.resources
+C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.csproj.GenerateResource.Cache
