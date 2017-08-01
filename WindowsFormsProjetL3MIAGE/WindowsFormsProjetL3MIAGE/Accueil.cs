@@ -21,5 +21,12 @@ namespace WindowsFormsProjetL3MIAGE
         {
             Environment.Exit(0);
         }
+
+        private void ajouterUnClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Client ObjF = new Client();
+            ObjF.Show();
+        }
     }
 }

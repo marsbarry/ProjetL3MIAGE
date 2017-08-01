@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
+using System.Windows.Forms;
 
 namespace WindowsFormsProjetL3MIAGE.CLasse
 {
@@ -15,7 +17,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         private static bool ConnOk;
         OracleCommand Cmd = new OracleCommand();
 
-        public ClassReq(string uneReq) //Contructeur
+        public ConnexionBD(string uneReq) //Contructeur
         {
             Req = uneReq;
         }
