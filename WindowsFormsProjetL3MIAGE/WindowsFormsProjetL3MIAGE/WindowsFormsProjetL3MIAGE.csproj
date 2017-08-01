@@ -80,6 +80,7 @@
     </Compile>
     <Compile Include="CLasse\Client.cs" />
     <Compile Include="CLasse\ConnexionBD.cs" />
+    <Compile Include="CLasse\GestionClient.cs" />
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
     </Compile>
