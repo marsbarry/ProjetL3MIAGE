@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace WindowsFormsProjetL3MIAGE.CLasse
 {
@@ -29,6 +30,21 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             cpCli = unCP;
             telCli = unTel;
             mailCli = unMail;
+        }
+        public Client(int unNum)
+        {
+            //Constructeur client deja present dans la base de données
+            DataTable DataClient = new DataTable();
+            DataClient = GestionClient.unCli(unNum);
+            numCli = Convert.ToInt32(DataClient.Rows[0][0]);
+            nomCli = Convert.ToString(DataClient.Rows[0][1]);
+            prenomCli = Convert.ToString(DataClient.Rows[0][2]);
+            telCli = Convert.ToInt32(DataClient.Rows[0][3]);
+            adrCli = Convert.ToString(DataClient.Rows[0][4]);
+            cpCli = Convert.ToInt32(DataClient.Rows[0][5]);
+            villeCli = Convert.ToString(DataClient.Rows[0][6]);
+            mailCli = Convert.ToString(DataClient.Rows[0][7]);
+
         }
 
         //Fonction get

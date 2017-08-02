@@ -13,7 +13,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             {
                 DataTable dtTable;
                 string Req = "Select * From Client Where IDCLI = " + numCli;
-            ConnexionBD uneReq = new ConnexionBD(Req);
+                ConnexionBD uneReq = new ConnexionBD(Req);
                 dtTable = uneReq.ExecuteSelect();
                 return dtTable;
             }

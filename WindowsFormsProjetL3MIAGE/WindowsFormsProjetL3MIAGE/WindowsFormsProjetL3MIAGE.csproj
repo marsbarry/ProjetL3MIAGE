@@ -40,7 +40,7 @@
     </Reference>
     <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Oracle.DataAccess.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Les 3 belges\PPE\IHMPPE\IHMPPE\bin\Debug\Oracle.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -58,6 +58,10 @@
     </Reference>
     <Reference Include="Policy.4.121.Oracle.ManagedDataAccess">
       <HintPath>..\..\..\odp.net\managed\PublisherPolicy\4\Policy.4.121.Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjTpConn, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ProjTpConn.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -93,11 +97,17 @@
     <Compile Include="IHM\Ajouter Commande\AjouterCommandeProduit.Designer.cs">
       <DependentUpon>AjouterCommandeProduit.cs</DependentUpon>
     </Compile>
-    <Compile Include="IHM\Client.cs">
+    <Compile Include="IHM\Client\AjouterClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IHM\Client.Designer.cs">
-      <DependentUpon>Client.cs</DependentUpon>
+    <Compile Include="IHM\Client\AjouterClient.Designer.cs">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHM\ConsulterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM\ConsulterClient.Designer.cs">
+      <DependentUpon>ConsulterClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,8 +120,11 @@
     <EmbeddedResource Include="IHM\Ajouter Commande\AjouterCommandeProduit.resx">
       <DependentUpon>AjouterCommandeProduit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IHM\Client.resx">
-      <DependentUpon>Client.cs</DependentUpon>
+    <EmbeddedResource Include="IHM\Client\AjouterClient.resx">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHM\ConsulterClient.resx">
+      <DependentUpon>ConsulterClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

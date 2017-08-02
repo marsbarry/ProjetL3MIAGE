@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsProjetL3MIAGE
 {
-    partial class Client
+    partial class AjouterUnCLient
     {
         /// <summary>
         /// Required designer variable.
@@ -205,7 +205,7 @@
             this.buttonCanAc.UseVisualStyleBackColor = true;
             this.buttonCanAc.Click += new System.EventHandler(this.buttonCanAc_Click);
             // 
-            // Client
+            // AjouterUnCLient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -230,7 +230,7 @@
             this.Controls.Add(this.labelNomAC);
             this.Controls.Add(this.labelNumAC);
             this.Controls.Add(this.labelTitreAC);
-            this.Name = "Client";
+            this.Name = "AjouterUnCLient";
             this.Text = "Ajout d\'un client";
             this.ResumeLayout(false);
             this.PerformLayout();

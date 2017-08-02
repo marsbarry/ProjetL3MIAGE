@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsProjetL3MIAGE.CLasse;
+using WindowsFormsProjetL3MIAGE.IHM.Client;
+using ProjTpConn;
 
 namespace WindowsFormsProjetL3MIAGE
 {
@@ -14,6 +17,7 @@ namespace WindowsFormsProjetL3MIAGE
     {
         public Accueil()
         {
+            ConnexionBD.Connecter("userprojl3", "manager");
             InitializeComponent();
         }
 
@@ -25,8 +29,20 @@ namespace WindowsFormsProjetL3MIAGE
         private void ajouterUnClientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Client ObjF = new Client();
+            AjouterUnCLient ObjF = new AjouterUnCLient();
             ObjF.Show();
+        }
+
+        private void consulterLesClientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ConsulterUnClient ObjF = new ConsulterUnClient();
+            ObjF.Show();
+        }
+
+        private void Accueil_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -142,6 +142,7 @@
             this.consulterLesClientsToolStripMenuItem.Name = "consulterLesClientsToolStripMenuItem";
             this.consulterLesClientsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.consulterLesClientsToolStripMenuItem.Text = "Consulter les clients";
+            this.consulterLesClientsToolStripMenuItem.Click += new System.EventHandler(this.consulterLesClientsToolStripMenuItem_Click);
             // 
             // Accueil
             // 
@@ -152,6 +153,7 @@
             this.MainMenuStrip = this.menuStripFichier;
             this.Name = "Accueil";
             this.Text = "Accueil";
+            this.Load += new System.EventHandler(this.Accueil_Load);
             this.menuStripFichier.ResumeLayout(false);
             this.menuStripFichier.PerformLayout();
             this.ResumeLayout(false);

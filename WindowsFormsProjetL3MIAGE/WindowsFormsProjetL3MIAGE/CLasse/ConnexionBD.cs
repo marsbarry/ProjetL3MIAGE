@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsProjetL3MIAGE.CLasse
 {
-    class ConnexionBD
+    public class ConnexionBD
     {
         private string Req;
         private int Nb1;
@@ -84,10 +84,10 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
                 ConnOk = true;
                 MessageBox.Show("Connection marche");
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 ConnOk = false;
-                MessageBox.Show("Connection marche pas");
+                MessageBox.Show(e.ToString());
 
             }
 

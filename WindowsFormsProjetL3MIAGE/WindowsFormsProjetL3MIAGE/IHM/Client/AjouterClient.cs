@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsProjetL3MIAGE
 {
-    public partial class Client : Form
+    public partial class AjouterUnCLient : Form
     {
-        public Client()
+        public AjouterUnCLient()
         {
             InitializeComponent();
         }
