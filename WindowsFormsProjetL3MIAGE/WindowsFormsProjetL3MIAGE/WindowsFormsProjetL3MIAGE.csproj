@@ -72,27 +72,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accueil.cs">
+    <Compile Include="IHM\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accueil.Designer.cs">
+    <Compile Include="IHM\Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="CLasse\Client.cs" />
     <Compile Include="CLasse\ConnexionBD.cs" />
     <Compile Include="CLasse\GestionClient.cs" />
-    <Compile Include="Client.cs">
+    <Compile Include="IHM\Ajouter Commande\AjouterCommandeInfoClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Client.Designer.cs">
+    <Compile Include="IHM\Ajouter Commande\AjouterCommandeInfoClient.Designer.cs">
+      <DependentUpon>AjouterCommandeInfoClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHM\Ajouter Commande\AjouterCommandeProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM\Ajouter Commande\AjouterCommandeProduit.Designer.cs">
+      <DependentUpon>AjouterCommandeProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHM\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM\Client.Designer.cs">
       <DependentUpon>Client.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Accueil.resx">
+    <EmbeddedResource Include="IHM\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Client.resx">
+    <EmbeddedResource Include="IHM\Ajouter Commande\AjouterCommandeInfoClient.resx">
+      <DependentUpon>AjouterCommandeInfoClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHM\Ajouter Commande\AjouterCommandeProduit.resx">
+      <DependentUpon>AjouterCommandeProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHM\Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -115,7 +133,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="IHM\App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

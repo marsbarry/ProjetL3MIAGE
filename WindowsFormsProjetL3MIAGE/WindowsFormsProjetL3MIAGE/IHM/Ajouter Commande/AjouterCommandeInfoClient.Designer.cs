@@ -221,7 +221,7 @@
             this.Controls.Add(this.labelRechNomCli);
             this.Controls.Add(this.labelTitreAco);
             this.Name = "AjouterCommandeInfoClient";
-            this.Text = "AjouterCommande";
+            this.Text = "AjouterCommandeInfoClient";
             this.ResumeLayout(false);
             this.PerformLayout();
 
