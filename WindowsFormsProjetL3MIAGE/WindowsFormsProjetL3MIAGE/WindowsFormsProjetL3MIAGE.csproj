@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLasse\CommandeC.cs" />
+    <Compile Include="CLasse\GestionCommandeC.cs" />
     <Compile Include="IHM\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>

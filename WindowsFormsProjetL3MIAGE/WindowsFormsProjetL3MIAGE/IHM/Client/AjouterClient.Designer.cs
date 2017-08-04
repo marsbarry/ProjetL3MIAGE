@@ -194,6 +194,7 @@
             this.buttonAjAc.TabIndex = 17;
             this.buttonAjAc.Text = "Ajouter";
             this.buttonAjAc.UseVisualStyleBackColor = true;
+            this.buttonAjAc.Click += new System.EventHandler(this.buttonAjAc_Click);
             // 
             // buttonCanAc
             // 
@@ -232,6 +233,7 @@
             this.Controls.Add(this.labelTitreAC);
             this.Name = "AjouterUnCLient";
             this.Text = "Ajout d\'un client";
+            this.Load += new System.EventHandler(this.AjouterUnCLient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
