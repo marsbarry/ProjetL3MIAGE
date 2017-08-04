@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLasse\CommandeC.cs" />
     <Compile Include="IHM\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
