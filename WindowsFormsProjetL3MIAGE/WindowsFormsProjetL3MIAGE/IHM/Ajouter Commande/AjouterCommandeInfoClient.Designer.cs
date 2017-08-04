@@ -46,12 +46,14 @@
             this.textBoxVilleAco = new System.Windows.Forms.TextBox();
             this.co = new System.Windows.Forms.Button();
             this.buttonSuiAco = new System.Windows.Forms.Button();
+            this.labelNumCMD = new System.Windows.Forms.Label();
+            this.textBoxNumCMD = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelTitreAco
             // 
             this.labelTitreAco.AutoSize = true;
-            this.labelTitreAco.Location = new System.Drawing.Point(12, 9);
+            this.labelTitreAco.Location = new System.Drawing.Point(96, 9);
             this.labelTitreAco.Name = "labelTitreAco";
             this.labelTitreAco.Size = new System.Drawing.Size(161, 13);
             this.labelTitreAco.TabIndex = 0;
@@ -60,7 +62,7 @@
             // labelRechNomCli
             // 
             this.labelRechNomCli.AutoSize = true;
-            this.labelRechNomCli.Location = new System.Drawing.Point(12, 38);
+            this.labelRechNomCli.Location = new System.Drawing.Point(12, 61);
             this.labelRechNomCli.Name = "labelRechNomCli";
             this.labelRechNomCli.Size = new System.Drawing.Size(154, 13);
             this.labelRechNomCli.TabIndex = 1;
@@ -69,7 +71,7 @@
             // labelChoiClient
             // 
             this.labelChoiClient.AutoSize = true;
-            this.labelChoiClient.Location = new System.Drawing.Point(12, 65);
+            this.labelChoiClient.Location = new System.Drawing.Point(12, 88);
             this.labelChoiClient.Name = "labelChoiClient";
             this.labelChoiClient.Size = new System.Drawing.Size(139, 13);
             this.labelChoiClient.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // textBoxRechNomCli
             // 
-            this.textBoxRechNomCli.Location = new System.Drawing.Point(200, 38);
+            this.textBoxRechNomCli.Location = new System.Drawing.Point(200, 61);
             this.textBoxRechNomCli.Name = "textBoxRechNomCli";
             this.textBoxRechNomCli.Size = new System.Drawing.Size(100, 20);
             this.textBoxRechNomCli.TabIndex = 3;
@@ -85,10 +87,11 @@
             // comboBoxChoiCli
             // 
             this.comboBoxChoiCli.FormattingEnabled = true;
-            this.comboBoxChoiCli.Location = new System.Drawing.Point(200, 65);
+            this.comboBoxChoiCli.Location = new System.Drawing.Point(200, 88);
             this.comboBoxChoiCli.Name = "comboBoxChoiCli";
             this.comboBoxChoiCli.Size = new System.Drawing.Size(121, 21);
             this.comboBoxChoiCli.TabIndex = 4;
+            this.comboBoxChoiCli.SelectedIndexChanged += new System.EventHandler(this.comboBoxChoiCli_SelectedIndexChanged);
             // 
             // labelInfCli
             // 
@@ -197,11 +200,30 @@
             this.buttonSuiAco.Text = "Suivant";
             this.buttonSuiAco.UseVisualStyleBackColor = true;
             // 
+            // labelNumCMD
+            // 
+            this.labelNumCMD.AutoSize = true;
+            this.labelNumCMD.Location = new System.Drawing.Point(15, 34);
+            this.labelNumCMD.Name = "labelNumCMD";
+            this.labelNumCMD.Size = new System.Drawing.Size(125, 13);
+            this.labelNumCMD.TabIndex = 18;
+            this.labelNumCMD.Text = "Numéro de la commande";
+            // 
+            // textBoxNumCMD
+            // 
+            this.textBoxNumCMD.Location = new System.Drawing.Point(200, 31);
+            this.textBoxNumCMD.Name = "textBoxNumCMD";
+            this.textBoxNumCMD.ReadOnly = true;
+            this.textBoxNumCMD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumCMD.TabIndex = 19;
+            // 
             // AjouterCommandeInfoClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 362);
+            this.ClientSize = new System.Drawing.Size(335, 362);
+            this.Controls.Add(this.textBoxNumCMD);
+            this.Controls.Add(this.labelNumCMD);
             this.Controls.Add(this.buttonSuiAco);
             this.Controls.Add(this.co);
             this.Controls.Add(this.textBoxVilleAco);
@@ -222,6 +244,7 @@
             this.Controls.Add(this.labelTitreAco);
             this.Name = "AjouterCommandeInfoClient";
             this.Text = "AjouterCommandeInfoClient";
+            this.Load += new System.EventHandler(this.AjouterCommandeInfoClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +270,7 @@
         private System.Windows.Forms.TextBox textBoxVilleAco;
         private System.Windows.Forms.Button co;
         private System.Windows.Forms.Button buttonSuiAco;
+        private System.Windows.Forms.Label labelNumCMD;
+        private System.Windows.Forms.TextBox textBoxNumCMD;
     }
 }

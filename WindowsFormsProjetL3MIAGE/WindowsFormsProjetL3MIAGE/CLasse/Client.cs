@@ -7,7 +7,7 @@ using System.Data;
 
 namespace WindowsFormsProjetL3MIAGE.CLasse
 {
-    class Client
+    public class Client
     {
         //Propriété
         private int numCli;
