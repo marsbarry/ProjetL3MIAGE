@@ -105,10 +105,10 @@
     <Compile Include="IHM\Client\AjouterClient.Designer.cs">
       <DependentUpon>AjouterClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="IHM\ConsulterClient.cs">
+    <Compile Include="IHM\Client\ConsulterClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IHM\ConsulterClient.Designer.cs">
+    <Compile Include="IHM\Client\ConsulterClient.Designer.cs">
       <DependentUpon>ConsulterClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -125,7 +125,7 @@
     <EmbeddedResource Include="IHM\Client\AjouterClient.resx">
       <DependentUpon>AjouterClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IHM\ConsulterClient.resx">
+    <EmbeddedResource Include="IHM\Client\ConsulterClient.resx">
       <DependentUpon>ConsulterClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
