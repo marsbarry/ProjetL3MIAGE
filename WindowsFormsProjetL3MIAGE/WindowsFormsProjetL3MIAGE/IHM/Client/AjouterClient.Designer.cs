@@ -52,11 +52,12 @@
             // labelTitreAC
             // 
             this.labelTitreAC.AutoSize = true;
-            this.labelTitreAC.Location = new System.Drawing.Point(103, 18);
+            this.labelTitreAC.Location = new System.Drawing.Point(62, 9);
             this.labelTitreAC.Name = "labelTitreAC";
             this.labelTitreAC.Size = new System.Drawing.Size(185, 13);
             this.labelTitreAC.TabIndex = 0;
             this.labelTitreAC.Text = "Formulaire d\'ajout d\'un nouveau client";
+            this.labelTitreAC.Click += new System.EventHandler(this.labelTitreAC_Click);
             // 
             // labelNumAC
             // 
@@ -134,61 +135,61 @@
             // 
             this.textBoxNumC.Location = new System.Drawing.Point(134, 76);
             this.textBoxNumC.Name = "textBoxNumC";
-            this.textBoxNumC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumC.Size = new System.Drawing.Size(154, 20);
             this.textBoxNumC.TabIndex = 9;
             // 
             // textBoxNomAc
             // 
             this.textBoxNomAc.Location = new System.Drawing.Point(134, 113);
             this.textBoxNomAc.Name = "textBoxNomAc";
-            this.textBoxNomAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNomAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxNomAc.TabIndex = 10;
             // 
             // textBoxPreAc
             // 
             this.textBoxPreAc.Location = new System.Drawing.Point(134, 147);
             this.textBoxPreAc.Name = "textBoxPreAc";
-            this.textBoxPreAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPreAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxPreAc.TabIndex = 11;
             // 
             // textBoxAdrAc
             // 
             this.textBoxAdrAc.Location = new System.Drawing.Point(134, 183);
             this.textBoxAdrAc.Name = "textBoxAdrAc";
-            this.textBoxAdrAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAdrAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxAdrAc.TabIndex = 12;
             // 
             // textBoxVilleAc
             // 
             this.textBoxVilleAc.Location = new System.Drawing.Point(134, 215);
             this.textBoxVilleAc.Name = "textBoxVilleAc";
-            this.textBoxVilleAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVilleAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxVilleAc.TabIndex = 13;
             // 
             // textBoxCpAc
             // 
             this.textBoxCpAc.Location = new System.Drawing.Point(134, 251);
             this.textBoxCpAc.Name = "textBoxCpAc";
-            this.textBoxCpAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCpAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxCpAc.TabIndex = 14;
             // 
             // textBoxTelAc
             // 
             this.textBoxTelAc.Location = new System.Drawing.Point(134, 285);
             this.textBoxTelAc.Name = "textBoxTelAc";
-            this.textBoxTelAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTelAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxTelAc.TabIndex = 15;
             // 
             // textBoxMailAc
             // 
             this.textBoxMailAc.Location = new System.Drawing.Point(134, 322);
             this.textBoxMailAc.Name = "textBoxMailAc";
-            this.textBoxMailAc.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMailAc.Size = new System.Drawing.Size(154, 20);
             this.textBoxMailAc.TabIndex = 16;
             // 
             // buttonAjAc
             // 
-            this.buttonAjAc.Location = new System.Drawing.Point(303, 377);
+            this.buttonAjAc.Location = new System.Drawing.Point(235, 377);
             this.buttonAjAc.Name = "buttonAjAc";
             this.buttonAjAc.Size = new System.Drawing.Size(75, 23);
             this.buttonAjAc.TabIndex = 17;
@@ -210,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 412);
+            this.ClientSize = new System.Drawing.Size(322, 412);
             this.ControlBox = false;
             this.Controls.Add(this.buttonCanAc);
             this.Controls.Add(this.buttonAjAc);

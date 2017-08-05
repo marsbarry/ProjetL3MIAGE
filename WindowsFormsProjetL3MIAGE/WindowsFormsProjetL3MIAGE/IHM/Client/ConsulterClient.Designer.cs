@@ -60,7 +60,7 @@
             // 
             // buttonAjCC
             // 
-            this.buttonAjCC.Location = new System.Drawing.Point(308, 368);
+            this.buttonAjCC.Location = new System.Drawing.Point(219, 368);
             this.buttonAjCC.Name = "buttonAjCC";
             this.buttonAjCC.Size = new System.Drawing.Size(75, 23);
             this.buttonAjCC.TabIndex = 36;
@@ -72,7 +72,7 @@
             this.textBoxMailCC.Location = new System.Drawing.Point(139, 313);
             this.textBoxMailCC.Name = "textBoxMailCC";
             this.textBoxMailCC.ReadOnly = true;
-            this.textBoxMailCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMailCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxMailCC.TabIndex = 35;
             // 
             // textBoxTelCC
@@ -80,7 +80,7 @@
             this.textBoxTelCC.Location = new System.Drawing.Point(139, 276);
             this.textBoxTelCC.Name = "textBoxTelCC";
             this.textBoxTelCC.ReadOnly = true;
-            this.textBoxTelCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTelCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxTelCC.TabIndex = 34;
             // 
             // textBoxCpCC
@@ -88,7 +88,7 @@
             this.textBoxCpCC.Location = new System.Drawing.Point(139, 242);
             this.textBoxCpCC.Name = "textBoxCpCC";
             this.textBoxCpCC.ReadOnly = true;
-            this.textBoxCpCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCpCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxCpCC.TabIndex = 33;
             // 
             // textBoxVilleCC
@@ -96,7 +96,7 @@
             this.textBoxVilleCC.Location = new System.Drawing.Point(139, 206);
             this.textBoxVilleCC.Name = "textBoxVilleCC";
             this.textBoxVilleCC.ReadOnly = true;
-            this.textBoxVilleCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVilleCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxVilleCC.TabIndex = 32;
             // 
             // textBoxAdrCC
@@ -104,7 +104,7 @@
             this.textBoxAdrCC.Location = new System.Drawing.Point(139, 174);
             this.textBoxAdrCC.Name = "textBoxAdrCC";
             this.textBoxAdrCC.ReadOnly = true;
-            this.textBoxAdrCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAdrCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxAdrCC.TabIndex = 31;
             // 
             // textBoxPreCC
@@ -112,7 +112,7 @@
             this.textBoxPreCC.Location = new System.Drawing.Point(139, 138);
             this.textBoxPreCC.Name = "textBoxPreCC";
             this.textBoxPreCC.ReadOnly = true;
-            this.textBoxPreCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPreCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxPreCC.TabIndex = 30;
             // 
             // textBoxNomCC
@@ -120,7 +120,7 @@
             this.textBoxNomCC.Location = new System.Drawing.Point(139, 104);
             this.textBoxNomCC.Name = "textBoxNomCC";
             this.textBoxNomCC.ReadOnly = true;
-            this.textBoxNomCC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNomCC.Size = new System.Drawing.Size(135, 20);
             this.textBoxNomCC.TabIndex = 29;
             // 
             // labelMailCC
@@ -198,7 +198,7 @@
             // labelTitreCC
             // 
             this.labelTitreCC.AutoSize = true;
-            this.labelTitreCC.Location = new System.Drawing.Point(108, 9);
+            this.labelTitreCC.Location = new System.Drawing.Point(58, 9);
             this.labelTitreCC.Name = "labelTitreCC";
             this.labelTitreCC.Size = new System.Drawing.Size(185, 13);
             this.labelTitreCC.TabIndex = 19;
@@ -209,14 +209,14 @@
             this.comboBoxNumCliCC.FormattingEnabled = true;
             this.comboBoxNumCliCC.Location = new System.Drawing.Point(139, 58);
             this.comboBoxNumCliCC.Name = "comboBoxNumCliCC";
-            this.comboBoxNumCliCC.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxNumCliCC.Size = new System.Drawing.Size(135, 21);
             this.comboBoxNumCliCC.TabIndex = 38;
             // 
             // ConsulterUnClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 408);
+            this.ClientSize = new System.Drawing.Size(312, 408);
             this.Controls.Add(this.comboBoxNumCliCC);
             this.Controls.Add(this.buttonCanCC);
             this.Controls.Add(this.buttonAjCC);

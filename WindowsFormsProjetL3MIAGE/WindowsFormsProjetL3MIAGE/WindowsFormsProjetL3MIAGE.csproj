@@ -32,12 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Web">
-      <HintPath>..\..\..\MySql.Web.dll</HintPath>
-    </Reference>
     <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Desktop\Les 3 belges\PPE\IHMPPE\IHMPPE\bin\Debug\Oracle.DataAccess.dll</HintPath>
@@ -49,15 +43,6 @@
     <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\odp.net\managed\common\EF6\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Oracle.ManagedDataAccessDTC">
-      <HintPath>..\..\..\odp.net\managed\x64\Oracle.ManagedDataAccessDTC.dll</HintPath>
-    </Reference>
-    <Reference Include="Oracle.ManagedDataAccessIOP">
-      <HintPath>..\..\..\odp.net\managed\x64\Oracle.ManagedDataAccessIOP.dll</HintPath>
-    </Reference>
-    <Reference Include="Policy.4.121.Oracle.ManagedDataAccess">
-      <HintPath>..\..\..\odp.net\managed\PublisherPolicy\4\Policy.4.121.Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
     <Reference Include="ProjTpConn, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -78,6 +63,7 @@
   <ItemGroup>
     <Compile Include="CLasse\CommandeC.cs" />
     <Compile Include="CLasse\GestionCommandeC.cs" />
+    <Compile Include="CLasse\Produit.cs" />
     <Compile Include="IHM\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +97,12 @@
     <Compile Include="IHM\Client\ConsulterClient.Designer.cs">
       <DependentUpon>ConsulterClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="IHM\SAV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM\SAV.Designer.cs">
+      <DependentUpon>SAV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IHM\Accueil.resx">
@@ -127,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IHM\Client\ConsulterClient.resx">
       <DependentUpon>ConsulterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHM\SAV.resx">
+      <DependentUpon>SAV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

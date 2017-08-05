@@ -64,7 +64,7 @@
             // 
             this.textBoxNomProdACP.Location = new System.Drawing.Point(152, 53);
             this.textBoxNomProdACP.Name = "textBoxNomProdACP";
-            this.textBoxNomProdACP.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNomProdACP.Size = new System.Drawing.Size(121, 20);
             this.textBoxNomProdACP.TabIndex = 2;
             // 
             // comboBoxRefProdACP
@@ -88,7 +88,7 @@
             // 
             this.textBoxPrixProdACP.Location = new System.Drawing.Point(152, 154);
             this.textBoxPrixProdACP.Name = "textBoxPrixProdACP";
-            this.textBoxPrixProdACP.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrixProdACP.Size = new System.Drawing.Size(121, 20);
             this.textBoxPrixProdACP.TabIndex = 5;
             // 
             // labelTitreACP

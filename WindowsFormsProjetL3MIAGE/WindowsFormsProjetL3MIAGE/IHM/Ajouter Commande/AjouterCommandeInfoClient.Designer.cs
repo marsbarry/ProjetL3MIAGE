@@ -81,7 +81,7 @@
             // 
             this.textBoxRechNomCli.Location = new System.Drawing.Point(200, 61);
             this.textBoxRechNomCli.Name = "textBoxRechNomCli";
-            this.textBoxRechNomCli.Size = new System.Drawing.Size(100, 20);
+            this.textBoxRechNomCli.Size = new System.Drawing.Size(143, 20);
             this.textBoxRechNomCli.TabIndex = 3;
             // 
             // comboBoxChoiCli
@@ -89,7 +89,7 @@
             this.comboBoxChoiCli.FormattingEnabled = true;
             this.comboBoxChoiCli.Location = new System.Drawing.Point(200, 88);
             this.comboBoxChoiCli.Name = "comboBoxChoiCli";
-            this.comboBoxChoiCli.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxChoiCli.Size = new System.Drawing.Size(143, 21);
             this.comboBoxChoiCli.TabIndex = 4;
             this.comboBoxChoiCli.SelectedIndexChanged += new System.EventHandler(this.comboBoxChoiCli_SelectedIndexChanged);
             // 
@@ -151,35 +151,35 @@
             // 
             this.textBoxTelAco.Location = new System.Drawing.Point(200, 146);
             this.textBoxTelAco.Name = "textBoxTelAco";
-            this.textBoxTelAco.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTelAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxTelAco.TabIndex = 11;
             // 
             // textBoxAdrAco
             // 
             this.textBoxAdrAco.Location = new System.Drawing.Point(200, 253);
             this.textBoxAdrAco.Name = "textBoxAdrAco";
-            this.textBoxAdrAco.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAdrAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxAdrAco.TabIndex = 12;
             // 
             // textBoxMailAco
             // 
             this.textBoxMailAco.Location = new System.Drawing.Point(200, 214);
             this.textBoxMailAco.Name = "textBoxMailAco";
-            this.textBoxMailAco.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMailAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxMailAco.TabIndex = 13;
             // 
             // textBoxCpAco
             // 
             this.textBoxCpAco.Location = new System.Drawing.Point(200, 176);
             this.textBoxCpAco.Name = "textBoxCpAco";
-            this.textBoxCpAco.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCpAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxCpAco.TabIndex = 14;
             // 
             // textBoxVilleAco
             // 
             this.textBoxVilleAco.Location = new System.Drawing.Point(200, 285);
             this.textBoxVilleAco.Name = "textBoxVilleAco";
-            this.textBoxVilleAco.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVilleAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxVilleAco.TabIndex = 15;
             // 
             // co
@@ -193,7 +193,7 @@
             // 
             // buttonSuiAco
             // 
-            this.buttonSuiAco.Location = new System.Drawing.Point(225, 327);
+            this.buttonSuiAco.Location = new System.Drawing.Point(268, 327);
             this.buttonSuiAco.Name = "buttonSuiAco";
             this.buttonSuiAco.Size = new System.Drawing.Size(75, 23);
             this.buttonSuiAco.TabIndex = 17;
@@ -214,14 +214,14 @@
             this.textBoxNumCMD.Location = new System.Drawing.Point(200, 31);
             this.textBoxNumCMD.Name = "textBoxNumCMD";
             this.textBoxNumCMD.ReadOnly = true;
-            this.textBoxNumCMD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumCMD.Size = new System.Drawing.Size(143, 20);
             this.textBoxNumCMD.TabIndex = 19;
             // 
             // AjouterCommandeInfoClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 362);
+            this.ClientSize = new System.Drawing.Size(355, 362);
             this.Controls.Add(this.textBoxNumCMD);
             this.Controls.Add(this.labelNumCMD);
             this.Controls.Add(this.buttonSuiAco);

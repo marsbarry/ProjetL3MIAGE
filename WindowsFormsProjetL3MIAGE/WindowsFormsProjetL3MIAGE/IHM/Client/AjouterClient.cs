@@ -45,5 +45,10 @@ namespace WindowsFormsProjetL3MIAGE
                 MessageBox.Show("Le client " + textBoxNomAc.Text + " n'a pas était ajouté");
             }
         }
+
+        private void labelTitreAC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
