@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="CLasse\CommandeC.cs" />
     <Compile Include="CLasse\GestionCommandeC.cs" />
+    <Compile Include="CLasse\GestionSAV.cs" />
     <Compile Include="CLasse\Produit.cs" />
     <Compile Include="CLasse\SAV.cs" />
     <Compile Include="IHM\Accueil.cs">
