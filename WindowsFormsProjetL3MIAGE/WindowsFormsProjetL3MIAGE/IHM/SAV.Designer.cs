@@ -58,11 +58,11 @@
             this.tabPageTraiLit = new System.Windows.Forms.TabPage();
             this.buttonOkSAV = new System.Windows.Forms.Button();
             this.buttonCanSAV = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxStatSAV = new System.Windows.Forms.ComboBox();
+            this.NomCliSAV2 = new System.Windows.Forms.TextBox();
+            this.textBoxCommSAV = new System.Windows.Forms.TextBox();
+            this.textBoxNoteSaV = new System.Windows.Forms.TextBox();
+            this.textBoxNumLitSAV = new System.Windows.Forms.TextBox();
             this.labelStatSAV = new System.Windows.Forms.Label();
             this.labelNoteSAV = new System.Windows.Forms.Label();
             this.labelCommentaireSAV = new System.Windows.Forms.Label();
@@ -339,11 +339,11 @@
             // 
             this.tabPageTraiLit.Controls.Add(this.buttonOkSAV);
             this.tabPageTraiLit.Controls.Add(this.buttonCanSAV);
-            this.tabPageTraiLit.Controls.Add(this.comboBox1);
-            this.tabPageTraiLit.Controls.Add(this.textBox4);
-            this.tabPageTraiLit.Controls.Add(this.textBox3);
-            this.tabPageTraiLit.Controls.Add(this.textBox2);
-            this.tabPageTraiLit.Controls.Add(this.textBox1);
+            this.tabPageTraiLit.Controls.Add(this.comboBoxStatSAV);
+            this.tabPageTraiLit.Controls.Add(this.NomCliSAV2);
+            this.tabPageTraiLit.Controls.Add(this.textBoxCommSAV);
+            this.tabPageTraiLit.Controls.Add(this.textBoxNoteSaV);
+            this.tabPageTraiLit.Controls.Add(this.textBoxNumLitSAV);
             this.tabPageTraiLit.Controls.Add(this.labelStatSAV);
             this.tabPageTraiLit.Controls.Add(this.labelNoteSAV);
             this.tabPageTraiLit.Controls.Add(this.labelCommentaireSAV);
@@ -374,88 +374,88 @@
             this.buttonCanSAV.Text = "Annuler";
             this.buttonCanSAV.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboBoxStatSAV
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(179, 349);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 21);
-            this.comboBox1.TabIndex = 9;
+            this.comboBoxStatSAV.FormattingEnabled = true;
+            this.comboBoxStatSAV.Location = new System.Drawing.Point(179, 349);
+            this.comboBoxStatSAV.Name = "comboBoxStatSAV";
+            this.comboBoxStatSAV.Size = new System.Drawing.Size(160, 21);
+            this.comboBoxStatSAV.TabIndex = 9;
             // 
-            // textBox4
+            // NomCliSAV2
             // 
-            this.textBox4.Location = new System.Drawing.Point(179, 74);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(160, 20);
-            this.textBox4.TabIndex = 8;
+            this.NomCliSAV2.Location = new System.Drawing.Point(179, 74);
+            this.NomCliSAV2.Name = "NomCliSAV2";
+            this.NomCliSAV2.Size = new System.Drawing.Size(160, 20);
+            this.NomCliSAV2.TabIndex = 8;
             // 
-            // textBox3
+            // textBoxCommSAV
             // 
-            this.textBox3.Location = new System.Drawing.Point(179, 121);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(160, 77);
-            this.textBox3.TabIndex = 7;
+            this.textBoxCommSAV.Location = new System.Drawing.Point(179, 121);
+            this.textBoxCommSAV.Multiline = true;
+            this.textBoxCommSAV.Name = "textBoxCommSAV";
+            this.textBoxCommSAV.Size = new System.Drawing.Size(160, 77);
+            this.textBoxCommSAV.TabIndex = 7;
             // 
-            // textBox2
+            // textBoxNoteSaV
             // 
-            this.textBox2.Location = new System.Drawing.Point(179, 228);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 78);
-            this.textBox2.TabIndex = 6;
+            this.textBoxNoteSaV.Location = new System.Drawing.Point(179, 228);
+            this.textBoxNoteSaV.Multiline = true;
+            this.textBoxNoteSaV.Name = "textBoxNoteSaV";
+            this.textBoxNoteSaV.Size = new System.Drawing.Size(160, 78);
+            this.textBoxNoteSaV.TabIndex = 6;
             // 
-            // textBox1
+            // textBoxNumLitSAV
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBoxNumLitSAV.Location = new System.Drawing.Point(179, 35);
+            this.textBoxNumLitSAV.Name = "textBoxNumLitSAV";
+            this.textBoxNumLitSAV.Size = new System.Drawing.Size(160, 20);
+            this.textBoxNumLitSAV.TabIndex = 5;
             // 
             // labelStatSAV
             // 
             this.labelStatSAV.AutoSize = true;
             this.labelStatSAV.Location = new System.Drawing.Point(7, 349);
             this.labelStatSAV.Name = "labelStatSAV";
-            this.labelStatSAV.Size = new System.Drawing.Size(35, 13);
+            this.labelStatSAV.Size = new System.Drawing.Size(44, 13);
             this.labelStatSAV.TabIndex = 4;
-            this.labelStatSAV.Text = "label5";
+            this.labelStatSAV.Text = "Statut : ";
             // 
             // labelNoteSAV
             // 
             this.labelNoteSAV.AutoSize = true;
-            this.labelNoteSAV.Location = new System.Drawing.Point(7, 252);
+            this.labelNoteSAV.Location = new System.Drawing.Point(7, 268);
             this.labelNoteSAV.Name = "labelNoteSAV";
-            this.labelNoteSAV.Size = new System.Drawing.Size(35, 13);
+            this.labelNoteSAV.Size = new System.Drawing.Size(39, 13);
             this.labelNoteSAV.TabIndex = 3;
-            this.labelNoteSAV.Text = "label4";
+            this.labelNoteSAV.Text = "Note : ";
             // 
             // labelCommentaireSAV
             // 
             this.labelCommentaireSAV.AutoSize = true;
-            this.labelCommentaireSAV.Location = new System.Drawing.Point(7, 150);
+            this.labelCommentaireSAV.Location = new System.Drawing.Point(6, 156);
             this.labelCommentaireSAV.Name = "labelCommentaireSAV";
-            this.labelCommentaireSAV.Size = new System.Drawing.Size(35, 13);
+            this.labelCommentaireSAV.Size = new System.Drawing.Size(74, 13);
             this.labelCommentaireSAV.TabIndex = 2;
-            this.labelCommentaireSAV.Text = "label3";
+            this.labelCommentaireSAV.Text = "Commentaire :";
             // 
             // labelNomCliSAV1
             // 
             this.labelNomCliSAV1.AutoSize = true;
             this.labelNomCliSAV1.Location = new System.Drawing.Point(7, 74);
             this.labelNomCliSAV1.Name = "labelNomCliSAV1";
-            this.labelNomCliSAV1.Size = new System.Drawing.Size(35, 13);
+            this.labelNomCliSAV1.Size = new System.Drawing.Size(81, 13);
             this.labelNomCliSAV1.TabIndex = 1;
-            this.labelNomCliSAV1.Text = "label2";
+            this.labelNomCliSAV1.Text = "Nom du client : ";
             // 
             // labelNumLitSAV
             // 
             this.labelNumLitSAV.AutoSize = true;
             this.labelNumLitSAV.Location = new System.Drawing.Point(7, 35);
             this.labelNumLitSAV.Name = "labelNumLitSAV";
-            this.labelNumLitSAV.Size = new System.Drawing.Size(35, 13);
+            this.labelNumLitSAV.Size = new System.Drawing.Size(78, 13);
             this.labelNumLitSAV.TabIndex = 0;
-            this.labelNumLitSAV.Text = "label1";
+            this.labelNumLitSAV.Text = "Numéro Litige :";
             // 
             // SAV
             // 
@@ -509,11 +509,11 @@
         private System.Windows.Forms.TabPage tabPageTraiLit;
         private System.Windows.Forms.Button buttonOkSAV;
         private System.Windows.Forms.Button buttonCanSAV;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBoxStatSAV;
+        private System.Windows.Forms.TextBox NomCliSAV2;
+        private System.Windows.Forms.TextBox textBoxCommSAV;
+        private System.Windows.Forms.TextBox textBoxNoteSaV;
+        private System.Windows.Forms.TextBox textBoxNumLitSAV;
         private System.Windows.Forms.Label labelStatSAV;
         private System.Windows.Forms.Label labelNoteSAV;
         private System.Windows.Forms.Label labelCommentaireSAV;
