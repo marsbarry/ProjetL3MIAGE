@@ -13,9 +13,22 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 {
     public partial class SAV : Form
     {
+        private int v1;
+        private string text1;
+        private string text2;
+        private string v2;
+
         public SAV()
         {
             InitializeComponent();
+        }
+
+        public SAV(int v1, string text1, string text2, string v2)
+        {
+            this.v1 = v1;
+            this.text1 = text1;
+            this.text2 = text2;
+            this.v2 = v2;
         }
 
         private void SAV_Load(object sender, EventArgs e)
@@ -55,7 +68,45 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
         private void comboBoxArtSAV_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            int IdProd = Convert.ToInt32(comboBoxArtSAV.SelectedItem);
+            string ReqNomProd = "select produit.nomprod from produit where produit.idproduit = " + IdProd;
+            DataTable DtArt = new DataTable();
+            ConnexionBD ObjArt = new ConnexionBD(ReqNomProd);
+            DtArt = ObjArt.ExecuteSelect();
+            Produit ObjProd = new Produit(Convert.ToInt32(comboBoxArtSAV.SelectedItem));
+            textBoxNumProdSAV.Text = ObjProd.GetNomProd().ToString();
+            textBoxNomCliSAV.Text = textBoxNomSAV.Text;
+            NomCliSAV2.Text = textBoxNomSAV.Text;
+            GestionSAV OUi = new GestionSAV();
+            textBoxNumLitSAV.Text = OUi.GetMAxId().ToString();
+        }
+
+        private void buttonOkSAV_Click(object sender, EventArgs e)
+        {
+            SAV NewLit = new SAV(Convert.ToInt32(textBoxNumLitSAV.Text), textBoxCommSAV.Text, textBoxNoteSaV.Text, comboBoxStatSAV.SelectedItem.ToString());
+            this.Close();
+            Accueil Oui = new Accueil();
+            Oui.Show();
+        }
+
+        private void buttonCanSAV_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Accueil Oui = new Accueil();
+            Oui.Show();
+        }
+
+        private void comboBoxNumCmdSAV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int Idcmdc = Convert.ToInt32(comboBoxNumCmdSAV.SelectedItem);
+            string Unerequete = "select produit.idproduit from produit , COMMANDEC , COMMANDEC_2 where PRODUIT.IDPRODUIT = COMMANDEC_2.IDPRODUIT and COMMANDEC_2.IDCMDC = COMMANDEC.IDCMDC and COMMANDEC_2.IDCMDC =" + Idcmdc;
+            DataTable DtCOMM = new DataTable();
+            ConnexionBD ObjCons = new ConnexionBD(Unerequete);
+            DtCOMM = ObjCons.ExecuteSelect();
+            foreach (DataRow row in DtCOMM.Rows)
+            {
+                comboBoxArtSAV.Items.Add(row[0]);
+            }
         }
     }
 }

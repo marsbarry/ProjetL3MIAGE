@@ -27,6 +27,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         /// <param name="unidart"Id de l article porant sur le Litige></param>
         /// <param name="unidcommande">Id de la commande du litige  </param>
         /// <param name="unIdCli">Id du client porant réclamation pour le Litige</param>
+       
         public SAV(int unId, string uncomm, string Unenote, string unstatut) // Constructeur pour un litige non existant dans la base de données
         {
             string ReqAddLit = "INSERT INTO LITIGE (IDLIT,COMMENTAIRE,NOTE,STATUT) values (" + unId + ",'" + uncomm + "','" + Unenote + "','" + unstatut + "')";

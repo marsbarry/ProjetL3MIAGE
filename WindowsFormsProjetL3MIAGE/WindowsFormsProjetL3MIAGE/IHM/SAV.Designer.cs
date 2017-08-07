@@ -298,6 +298,7 @@
             this.comboBoxNumCmdSAV.Name = "comboBoxNumCmdSAV";
             this.comboBoxNumCmdSAV.Size = new System.Drawing.Size(121, 21);
             this.comboBoxNumCmdSAV.TabIndex = 4;
+            this.comboBoxNumCmdSAV.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumCmdSAV_SelectedIndexChanged);
             // 
             // labelNomProdSAV
             // 
@@ -364,6 +365,7 @@
             this.buttonOkSAV.TabIndex = 11;
             this.buttonOkSAV.Text = "Valider";
             this.buttonOkSAV.UseVisualStyleBackColor = true;
+            this.buttonOkSAV.Click += new System.EventHandler(this.buttonOkSAV_Click);
             // 
             // buttonCanSAV
             // 
@@ -373,6 +375,7 @@
             this.buttonCanSAV.TabIndex = 10;
             this.buttonCanSAV.Text = "Annuler";
             this.buttonCanSAV.UseVisualStyleBackColor = true;
+            this.buttonCanSAV.Click += new System.EventHandler(this.buttonCanSAV_Click);
             // 
             // comboBoxStatSAV
             // 
