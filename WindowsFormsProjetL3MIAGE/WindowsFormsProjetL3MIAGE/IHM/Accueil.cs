@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WindowsFormsProjetL3MIAGE.CLasse;
 using WindowsFormsProjetL3MIAGE.IHM.Client;
 using ProjTpConn;
+using WindowsFormsProjetL3MIAGE.IHM;
 
 namespace WindowsFormsProjetL3MIAGE
 {
@@ -43,6 +44,30 @@ namespace WindowsFormsProjetL3MIAGE
         private void Accueil_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void ajouterUneCommandeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AjouterCommandeInfoClient objF = new AjouterCommandeInfoClient();
+            objF.Show();
+        }
+
+        private void ouvrirUneRéclamationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            IHM.SAV objF = new IHM.SAV();
+            objF.Show();
+        }
+
+        private void consulterLesCommandesDunClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modifierUneCommandeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

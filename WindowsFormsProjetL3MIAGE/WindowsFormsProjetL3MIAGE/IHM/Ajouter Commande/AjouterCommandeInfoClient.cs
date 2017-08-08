@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsProjetL3MIAGE.CLasse;
+using WindowsFormsProjetL3MIAGE.IHM.Ajouter_Commande;
 
 namespace WindowsFormsProjetL3MIAGE.IHM
 {
@@ -36,6 +37,20 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxAdrAco.Text = unCli.getAdrCli();
             textBoxVilleAco.Text = unCli.getVille();
             
+        }
+
+        private void co_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Accueil objF = new Accueil();
+            objF.Show();
+        }
+
+        private void buttonSuiAco_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AjouterCommandeProduit objF = new AjouterCommandeProduit();
+            objF.Show();
         }
     }
 }

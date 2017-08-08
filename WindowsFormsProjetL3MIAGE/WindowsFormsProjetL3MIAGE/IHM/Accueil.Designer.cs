@@ -87,18 +87,21 @@
             this.ajouterUneCommandeToolStripMenuItem.Name = "ajouterUneCommandeToolStripMenuItem";
             this.ajouterUneCommandeToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.ajouterUneCommandeToolStripMenuItem.Text = "Ajouter une commande";
+            this.ajouterUneCommandeToolStripMenuItem.Click += new System.EventHandler(this.ajouterUneCommandeToolStripMenuItem_Click);
             // 
             // consulterLesCommandesDunClientToolStripMenuItem
             // 
             this.consulterLesCommandesDunClientToolStripMenuItem.Name = "consulterLesCommandesDunClientToolStripMenuItem";
             this.consulterLesCommandesDunClientToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.consulterLesCommandesDunClientToolStripMenuItem.Text = "Consulter les commandes d\"un client";
+            this.consulterLesCommandesDunClientToolStripMenuItem.Click += new System.EventHandler(this.consulterLesCommandesDunClientToolStripMenuItem_Click);
             // 
             // modifierUneCommandeToolStripMenuItem
             // 
             this.modifierUneCommandeToolStripMenuItem.Name = "modifierUneCommandeToolStripMenuItem";
             this.modifierUneCommandeToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.modifierUneCommandeToolStripMenuItem.Text = "Modifier une commande";
+            this.modifierUneCommandeToolStripMenuItem.Click += new System.EventHandler(this.modifierUneCommandeToolStripMenuItem_Click);
             // 
             // sAVToolStripMenuItem
             // 
@@ -114,6 +117,7 @@
             this.ouvrirUneRéclamationToolStripMenuItem.Name = "ouvrirUneRéclamationToolStripMenuItem";
             this.ouvrirUneRéclamationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.ouvrirUneRéclamationToolStripMenuItem.Text = "Ouvrir une réclamation";
+            this.ouvrirUneRéclamationToolStripMenuItem.Click += new System.EventHandler(this.ouvrirUneRéclamationToolStripMenuItem_Click);
             // 
             // consulterUneRéclamationToolStripMenuItem
             // 

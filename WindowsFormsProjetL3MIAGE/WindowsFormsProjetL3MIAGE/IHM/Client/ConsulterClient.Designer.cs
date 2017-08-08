@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonCanCC = new System.Windows.Forms.Button();
-            this.buttonAjCC = new System.Windows.Forms.Button();
+            this.buttonFinCC = new System.Windows.Forms.Button();
             this.textBoxMailCC = new System.Windows.Forms.TextBox();
             this.textBoxTelCC = new System.Windows.Forms.TextBox();
             this.textBoxCpCC = new System.Windows.Forms.TextBox();
@@ -49,23 +48,15 @@
             this.comboBoxNumCliCC = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // buttonCanCC
+            // buttonFinCC
             // 
-            this.buttonCanCC.Location = new System.Drawing.Point(20, 368);
-            this.buttonCanCC.Name = "buttonCanCC";
-            this.buttonCanCC.Size = new System.Drawing.Size(75, 23);
-            this.buttonCanCC.TabIndex = 37;
-            this.buttonCanCC.Text = "Annuler";
-            this.buttonCanCC.UseVisualStyleBackColor = true;
-            // 
-            // buttonAjCC
-            // 
-            this.buttonAjCC.Location = new System.Drawing.Point(219, 368);
-            this.buttonAjCC.Name = "buttonAjCC";
-            this.buttonAjCC.Size = new System.Drawing.Size(75, 23);
-            this.buttonAjCC.TabIndex = 36;
-            this.buttonAjCC.Text = "Ajouter";
-            this.buttonAjCC.UseVisualStyleBackColor = true;
+            this.buttonFinCC.Location = new System.Drawing.Point(112, 373);
+            this.buttonFinCC.Name = "buttonFinCC";
+            this.buttonFinCC.Size = new System.Drawing.Size(75, 23);
+            this.buttonFinCC.TabIndex = 36;
+            this.buttonFinCC.Text = "Terminer";
+            this.buttonFinCC.UseVisualStyleBackColor = true;
+            this.buttonFinCC.Click += new System.EventHandler(this.buttonAjCC_Click);
             // 
             // textBoxMailCC
             // 
@@ -200,9 +191,9 @@
             this.labelTitreCC.AutoSize = true;
             this.labelTitreCC.Location = new System.Drawing.Point(58, 9);
             this.labelTitreCC.Name = "labelTitreCC";
-            this.labelTitreCC.Size = new System.Drawing.Size(185, 13);
+            this.labelTitreCC.Size = new System.Drawing.Size(181, 13);
             this.labelTitreCC.TabIndex = 19;
-            this.labelTitreCC.Text = "Formulaire d\'ajout d\'un nouveau client";
+            this.labelTitreCC.Text = "Formulaire de consultation d\'un client";
             // 
             // comboBoxNumCliCC
             // 
@@ -218,8 +209,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 408);
             this.Controls.Add(this.comboBoxNumCliCC);
-            this.Controls.Add(this.buttonCanCC);
-            this.Controls.Add(this.buttonAjCC);
+            this.Controls.Add(this.buttonFinCC);
             this.Controls.Add(this.textBoxMailCC);
             this.Controls.Add(this.textBoxTelCC);
             this.Controls.Add(this.textBoxCpCC);
@@ -245,9 +235,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonCanCC;
-        private System.Windows.Forms.Button buttonAjCC;
+        private System.Windows.Forms.Button buttonFinCC;
         private System.Windows.Forms.TextBox textBoxMailCC;
         private System.Windows.Forms.TextBox textBoxTelCC;
         private System.Windows.Forms.TextBox textBoxCpCC;

@@ -31,5 +31,19 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Client
             }
 
         }
+
+        private void buttonCanCC_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Accueil objF = new Accueil();
+            objF.Show();
+        }
+
+        private void buttonAjCC_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Accueil objF = new Accueil();
+            objF.Show();
+        }
     }
 }

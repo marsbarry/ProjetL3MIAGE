@@ -190,6 +190,7 @@
             this.co.TabIndex = 16;
             this.co.Text = "Annuler";
             this.co.UseVisualStyleBackColor = true;
+            this.co.Click += new System.EventHandler(this.co_Click);
             // 
             // buttonSuiAco
             // 
@@ -199,6 +200,7 @@
             this.buttonSuiAco.TabIndex = 17;
             this.buttonSuiAco.Text = "Suivant";
             this.buttonSuiAco.UseVisualStyleBackColor = true;
+            this.buttonSuiAco.Click += new System.EventHandler(this.buttonSuiAco_Click);
             // 
             // labelNumCMD
             // 

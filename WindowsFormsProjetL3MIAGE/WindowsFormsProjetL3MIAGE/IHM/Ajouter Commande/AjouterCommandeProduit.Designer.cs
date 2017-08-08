@@ -134,6 +134,7 @@
             this.buttonCanACP.TabIndex = 10;
             this.buttonCanACP.Text = "Annuler";
             this.buttonCanACP.UseVisualStyleBackColor = true;
+            this.buttonCanACP.Click += new System.EventHandler(this.buttonCanACP_Click);
             // 
             // buttonEnrACP
             // 
@@ -143,6 +144,7 @@
             this.buttonEnrACP.TabIndex = 11;
             this.buttonEnrACP.Text = "Enregistrer";
             this.buttonEnrACP.UseVisualStyleBackColor = true;
+            this.buttonEnrACP.Click += new System.EventHandler(this.buttonEnrACP_Click);
             // 
             // AjouterCommandeProduit
             // 

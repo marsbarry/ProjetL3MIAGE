@@ -16,5 +16,17 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Ajouter_Commande
         {
             InitializeComponent();
         }
+
+        private void buttonCanACP_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Accueil objF = new Accueil();
+            objF.Show();
+        }
+
+        private void buttonEnrACP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
