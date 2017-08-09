@@ -202,6 +202,7 @@
             this.comboBoxNumCliCC.Name = "comboBoxNumCliCC";
             this.comboBoxNumCliCC.Size = new System.Drawing.Size(135, 21);
             this.comboBoxNumCliCC.TabIndex = 38;
+            this.comboBoxNumCliCC.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumCliCC_SelectedIndexChanged);
             // 
             // ConsulterUnClient
             // 

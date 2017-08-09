@@ -34,6 +34,11 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 
         }
 
+        public int GetIdCMDC()
+        {
+            return this.IdCmdc;
+        }
+
         public string GetStatut()
         {
             return this.Statut;

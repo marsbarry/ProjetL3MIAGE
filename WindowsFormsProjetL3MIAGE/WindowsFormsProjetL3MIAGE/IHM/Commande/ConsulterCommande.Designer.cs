@@ -30,8 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInfoCliCoCo = new System.Windows.Forms.TabPage();
-            this.tabPageProdCoCo = new System.Windows.Forms.TabPage();
-            this.textBoxNumCoCo = new System.Windows.Forms.TextBox();
+            this.textBoxNumCMDCCoCo = new System.Windows.Forms.TextBox();
             this.labelNumCoCo = new System.Windows.Forms.Label();
             this.textBoxVilleCoCo = new System.Windows.Forms.TextBox();
             this.textBoxCpCoCo = new System.Windows.Forms.TextBox();
@@ -48,10 +47,11 @@
             this.labelChoiClientCoCo = new System.Windows.Forms.Label();
             this.labelRechNomCliCoCo = new System.Windows.Forms.Label();
             this.labelTitreCCo = new System.Windows.Forms.Label();
-            this.listBoxPanACP = new System.Windows.Forms.ListBox();
-            this.buttonValCoCo = new System.Windows.Forms.Button();
-            this.textBoxNumCliCoCo = new System.Windows.Forms.TextBox();
+            this.tabPageProdCoCo = new System.Windows.Forms.TabPage();
             this.labelTitreCoCoPro = new System.Windows.Forms.Label();
+            this.buttonValCoCo = new System.Windows.Forms.Button();
+            this.listBoxPanACP = new System.Windows.Forms.ListBox();
+            this.comboBoxNumCLiCoCo = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPageInfoCliCoCo.SuspendLayout();
             this.tabPageProdCoCo.SuspendLayout();
@@ -69,8 +69,8 @@
             // 
             // tabPageInfoCliCoCo
             // 
-            this.tabPageInfoCliCoCo.Controls.Add(this.textBoxNumCliCoCo);
-            this.tabPageInfoCliCoCo.Controls.Add(this.textBoxNumCoCo);
+            this.tabPageInfoCliCoCo.Controls.Add(this.comboBoxNumCLiCoCo);
+            this.tabPageInfoCliCoCo.Controls.Add(this.textBoxNumCMDCCoCo);
             this.tabPageInfoCliCoCo.Controls.Add(this.labelNumCoCo);
             this.tabPageInfoCliCoCo.Controls.Add(this.textBoxVilleCoCo);
             this.tabPageInfoCliCoCo.Controls.Add(this.textBoxCpCoCo);
@@ -95,30 +95,18 @@
             this.tabPageInfoCliCoCo.Text = "Informations sur le Client";
             this.tabPageInfoCliCoCo.UseVisualStyleBackColor = true;
             // 
-            // tabPageProdCoCo
+            // textBoxNumCMDCCoCo
             // 
-            this.tabPageProdCoCo.Controls.Add(this.labelTitreCoCoPro);
-            this.tabPageProdCoCo.Controls.Add(this.buttonValCoCo);
-            this.tabPageProdCoCo.Controls.Add(this.listBoxPanACP);
-            this.tabPageProdCoCo.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProdCoCo.Name = "tabPageProdCoCo";
-            this.tabPageProdCoCo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProdCoCo.Size = new System.Drawing.Size(341, 362);
-            this.tabPageProdCoCo.TabIndex = 1;
-            this.tabPageProdCoCo.Text = "Contenu de la commande";
-            this.tabPageProdCoCo.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNumCoCo
-            // 
-            this.textBoxNumCoCo.Location = new System.Drawing.Point(193, 33);
-            this.textBoxNumCoCo.Name = "textBoxNumCoCo";
-            this.textBoxNumCoCo.Size = new System.Drawing.Size(143, 20);
-            this.textBoxNumCoCo.TabIndex = 59;
+            this.textBoxNumCMDCCoCo.Location = new System.Drawing.Point(193, 90);
+            this.textBoxNumCMDCCoCo.Name = "textBoxNumCMDCCoCo";
+            this.textBoxNumCMDCCoCo.ReadOnly = true;
+            this.textBoxNumCMDCCoCo.Size = new System.Drawing.Size(141, 20);
+            this.textBoxNumCMDCCoCo.TabIndex = 60;
             // 
             // labelNumCoCo
             // 
             this.labelNumCoCo.AutoSize = true;
-            this.labelNumCoCo.Location = new System.Drawing.Point(5, 36);
+            this.labelNumCoCo.Location = new System.Drawing.Point(8, 97);
             this.labelNumCoCo.Name = "labelNumCoCo";
             this.labelNumCoCo.Size = new System.Drawing.Size(125, 13);
             this.labelNumCoCo.TabIndex = 58;
@@ -230,7 +218,7 @@
             // labelChoiClientCoCo
             // 
             this.labelChoiClientCoCo.AutoSize = true;
-            this.labelChoiClientCoCo.Location = new System.Drawing.Point(5, 90);
+            this.labelChoiClientCoCo.Location = new System.Drawing.Point(8, 28);
             this.labelChoiClientCoCo.Name = "labelChoiClientCoCo";
             this.labelChoiClientCoCo.Size = new System.Drawing.Size(139, 13);
             this.labelChoiClientCoCo.TabIndex = 42;
@@ -239,7 +227,7 @@
             // labelRechNomCliCoCo
             // 
             this.labelRechNomCliCoCo.AutoSize = true;
-            this.labelRechNomCliCoCo.Location = new System.Drawing.Point(5, 63);
+            this.labelRechNomCliCoCo.Location = new System.Drawing.Point(8, 63);
             this.labelRechNomCliCoCo.Name = "labelRechNomCliCoCo";
             this.labelRechNomCliCoCo.Size = new System.Drawing.Size(154, 13);
             this.labelRechNomCliCoCo.TabIndex = 41;
@@ -254,30 +242,18 @@
             this.labelTitreCCo.TabIndex = 40;
             this.labelTitreCCo.Text = "Consultation d\'une commande";
             // 
-            // listBoxPanACP
+            // tabPageProdCoCo
             // 
-            this.listBoxPanACP.FormattingEnabled = true;
-            this.listBoxPanACP.Location = new System.Drawing.Point(6, 51);
-            this.listBoxPanACP.Name = "listBoxPanACP";
-            this.listBoxPanACP.Size = new System.Drawing.Size(286, 251);
-            this.listBoxPanACP.TabIndex = 9;
-            // 
-            // buttonValCoCo
-            // 
-            this.buttonValCoCo.Location = new System.Drawing.Point(130, 333);
-            this.buttonValCoCo.Name = "buttonValCoCo";
-            this.buttonValCoCo.Size = new System.Drawing.Size(75, 23);
-            this.buttonValCoCo.TabIndex = 10;
-            this.buttonValCoCo.Text = "Terminer";
-            this.buttonValCoCo.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNumCliCoCo
-            // 
-            this.textBoxNumCliCoCo.Location = new System.Drawing.Point(193, 90);
-            this.textBoxNumCliCoCo.Name = "textBoxNumCliCoCo";
-            this.textBoxNumCliCoCo.ReadOnly = true;
-            this.textBoxNumCliCoCo.Size = new System.Drawing.Size(141, 20);
-            this.textBoxNumCliCoCo.TabIndex = 60;
+            this.tabPageProdCoCo.Controls.Add(this.labelTitreCoCoPro);
+            this.tabPageProdCoCo.Controls.Add(this.buttonValCoCo);
+            this.tabPageProdCoCo.Controls.Add(this.listBoxPanACP);
+            this.tabPageProdCoCo.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProdCoCo.Name = "tabPageProdCoCo";
+            this.tabPageProdCoCo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProdCoCo.Size = new System.Drawing.Size(341, 362);
+            this.tabPageProdCoCo.TabIndex = 1;
+            this.tabPageProdCoCo.Text = "Contenu de la commande";
+            this.tabPageProdCoCo.UseVisualStyleBackColor = true;
             // 
             // labelTitreCoCoPro
             // 
@@ -288,6 +264,32 @@
             this.labelTitreCoCoPro.TabIndex = 11;
             this.labelTitreCoCoPro.Text = "Liste des porduits";
             // 
+            // buttonValCoCo
+            // 
+            this.buttonValCoCo.Location = new System.Drawing.Point(130, 333);
+            this.buttonValCoCo.Name = "buttonValCoCo";
+            this.buttonValCoCo.Size = new System.Drawing.Size(75, 23);
+            this.buttonValCoCo.TabIndex = 10;
+            this.buttonValCoCo.Text = "Terminer";
+            this.buttonValCoCo.UseVisualStyleBackColor = true;
+            // 
+            // listBoxPanACP
+            // 
+            this.listBoxPanACP.FormattingEnabled = true;
+            this.listBoxPanACP.Location = new System.Drawing.Point(6, 51);
+            this.listBoxPanACP.Name = "listBoxPanACP";
+            this.listBoxPanACP.Size = new System.Drawing.Size(286, 251);
+            this.listBoxPanACP.TabIndex = 9;
+            // 
+            // comboBoxNumCLiCoCo
+            // 
+            this.comboBoxNumCLiCoCo.FormattingEnabled = true;
+            this.comboBoxNumCLiCoCo.Location = new System.Drawing.Point(193, 28);
+            this.comboBoxNumCLiCoCo.Name = "comboBoxNumCLiCoCo";
+            this.comboBoxNumCLiCoCo.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxNumCLiCoCo.TabIndex = 61;
+            this.comboBoxNumCLiCoCo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCoCo_SelectedIndexChanged);
+            // 
             // ConsulterCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +298,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "ConsulterCommande";
             this.Text = "ConsulterCommande";
+            this.Load += new System.EventHandler(this.ConsulterCommande_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageInfoCliCoCo.ResumeLayout(false);
             this.tabPageInfoCliCoCo.PerformLayout();
@@ -309,7 +312,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageInfoCliCoCo;
-        private System.Windows.Forms.TextBox textBoxNumCoCo;
         private System.Windows.Forms.Label labelNumCoCo;
         private System.Windows.Forms.TextBox textBoxVilleCoCo;
         private System.Windows.Forms.TextBox textBoxCpCoCo;
@@ -329,7 +331,8 @@
         private System.Windows.Forms.TabPage tabPageProdCoCo;
         private System.Windows.Forms.Button buttonValCoCo;
         private System.Windows.Forms.ListBox listBoxPanACP;
-        private System.Windows.Forms.TextBox textBoxNumCliCoCo;
+        private System.Windows.Forms.TextBox textBoxNumCMDCCoCo;
         private System.Windows.Forms.Label labelTitreCoCoPro;
+        private System.Windows.Forms.ComboBox comboBoxNumCLiCoCo;
     }
 }

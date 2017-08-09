@@ -45,5 +45,18 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Client
             Accueil objF = new Accueil();
             objF.Show();
         }
+
+        private void comboBoxNumCliCC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CLasse.Client objCli = new CLasse.Client(Convert.ToInt32(comboBoxNumCliCC.Text));
+            textBoxNomCC.Text = objCli.getNomCli();
+            textBoxPreCC.Text = objCli.getPrenomCli();
+            textBoxAdrCC.Text = objCli.getAdrCli();
+            textBoxVilleCC.Text = objCli.getVille();
+            textBoxCpCC.Text = objCli.getCpCli().ToString();
+            textBoxTelCC.Text = objCli.getTelCli().ToString();
+            textBoxMailCC.Text = objCli.getMailCli();
+
+        }
     }
 }
