@@ -124,6 +124,7 @@
             this.consulterUneRéclamationToolStripMenuItem.Name = "consulterUneRéclamationToolStripMenuItem";
             this.consulterUneRéclamationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.consulterUneRéclamationToolStripMenuItem.Text = "Consulter une réclamation";
+            this.consulterUneRéclamationToolStripMenuItem.Click += new System.EventHandler(this.consulterUneRéclamationToolStripMenuItem_Click);
             // 
             // clientToolStripMenuItem
             // 

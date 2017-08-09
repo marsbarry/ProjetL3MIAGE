@@ -69,5 +69,10 @@ namespace WindowsFormsProjetL3MIAGE
         {
 
         }
+
+        private void consulterUneRéclamationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
