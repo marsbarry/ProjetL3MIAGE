@@ -62,7 +62,9 @@ namespace WindowsFormsProjetL3MIAGE
 
         private void consulterLesCommandesDunClientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ConsulterCommande objF = new ConsulterCommande();
+            objF.Show();
         }
 
         private void modifierUneCommandeToolStripMenuItem_Click(object sender, EventArgs e)
