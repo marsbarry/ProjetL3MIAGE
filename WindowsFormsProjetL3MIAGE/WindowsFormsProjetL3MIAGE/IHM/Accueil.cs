@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsProjetL3MIAGE.CLasse;
 using WindowsFormsProjetL3MIAGE.IHM.Client;
-using ProjTpConn;
 using WindowsFormsProjetL3MIAGE.IHM;
+using Oracle.DataAccess;
 
 namespace WindowsFormsProjetL3MIAGE
 {
