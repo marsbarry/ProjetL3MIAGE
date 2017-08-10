@@ -34,6 +34,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         public Client(int unNum)
         {
             //Constructeur client deja present dans la base de données
+
             DataTable DataClient = new DataTable();
             DataClient = GestionClient.unCli(unNum);
             numCli = Convert.ToInt32(DataClient.Rows[0][0]);

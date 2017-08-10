@@ -27,7 +27,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Client
           
             for (int j = 0; j < dtTable.Rows.Count; j++)
             {
-                comboBoxNumCliCC.Text = dtTable.Rows[j]["IDCLI"].ToString();
+                comboBoxNumCliCC.Items.Add(dtTable.Rows[j]["IDCLI"]);
             }
 
         }
