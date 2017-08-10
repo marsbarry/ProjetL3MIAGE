@@ -22,10 +22,10 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         {
 
             DataTable dtTable;
-            string Req = "Select * From CommandeC Where IDCLI = " + UnID;
+            string Req = "Select * From CommandeC Where IDCMDC = " + UnID;
             ConnexionBD uneReq = new ConnexionBD(Req);
-            dtTable = uneReq.ExecuteSelect();
 
+            dtTable = uneReq.ExecuteSelect();
 
             IdCmdc = Convert.ToInt32(dtTable.Rows[0][0]);
             Statut = Convert.ToString(dtTable.Rows[0][1]);
