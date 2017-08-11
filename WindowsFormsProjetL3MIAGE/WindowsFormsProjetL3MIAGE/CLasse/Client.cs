@@ -19,7 +19,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         private int telCli;
         private string mailCli;
 
-        public Client(int unNum, string unNom, string unPrenom, string uneAdr, string uneVille, int unCP, int unTel, string unMail)
+        public Client(int unNum, string unNom, string unPrenom, int unTel, string uneAdr, int unCP, string uneVille , string unMail)
         {
             //Constructeur nouveaux client
             numCli = unNum;

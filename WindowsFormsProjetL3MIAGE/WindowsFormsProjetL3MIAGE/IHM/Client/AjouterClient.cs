@@ -34,11 +34,15 @@ namespace WindowsFormsProjetL3MIAGE
         private void buttonAjAc_Click(object sender, EventArgs e)
         {
             //Message box confirmer
+
             DialogResult result = MessageBox.Show("Voulez vous ajoutez Mr/Mme " + textBoxNomAc.Text + " comme nouveau client ?", "Confirmer", MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                Client newCli = new Client(Convert.ToInt32(textBoxNumC.Text), textBoxNomAc.Text, textBoxPreAc.Text, textBoxAdrAc.Text, textBoxVilleAc.Text, Convert.ToInt32(textBoxCpAc.Text), Convert.ToInt32(textBoxTelAc.Text), Convert.ToString(textBoxMailAc.Text));
+                Client newCli = new Client(Convert.ToInt32(textBoxNumC.Text), textBoxNomAc.Text, textBoxPreAc.Text, Convert.ToInt32(textBoxTelAc.Text) , textBoxAdrAc.Text , Convert.ToInt32(textBoxCpAc.Text), textBoxVilleAc.Text, Convert.ToString(textBoxMailAc.Text));
                 GestionClient.AjoutCli(newCli);
+                this.Close();
+                Accueil objF = new Accueil();
+                objF.Show();
             }
             else
             {

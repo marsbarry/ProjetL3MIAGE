@@ -20,7 +20,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             public static int MaxCli() //Retourne le numero max des client (+1) 
             {
                 int nbmax;
-                string req = "Select MAX(numCli) from Client";
+                string req = "Select MAX(IDCLI) from Client";
                 ConnexionBD uneReq = new ConnexionBD(req);
                 DataTable DtCliMax = new DataTable();
                 DtCliMax = uneReq.ExecuteSelect();
@@ -46,9 +46,9 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             public static void AjoutCli(Client unclient) //Ajoute un client a la BDD
             {
 
-                string req = "Insert into CLIENT values (" + unclient.getNumCli() + ",'" + unclient.getNomCli() + "','" + unclient.getPrenomCli() + "','" + unclient.getAdrCli() + "', '" + unclient.getVille() + "', '" + unclient.getCpCli() + "','" + unclient.getTelCli() + "', '" + unclient.getMailCli() + "')";
+                string req = "Insert into CLIENT values (" + unclient.getNumCli() + ",'" + unclient.getNomCli() + "','" + unclient.getPrenomCli() + "','" + unclient.getTelCli() + "', '" + unclient.getAdrCli() + "', '" + unclient.getCpCli() + "','" + unclient.getVille() + "', '" + unclient.getMailCli() + "')";
                 ConnexionBD uneReq = new ConnexionBD(req);
-                // uneReq.ExecuteID();
+                uneReq.ExecuteIUD();
             }
 
 

@@ -135,6 +135,7 @@
             // 
             this.textBoxNumC.Location = new System.Drawing.Point(134, 76);
             this.textBoxNumC.Name = "textBoxNumC";
+            this.textBoxNumC.ReadOnly = true;
             this.textBoxNumC.Size = new System.Drawing.Size(154, 20);
             this.textBoxNumC.TabIndex = 9;
             // 
