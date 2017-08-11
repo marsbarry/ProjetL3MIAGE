@@ -154,6 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 363);
+            this.ControlBox = false;
             this.Controls.Add(this.menuStripFichier);
             this.MainMenuStrip = this.menuStripFichier;
             this.Name = "Accueil";

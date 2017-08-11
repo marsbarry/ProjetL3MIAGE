@@ -209,6 +209,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 408);
+            this.ControlBox = false;
             this.Controls.Add(this.comboBoxNumCliCC);
             this.Controls.Add(this.buttonFinCC);
             this.Controls.Add(this.textBoxMailCC);

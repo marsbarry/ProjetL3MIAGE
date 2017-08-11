@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInfoCliCoCo = new System.Windows.Forms.TabPage();
+            this.comboBoxNumCLiCoCo = new System.Windows.Forms.ComboBox();
             this.textBoxNumCMDCCoCo = new System.Windows.Forms.TextBox();
             this.labelNumCoCo = new System.Windows.Forms.Label();
             this.textBoxVilleCoCo = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.labelTitreCoCoPro = new System.Windows.Forms.Label();
             this.buttonValCoCo = new System.Windows.Forms.Button();
             this.listBoxPanACP = new System.Windows.Forms.ListBox();
-            this.comboBoxNumCLiCoCo = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPageInfoCliCoCo.SuspendLayout();
             this.tabPageProdCoCo.SuspendLayout();
@@ -95,6 +95,15 @@
             this.tabPageInfoCliCoCo.Text = "Informations sur le Client";
             this.tabPageInfoCliCoCo.UseVisualStyleBackColor = true;
             // 
+            // comboBoxNumCLiCoCo
+            // 
+            this.comboBoxNumCLiCoCo.FormattingEnabled = true;
+            this.comboBoxNumCLiCoCo.Location = new System.Drawing.Point(193, 28);
+            this.comboBoxNumCLiCoCo.Name = "comboBoxNumCLiCoCo";
+            this.comboBoxNumCLiCoCo.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxNumCLiCoCo.TabIndex = 61;
+            this.comboBoxNumCLiCoCo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCoCo_SelectedIndexChanged);
+            // 
             // textBoxNumCMDCCoCo
             // 
             this.textBoxNumCMDCCoCo.Location = new System.Drawing.Point(193, 90);
@@ -106,7 +115,7 @@
             // labelNumCoCo
             // 
             this.labelNumCoCo.AutoSize = true;
-            this.labelNumCoCo.Location = new System.Drawing.Point(8, 97);
+            this.labelNumCoCo.Location = new System.Drawing.Point(8, 36);
             this.labelNumCoCo.Name = "labelNumCoCo";
             this.labelNumCoCo.Size = new System.Drawing.Size(125, 13);
             this.labelNumCoCo.TabIndex = 58;
@@ -218,7 +227,7 @@
             // labelChoiClientCoCo
             // 
             this.labelChoiClientCoCo.AutoSize = true;
-            this.labelChoiClientCoCo.Location = new System.Drawing.Point(8, 28);
+            this.labelChoiClientCoCo.Location = new System.Drawing.Point(8, 97);
             this.labelChoiClientCoCo.Name = "labelChoiClientCoCo";
             this.labelChoiClientCoCo.Size = new System.Drawing.Size(139, 13);
             this.labelChoiClientCoCo.TabIndex = 42;
@@ -272,6 +281,7 @@
             this.buttonValCoCo.TabIndex = 10;
             this.buttonValCoCo.Text = "Terminer";
             this.buttonValCoCo.UseVisualStyleBackColor = true;
+            this.buttonValCoCo.Click += new System.EventHandler(this.buttonValCoCo_Click);
             // 
             // listBoxPanACP
             // 
@@ -281,20 +291,12 @@
             this.listBoxPanACP.Size = new System.Drawing.Size(286, 251);
             this.listBoxPanACP.TabIndex = 9;
             // 
-            // comboBoxNumCLiCoCo
-            // 
-            this.comboBoxNumCLiCoCo.FormattingEnabled = true;
-            this.comboBoxNumCLiCoCo.Location = new System.Drawing.Point(193, 28);
-            this.comboBoxNumCLiCoCo.Name = "comboBoxNumCLiCoCo";
-            this.comboBoxNumCLiCoCo.Size = new System.Drawing.Size(141, 21);
-            this.comboBoxNumCLiCoCo.TabIndex = 61;
-            this.comboBoxNumCLiCoCo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCoCo_SelectedIndexChanged);
-            // 
             // ConsulterCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(352, 401);
+            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Name = "ConsulterCommande";
             this.Text = "ConsulterCommande";

@@ -54,6 +54,24 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxAdrCoCo.Text = objdt1.Rows[0]["ADRCLI"].ToString();
             textBoxVilleCoCo.Text = objdt1.Rows[0]["VILLECLI"].ToString();
 
+            DataTable objdt2 = new DataTable();
+            string unereq1 = "SELECT NOMPROD FROM PRODUIT,COMMANDEC_2 where PRODUIT.IDPRODUIT = commandec_2.idproduit and commandec_2.idcmdc = " + Convert.ToInt32(comboBoxNumCLiCoCo.Text);
+            CLasse.ConnexionBD objConn2 = new CLasse.ConnexionBD(unereq1);
+            objdt2 = objConn2.ExecuteSelect();
+
+            for (int i = 0; i < objdt2.Rows.Count; i++)
+            {
+                listBoxPanACP.Items.Clear();
+                listBoxPanACP.Items.Add(objdt2.Rows[i]["NOMPROD"]);
+            }
+                 
+        }
+
+        private void buttonValCoCo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Accueil objF = new Accueil();
+            objF.Show();
         }
     }
 }
