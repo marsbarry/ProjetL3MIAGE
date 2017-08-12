@@ -12,7 +12,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         public static int MaxCmd()
         {
             int nbmax;
-            string req = "Select MAX(numCmd) from Commande";
+            string req = "Select MAX(idCmdc) from CommandeC";
             ConnexionBD uneReq = new ConnexionBD(req);
             DataTable DtCmdMax = new DataTable();
             DtCmdMax = uneReq.ExecuteSelect();

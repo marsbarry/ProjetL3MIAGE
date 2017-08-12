@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPageInfCliAjCmd = new System.Windows.Forms.TabPage();
+            this.tabPageProdCmd = new System.Windows.Forms.TabPage();
             this.textBoxNumCMD = new System.Windows.Forms.TextBox();
             this.labelNumCMD = new System.Windows.Forms.Label();
-            this.buttonSuiAco = new System.Windows.Forms.Button();
-            this.co = new System.Windows.Forms.Button();
             this.textBoxVilleAco = new System.Windows.Forms.TextBox();
             this.textBoxCpAco = new System.Windows.Forms.TextBox();
             this.textBoxMailAco = new System.Windows.Forms.TextBox();
@@ -43,13 +41,9 @@
             this.labelCpAco = new System.Windows.Forms.Label();
             this.labelMailAco = new System.Windows.Forms.Label();
             this.labelAdrAco = new System.Windows.Forms.Label();
-            this.labelVilleAco = new System.Windows.Forms.Label();
             this.labelTelAco = new System.Windows.Forms.Label();
-            this.labelInfCli = new System.Windows.Forms.Label();
             this.comboBoxChoiCli = new System.Windows.Forms.ComboBox();
-            this.textBoxRechNomCli = new System.Windows.Forms.TextBox();
             this.labelChoiClient = new System.Windows.Forms.Label();
-            this.labelRechNomCli = new System.Windows.Forms.Label();
             this.labelTitreAco = new System.Windows.Forms.Label();
             this.buttonEnrACP = new System.Windows.Forms.Button();
             this.buttonCanACP = new System.Windows.Forms.Button();
@@ -63,76 +57,80 @@
             this.textBoxNomProdACP = new System.Windows.Forms.TextBox();
             this.labelRefProdACP = new System.Windows.Forms.Label();
             this.labelNomProdACP = new System.Windows.Forms.Label();
+            this.labelNomCliAC = new System.Windows.Forms.Label();
+            this.textBoxNomCliAC = new System.Windows.Forms.TextBox();
+            this.labelVillCliAC = new System.Windows.Forms.Label();
+            this.labelPreCliAC = new System.Windows.Forms.Label();
+            this.textBoxPreCliAC = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabPageInfCliAjCmd.SuspendLayout();
+            this.tabPageProdCmd.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPageInfCliAjCmd);
+            this.tabControl1.Controls.Add(this.tabPageProdCmd);
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(325, 450);
+            this.tabControl1.Size = new System.Drawing.Size(354, 450);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPageInfCliAjCmd
             // 
-            this.tabPage1.Controls.Add(this.textBoxNumCMD);
-            this.tabPage1.Controls.Add(this.labelNumCMD);
-            this.tabPage1.Controls.Add(this.buttonSuiAco);
-            this.tabPage1.Controls.Add(this.co);
-            this.tabPage1.Controls.Add(this.textBoxVilleAco);
-            this.tabPage1.Controls.Add(this.textBoxCpAco);
-            this.tabPage1.Controls.Add(this.textBoxMailAco);
-            this.tabPage1.Controls.Add(this.textBoxAdrAco);
-            this.tabPage1.Controls.Add(this.textBoxTelAco);
-            this.tabPage1.Controls.Add(this.labelCpAco);
-            this.tabPage1.Controls.Add(this.labelMailAco);
-            this.tabPage1.Controls.Add(this.labelAdrAco);
-            this.tabPage1.Controls.Add(this.labelVilleAco);
-            this.tabPage1.Controls.Add(this.labelTelAco);
-            this.tabPage1.Controls.Add(this.labelInfCli);
-            this.tabPage1.Controls.Add(this.comboBoxChoiCli);
-            this.tabPage1.Controls.Add(this.textBoxRechNomCli);
-            this.tabPage1.Controls.Add(this.labelChoiClient);
-            this.tabPage1.Controls.Add(this.labelRechNomCli);
-            this.tabPage1.Controls.Add(this.labelTitreAco);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(342, 375);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxPreCliAC);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelPreCliAC);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelVillCliAC);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxNomCliAC);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelNomCliAC);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxNumCMD);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelNumCMD);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxVilleAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxCpAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxMailAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxAdrAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.textBoxTelAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelCpAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelMailAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelAdrAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelTelAco);
+            this.tabPageInfCliAjCmd.Controls.Add(this.comboBoxChoiCli);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelChoiClient);
+            this.tabPageInfCliAjCmd.Controls.Add(this.labelTitreAco);
+            this.tabPageInfCliAjCmd.Location = new System.Drawing.Point(4, 22);
+            this.tabPageInfCliAjCmd.Name = "tabPageInfCliAjCmd";
+            this.tabPageInfCliAjCmd.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageInfCliAjCmd.Size = new System.Drawing.Size(346, 424);
+            this.tabPageInfCliAjCmd.TabIndex = 0;
+            this.tabPageInfCliAjCmd.Text = "Informations sur le client";
+            this.tabPageInfCliAjCmd.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageProdCmd
             // 
-            this.tabPage2.Controls.Add(this.buttonEnrACP);
-            this.tabPage2.Controls.Add(this.buttonCanACP);
-            this.tabPage2.Controls.Add(this.buttonDelACP);
-            this.tabPage2.Controls.Add(this.listBoxPanACP);
-            this.tabPage2.Controls.Add(this.buttonAddProdACP);
-            this.tabPage2.Controls.Add(this.labelTitreACP);
-            this.tabPage2.Controls.Add(this.textBoxPrixProdACP);
-            this.tabPage2.Controls.Add(this.labelPrixProdACP);
-            this.tabPage2.Controls.Add(this.comboBoxRefProdACP);
-            this.tabPage2.Controls.Add(this.textBoxNomProdACP);
-            this.tabPage2.Controls.Add(this.labelRefProdACP);
-            this.tabPage2.Controls.Add(this.labelNomProdACP);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(317, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageProdCmd.Controls.Add(this.buttonEnrACP);
+            this.tabPageProdCmd.Controls.Add(this.buttonCanACP);
+            this.tabPageProdCmd.Controls.Add(this.buttonDelACP);
+            this.tabPageProdCmd.Controls.Add(this.listBoxPanACP);
+            this.tabPageProdCmd.Controls.Add(this.buttonAddProdACP);
+            this.tabPageProdCmd.Controls.Add(this.labelTitreACP);
+            this.tabPageProdCmd.Controls.Add(this.textBoxPrixProdACP);
+            this.tabPageProdCmd.Controls.Add(this.labelPrixProdACP);
+            this.tabPageProdCmd.Controls.Add(this.comboBoxRefProdACP);
+            this.tabPageProdCmd.Controls.Add(this.textBoxNomProdACP);
+            this.tabPageProdCmd.Controls.Add(this.labelRefProdACP);
+            this.tabPageProdCmd.Controls.Add(this.labelNomProdACP);
+            this.tabPageProdCmd.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProdCmd.Name = "tabPageProdCmd";
+            this.tabPageProdCmd.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProdCmd.Size = new System.Drawing.Size(346, 424);
+            this.tabPageProdCmd.TabIndex = 1;
+            this.tabPageProdCmd.Text = "Produits de la commande";
+            this.tabPageProdCmd.UseVisualStyleBackColor = true;
             // 
             // textBoxNumCMD
             // 
-            this.textBoxNumCMD.Location = new System.Drawing.Point(192, 35);
+            this.textBoxNumCMD.Location = new System.Drawing.Point(195, 35);
             this.textBoxNumCMD.Name = "textBoxNumCMD";
             this.textBoxNumCMD.ReadOnly = true;
             this.textBoxNumCMD.Size = new System.Drawing.Size(143, 20);
@@ -147,55 +145,37 @@
             this.labelNumCMD.TabIndex = 38;
             this.labelNumCMD.Text = "Numéro de la commande";
             // 
-            // buttonSuiAco
-            // 
-            this.buttonSuiAco.Location = new System.Drawing.Point(260, 331);
-            this.buttonSuiAco.Name = "buttonSuiAco";
-            this.buttonSuiAco.Size = new System.Drawing.Size(75, 23);
-            this.buttonSuiAco.TabIndex = 37;
-            this.buttonSuiAco.Text = "Suivant";
-            this.buttonSuiAco.UseVisualStyleBackColor = true;
-            // 
-            // co
-            // 
-            this.co.Location = new System.Drawing.Point(10, 331);
-            this.co.Name = "co";
-            this.co.Size = new System.Drawing.Size(75, 23);
-            this.co.TabIndex = 36;
-            this.co.Text = "Annuler";
-            this.co.UseVisualStyleBackColor = true;
-            // 
             // textBoxVilleAco
             // 
-            this.textBoxVilleAco.Location = new System.Drawing.Point(192, 289);
+            this.textBoxVilleAco.Location = new System.Drawing.Point(195, 260);
             this.textBoxVilleAco.Name = "textBoxVilleAco";
             this.textBoxVilleAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxVilleAco.TabIndex = 35;
             // 
             // textBoxCpAco
             // 
-            this.textBoxCpAco.Location = new System.Drawing.Point(192, 180);
+            this.textBoxCpAco.Location = new System.Drawing.Point(195, 222);
             this.textBoxCpAco.Name = "textBoxCpAco";
             this.textBoxCpAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxCpAco.TabIndex = 34;
             // 
             // textBoxMailAco
             // 
-            this.textBoxMailAco.Location = new System.Drawing.Point(192, 218);
+            this.textBoxMailAco.Location = new System.Drawing.Point(195, 294);
             this.textBoxMailAco.Name = "textBoxMailAco";
             this.textBoxMailAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxMailAco.TabIndex = 33;
             // 
             // textBoxAdrAco
             // 
-            this.textBoxAdrAco.Location = new System.Drawing.Point(192, 257);
+            this.textBoxAdrAco.Location = new System.Drawing.Point(195, 188);
             this.textBoxAdrAco.Name = "textBoxAdrAco";
             this.textBoxAdrAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxAdrAco.TabIndex = 32;
             // 
             // textBoxTelAco
             // 
-            this.textBoxTelAco.Location = new System.Drawing.Point(192, 150);
+            this.textBoxTelAco.Location = new System.Drawing.Point(195, 334);
             this.textBoxTelAco.Name = "textBoxTelAco";
             this.textBoxTelAco.Size = new System.Drawing.Size(143, 20);
             this.textBoxTelAco.TabIndex = 31;
@@ -203,7 +183,7 @@
             // labelCpAco
             // 
             this.labelCpAco.AutoSize = true;
-            this.labelCpAco.Location = new System.Drawing.Point(7, 187);
+            this.labelCpAco.Location = new System.Drawing.Point(7, 222);
             this.labelCpAco.Name = "labelCpAco";
             this.labelCpAco.Size = new System.Drawing.Size(73, 13);
             this.labelCpAco.TabIndex = 30;
@@ -212,7 +192,7 @@
             // labelMailAco
             // 
             this.labelMailAco.AutoSize = true;
-            this.labelMailAco.Location = new System.Drawing.Point(7, 218);
+            this.labelMailAco.Location = new System.Drawing.Point(7, 294);
             this.labelMailAco.Name = "labelMailAco";
             this.labelMailAco.Size = new System.Drawing.Size(75, 13);
             this.labelMailAco.TabIndex = 29;
@@ -221,71 +201,38 @@
             // labelAdrAco
             // 
             this.labelAdrAco.AutoSize = true;
-            this.labelAdrAco.Location = new System.Drawing.Point(7, 260);
+            this.labelAdrAco.Location = new System.Drawing.Point(7, 188);
             this.labelAdrAco.Name = "labelAdrAco";
             this.labelAdrAco.Size = new System.Drawing.Size(54, 13);
             this.labelAdrAco.TabIndex = 28;
             this.labelAdrAco.Text = "Adresse : ";
             // 
-            // labelVilleAco
-            // 
-            this.labelVilleAco.AutoSize = true;
-            this.labelVilleAco.Location = new System.Drawing.Point(7, 289);
-            this.labelVilleAco.Name = "labelVilleAco";
-            this.labelVilleAco.Size = new System.Drawing.Size(26, 13);
-            this.labelVilleAco.TabIndex = 27;
-            this.labelVilleAco.Text = "Ville";
-            // 
             // labelTelAco
             // 
             this.labelTelAco.AutoSize = true;
-            this.labelTelAco.Location = new System.Drawing.Point(7, 158);
+            this.labelTelAco.Location = new System.Drawing.Point(7, 334);
             this.labelTelAco.Name = "labelTelAco";
             this.labelTelAco.Size = new System.Drawing.Size(64, 13);
             this.labelTelAco.TabIndex = 26;
             this.labelTelAco.Text = "Téléphone :";
             // 
-            // labelInfCli
-            // 
-            this.labelInfCli.AutoSize = true;
-            this.labelInfCli.Location = new System.Drawing.Point(7, 124);
-            this.labelInfCli.Name = "labelInfCli";
-            this.labelInfCli.Size = new System.Drawing.Size(120, 13);
-            this.labelInfCli.TabIndex = 25;
-            this.labelInfCli.Text = "Informations sur le client";
-            // 
             // comboBoxChoiCli
             // 
             this.comboBoxChoiCli.FormattingEnabled = true;
-            this.comboBoxChoiCli.Location = new System.Drawing.Point(192, 92);
+            this.comboBoxChoiCli.Location = new System.Drawing.Point(195, 92);
             this.comboBoxChoiCli.Name = "comboBoxChoiCli";
             this.comboBoxChoiCli.Size = new System.Drawing.Size(143, 21);
             this.comboBoxChoiCli.TabIndex = 24;
-            // 
-            // textBoxRechNomCli
-            // 
-            this.textBoxRechNomCli.Location = new System.Drawing.Point(192, 65);
-            this.textBoxRechNomCli.Name = "textBoxRechNomCli";
-            this.textBoxRechNomCli.Size = new System.Drawing.Size(143, 20);
-            this.textBoxRechNomCli.TabIndex = 23;
+            this.comboBoxChoiCli.SelectedIndexChanged += new System.EventHandler(this.comboBoxChoiCli_SelectedIndexChanged_1);
             // 
             // labelChoiClient
             // 
             this.labelChoiClient.AutoSize = true;
-            this.labelChoiClient.Location = new System.Drawing.Point(4, 92);
+            this.labelChoiClient.Location = new System.Drawing.Point(7, 92);
             this.labelChoiClient.Name = "labelChoiClient";
             this.labelChoiClient.Size = new System.Drawing.Size(139, 13);
             this.labelChoiClient.TabIndex = 22;
             this.labelChoiClient.Text = "Choisir le numéro du client : ";
-            // 
-            // labelRechNomCli
-            // 
-            this.labelRechNomCli.AutoSize = true;
-            this.labelRechNomCli.Location = new System.Drawing.Point(4, 65);
-            this.labelRechNomCli.Name = "labelRechNomCli";
-            this.labelRechNomCli.Size = new System.Drawing.Size(154, 13);
-            this.labelRechNomCli.TabIndex = 21;
-            this.labelRechNomCli.Text = "Rechercher le nom d\'un client :";
             // 
             // labelTitreAco
             // 
@@ -398,21 +345,62 @@
             this.labelNomProdACP.TabIndex = 12;
             this.labelNomProdACP.Text = "Nom du produit :";
             // 
+            // labelNomCliAC
+            // 
+            this.labelNomCliAC.AutoSize = true;
+            this.labelNomCliAC.Location = new System.Drawing.Point(7, 124);
+            this.labelNomCliAC.Name = "labelNomCliAC";
+            this.labelNomCliAC.Size = new System.Drawing.Size(38, 13);
+            this.labelNomCliAC.TabIndex = 40;
+            this.labelNomCliAC.Text = "Nom : ";
+            // 
+            // textBoxNomCliAC
+            // 
+            this.textBoxNomCliAC.Location = new System.Drawing.Point(195, 124);
+            this.textBoxNomCliAC.Name = "textBoxNomCliAC";
+            this.textBoxNomCliAC.Size = new System.Drawing.Size(143, 20);
+            this.textBoxNomCliAC.TabIndex = 41;
+            // 
+            // labelVillCliAC
+            // 
+            this.labelVillCliAC.AutoSize = true;
+            this.labelVillCliAC.Location = new System.Drawing.Point(7, 260);
+            this.labelVillCliAC.Name = "labelVillCliAC";
+            this.labelVillCliAC.Size = new System.Drawing.Size(35, 13);
+            this.labelVillCliAC.TabIndex = 42;
+            this.labelVillCliAC.Text = "Ville : ";
+            // 
+            // labelPreCliAC
+            // 
+            this.labelPreCliAC.AutoSize = true;
+            this.labelPreCliAC.Location = new System.Drawing.Point(7, 156);
+            this.labelPreCliAC.Name = "labelPreCliAC";
+            this.labelPreCliAC.Size = new System.Drawing.Size(52, 13);
+            this.labelPreCliAC.TabIndex = 43;
+            this.labelPreCliAC.Text = "Prénom : ";
+            // 
+            // textBoxPreCliAC
+            // 
+            this.textBoxPreCliAC.Location = new System.Drawing.Point(195, 156);
+            this.textBoxPreCliAC.Name = "textBoxPreCliAC";
+            this.textBoxPreCliAC.Size = new System.Drawing.Size(143, 20);
+            this.textBoxPreCliAC.TabIndex = 44;
+            // 
             // AjouterCommandeInfoClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 451);
+            this.ClientSize = new System.Drawing.Size(352, 451);
             this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Name = "AjouterCommandeInfoClient";
             this.Text = "AjouterCommandeInfoClient";
             this.Load += new System.EventHandler(this.AjouterCommandeInfoClient_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabPageInfCliAjCmd.ResumeLayout(false);
+            this.tabPageInfCliAjCmd.PerformLayout();
+            this.tabPageProdCmd.ResumeLayout(false);
+            this.tabPageProdCmd.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -420,11 +408,9 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPageInfCliAjCmd;
         private System.Windows.Forms.TextBox textBoxNumCMD;
         private System.Windows.Forms.Label labelNumCMD;
-        private System.Windows.Forms.Button buttonSuiAco;
-        private System.Windows.Forms.Button co;
         private System.Windows.Forms.TextBox textBoxVilleAco;
         private System.Windows.Forms.TextBox textBoxCpAco;
         private System.Windows.Forms.TextBox textBoxMailAco;
@@ -433,15 +419,11 @@
         private System.Windows.Forms.Label labelCpAco;
         private System.Windows.Forms.Label labelMailAco;
         private System.Windows.Forms.Label labelAdrAco;
-        private System.Windows.Forms.Label labelVilleAco;
         private System.Windows.Forms.Label labelTelAco;
-        private System.Windows.Forms.Label labelInfCli;
         private System.Windows.Forms.ComboBox comboBoxChoiCli;
-        private System.Windows.Forms.TextBox textBoxRechNomCli;
         private System.Windows.Forms.Label labelChoiClient;
-        private System.Windows.Forms.Label labelRechNomCli;
         private System.Windows.Forms.Label labelTitreAco;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPageProdCmd;
         private System.Windows.Forms.Button buttonEnrACP;
         private System.Windows.Forms.Button buttonCanACP;
         private System.Windows.Forms.Button buttonDelACP;
@@ -454,5 +436,10 @@
         private System.Windows.Forms.TextBox textBoxNomProdACP;
         private System.Windows.Forms.Label labelRefProdACP;
         private System.Windows.Forms.Label labelNomProdACP;
+        private System.Windows.Forms.TextBox textBoxNomCliAC;
+        private System.Windows.Forms.Label labelNomCliAC;
+        private System.Windows.Forms.TextBox textBoxPreCliAC;
+        private System.Windows.Forms.Label labelPreCliAC;
+        private System.Windows.Forms.Label labelVillCliAC;
     }
 }

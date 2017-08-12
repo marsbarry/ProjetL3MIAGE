@@ -21,8 +21,17 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
         private void AjouterCommandeInfoClient_Load(object sender, EventArgs e)
         {
-            textBoxRechNomCli.Focus(); //A l'ouverture, le curseur placé sur la box de recherche
+            
             textBoxNumCMD.Text = GestionCommandeC.MaxCmd().ToString(); //A l'ouverture, le numerod e commande est automatiquement rempli
+            DataTable objdt = new DataTable();
+            string req = "SELECT IDCLI FROM CLIENT";
+            ConnexionBD objConn = new ConnexionBD(req);
+            objdt = objConn.ExecuteSelect();
+            for(int i = 0;i < objdt.Rows.Count; i++)
+            {
+                comboBoxChoiCli.Items.Add(objdt.Rows[i]["IDCLI"]);
+            }
+            
         }
 
         private void comboBoxChoiCli_SelectedIndexChanged(object sender, EventArgs e)
@@ -51,6 +60,23 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             this.Hide();
             AjouterCommandeProduit objF = new AjouterCommandeProduit();
             objF.Show();
+        }
+
+        private void comboBoxChoiCli_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            DataTable objdt = new DataTable();
+            string req = "SELECT * FROM CLIENT WHERE IDCLI = "+comboBoxChoiCli.SelectedItem;
+            ConnexionBD objconn = new ConnexionBD(req);
+            objdt = objconn.ExecuteSelect();
+
+            textBoxNomCliAC.Text = objdt.Rows[0]["NOMCLI"].ToString();
+            textBoxPreCliAC.Text =  objdt.Rows[0]["PRENOMCLI"].ToString();
+            textBoxTelAco.Text = objdt.Rows[0]["TELCLI"].ToString();
+            textBoxCpAco.Text = objdt.Rows[0]["CPCLI"].ToString();
+            textBoxMailAco.Text = objdt.Rows[0]["MAILCLI"].ToString();
+            textBoxVilleAco.Text = objdt.Rows[0]["VILLECLI"].ToString();
+            textBoxAdrAco.Text = objdt.Rows[0]["ADRCLI"].ToString();
+
         }
     }
 }
