@@ -109,5 +109,33 @@ namespace WindowsFormsProjetL3MIAGE.IHM
         {
             listBoxPanAC.Items.RemoveAt(listBoxPanAC.SelectedIndex);
         }
+
+        private void buttonCanAC_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Accueil objF = new Accueil();
+            objF.Show();
+        }
+
+        private void buttonEnrAC_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Voulez vous ajoutez la commande n° " + textBoxNumCMD.Text , "Confirmer", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+
+                string req = "insert into commandeC(idcli,idcmdc) values (" + comboBoxChoiCli.SelectedItem + "," + textBoxNumCMD.Text + ")";
+                ConnexionBD objconn = new ConnexionBD(req);
+                objconn.ExecuteIUD();
+
+                string req1 = "Insert into commandec_2 (IDCLI,IDCMDC,IDPRODUIT,QTECMDC) values (" + comboBoxChoiCli.SelectedItem + "," + textBoxNumCMD.Text + "," + textBoxRefProdAC.Text + "," + textBoxQteProdAC.Text + ")";
+                ConnexionBD objconn1 = new ConnexionBD(req1);
+                objconn1.ExecuteIUD();
+            }
+            else
+            {
+                MessageBox.Show("La commande n° " + textBoxNumCMD.Text + " n'a pas était ajouté");
+            }
+
+        }
     }
 }

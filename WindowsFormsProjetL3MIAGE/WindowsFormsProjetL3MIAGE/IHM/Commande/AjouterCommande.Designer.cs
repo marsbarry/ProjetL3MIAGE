@@ -62,6 +62,8 @@
             this.textBoxRefProdAC = new System.Windows.Forms.TextBox();
             this.labelRefProdACP = new System.Windows.Forms.Label();
             this.labelNomProdACP = new System.Windows.Forms.Label();
+            this.textBoxQteProdAC = new System.Windows.Forms.TextBox();
+            this.labelQteProdAC = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageInfCliAjCmd.SuspendLayout();
             this.tabPageProdCmd.SuspendLayout();
@@ -74,7 +76,7 @@
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(354, 450);
+            this.tabControl1.Size = new System.Drawing.Size(354, 495);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageInfCliAjCmd
@@ -264,6 +266,8 @@
             // 
             // tabPageProdCmd
             // 
+            this.tabPageProdCmd.Controls.Add(this.labelQteProdAC);
+            this.tabPageProdCmd.Controls.Add(this.textBoxQteProdAC);
             this.tabPageProdCmd.Controls.Add(this.buttonEnrAC);
             this.tabPageProdCmd.Controls.Add(this.buttonCanAC);
             this.tabPageProdCmd.Controls.Add(this.buttonDelAC);
@@ -279,32 +283,34 @@
             this.tabPageProdCmd.Location = new System.Drawing.Point(4, 22);
             this.tabPageProdCmd.Name = "tabPageProdCmd";
             this.tabPageProdCmd.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProdCmd.Size = new System.Drawing.Size(346, 424);
+            this.tabPageProdCmd.Size = new System.Drawing.Size(346, 469);
             this.tabPageProdCmd.TabIndex = 1;
             this.tabPageProdCmd.Text = "Produits de la commande";
             this.tabPageProdCmd.UseVisualStyleBackColor = true;
             // 
             // buttonEnrAC
             // 
-            this.buttonEnrAC.Location = new System.Drawing.Point(241, 391);
+            this.buttonEnrAC.Location = new System.Drawing.Point(241, 422);
             this.buttonEnrAC.Name = "buttonEnrAC";
             this.buttonEnrAC.Size = new System.Drawing.Size(75, 23);
             this.buttonEnrAC.TabIndex = 23;
             this.buttonEnrAC.Text = "Enregistrer";
             this.buttonEnrAC.UseVisualStyleBackColor = true;
+            this.buttonEnrAC.Click += new System.EventHandler(this.buttonEnrAC_Click);
             // 
             // buttonCanAC
             // 
-            this.buttonCanAC.Location = new System.Drawing.Point(6, 391);
+            this.buttonCanAC.Location = new System.Drawing.Point(6, 422);
             this.buttonCanAC.Name = "buttonCanAC";
             this.buttonCanAC.Size = new System.Drawing.Size(75, 23);
             this.buttonCanAC.TabIndex = 22;
             this.buttonCanAC.Text = "Annuler";
             this.buttonCanAC.UseVisualStyleBackColor = true;
+            this.buttonCanAC.Click += new System.EventHandler(this.buttonCanAC_Click);
             // 
             // buttonDelAC
             // 
-            this.buttonDelAC.Location = new System.Drawing.Point(241, 362);
+            this.buttonDelAC.Location = new System.Drawing.Point(241, 393);
             this.buttonDelAC.Name = "buttonDelAC";
             this.buttonDelAC.Size = new System.Drawing.Size(75, 23);
             this.buttonDelAC.TabIndex = 21;
@@ -315,14 +321,14 @@
             // listBoxPanAC
             // 
             this.listBoxPanAC.FormattingEnabled = true;
-            this.listBoxPanAC.Location = new System.Drawing.Point(6, 287);
+            this.listBoxPanAC.Location = new System.Drawing.Point(6, 318);
             this.listBoxPanAC.Name = "listBoxPanAC";
             this.listBoxPanAC.Size = new System.Drawing.Size(310, 69);
             this.listBoxPanAC.TabIndex = 20;
             // 
             // buttonAddProdACP
             // 
-            this.buttonAddProdACP.Location = new System.Drawing.Point(127, 212);
+            this.buttonAddProdACP.Location = new System.Drawing.Point(127, 243);
             this.buttonAddProdACP.Name = "buttonAddProdACP";
             this.buttonAddProdACP.Size = new System.Drawing.Size(75, 39);
             this.buttonAddProdACP.TabIndex = 19;
@@ -389,11 +395,27 @@
             this.labelNomProdACP.TabIndex = 12;
             this.labelNomProdACP.Text = "Nom du produit :";
             // 
+            // textBoxQteProdAC
+            // 
+            this.textBoxQteProdAC.Location = new System.Drawing.Point(142, 195);
+            this.textBoxQteProdAC.Name = "textBoxQteProdAC";
+            this.textBoxQteProdAC.Size = new System.Drawing.Size(174, 20);
+            this.textBoxQteProdAC.TabIndex = 24;
+            // 
+            // labelQteProdAC
+            // 
+            this.labelQteProdAC.AutoSize = true;
+            this.labelQteProdAC.Location = new System.Drawing.Point(6, 195);
+            this.labelQteProdAC.Name = "labelQteProdAC";
+            this.labelQteProdAC.Size = new System.Drawing.Size(97, 13);
+            this.labelQteProdAC.TabIndex = 25;
+            this.labelQteProdAC.Text = "Quantité du produit";
+            // 
             // AjouterCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 451);
+            this.ClientSize = new System.Drawing.Size(352, 501);
             this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Name = "AjouterCommande";
@@ -444,5 +466,7 @@
         private System.Windows.Forms.TextBox textBoxPreCliAC;
         private System.Windows.Forms.Label labelPreCliAC;
         private System.Windows.Forms.Label labelVillCliAC;
+        private System.Windows.Forms.Label labelQteProdAC;
+        private System.Windows.Forms.TextBox textBoxQteProdAC;
     }
 }
