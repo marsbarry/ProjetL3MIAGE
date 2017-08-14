@@ -75,17 +75,11 @@
     <Compile Include="CLasse\Client.cs" />
     <Compile Include="CLasse\ConnexionBD.cs" />
     <Compile Include="CLasse\GestionClient.cs" />
-    <Compile Include="IHM\Commande\AjouterCommandeInfoClient.cs">
+    <Compile Include="IHM\Commande\AjouterCommande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IHM\Commande\AjouterCommandeInfoClient.Designer.cs">
-      <DependentUpon>AjouterCommandeInfoClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IHM\Commande\AjouterCommandeProduit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IHM\Commande\AjouterCommandeProduit.Designer.cs">
-      <DependentUpon>AjouterCommandeProduit.cs</DependentUpon>
+    <Compile Include="IHM\Commande\AjouterCommande.Designer.cs">
+      <DependentUpon>AjouterCommande.cs</DependentUpon>
     </Compile>
     <Compile Include="IHM\Client\AjouterClient.cs">
       <SubType>Form</SubType>
@@ -116,11 +110,8 @@
     <EmbeddedResource Include="IHM\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IHM\Commande\AjouterCommandeInfoClient.resx">
-      <DependentUpon>AjouterCommandeInfoClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IHM\Commande\AjouterCommandeProduit.resx">
-      <DependentUpon>AjouterCommandeProduit.cs</DependentUpon>
+    <EmbeddedResource Include="IHM\Commande\AjouterCommande.resx">
+      <DependentUpon>AjouterCommande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IHM\Client\AjouterClient.resx">
       <DependentUpon>AjouterClient.cs</DependentUpon>

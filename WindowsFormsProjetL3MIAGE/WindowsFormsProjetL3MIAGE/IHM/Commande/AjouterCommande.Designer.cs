@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsProjetL3MIAGE.IHM
 {
-    partial class AjouterCommandeInfoClient
+    partial class AjouterCommande
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,11 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInfCliAjCmd = new System.Windows.Forms.TabPage();
-            this.tabPageProdCmd = new System.Windows.Forms.TabPage();
+            this.textBoxPreCliAC = new System.Windows.Forms.TextBox();
+            this.labelPreCliAC = new System.Windows.Forms.Label();
+            this.labelVillCliAC = new System.Windows.Forms.Label();
+            this.textBoxNomCliAC = new System.Windows.Forms.TextBox();
+            this.labelNomCliAC = new System.Windows.Forms.Label();
             this.textBoxNumCMD = new System.Windows.Forms.TextBox();
             this.labelNumCMD = new System.Windows.Forms.Label();
             this.textBoxVilleAco = new System.Windows.Forms.TextBox();
@@ -45,23 +49,19 @@
             this.comboBoxChoiCli = new System.Windows.Forms.ComboBox();
             this.labelChoiClient = new System.Windows.Forms.Label();
             this.labelTitreAco = new System.Windows.Forms.Label();
-            this.buttonEnrACP = new System.Windows.Forms.Button();
-            this.buttonCanACP = new System.Windows.Forms.Button();
-            this.buttonDelACP = new System.Windows.Forms.Button();
-            this.listBoxPanACP = new System.Windows.Forms.ListBox();
+            this.tabPageProdCmd = new System.Windows.Forms.TabPage();
+            this.buttonEnrAC = new System.Windows.Forms.Button();
+            this.buttonCanAC = new System.Windows.Forms.Button();
+            this.buttonDelAC = new System.Windows.Forms.Button();
+            this.listBoxPanAC = new System.Windows.Forms.ListBox();
             this.buttonAddProdACP = new System.Windows.Forms.Button();
             this.labelTitreACP = new System.Windows.Forms.Label();
-            this.textBoxPrixProdACP = new System.Windows.Forms.TextBox();
+            this.textBoxPrixProdAC = new System.Windows.Forms.TextBox();
             this.labelPrixProdACP = new System.Windows.Forms.Label();
-            this.comboBoxRefProdACP = new System.Windows.Forms.ComboBox();
-            this.textBoxNomProdACP = new System.Windows.Forms.TextBox();
+            this.comboBoxNomProdAC = new System.Windows.Forms.ComboBox();
+            this.textBoxRefProdAC = new System.Windows.Forms.TextBox();
             this.labelRefProdACP = new System.Windows.Forms.Label();
             this.labelNomProdACP = new System.Windows.Forms.Label();
-            this.labelNomCliAC = new System.Windows.Forms.Label();
-            this.textBoxNomCliAC = new System.Windows.Forms.TextBox();
-            this.labelVillCliAC = new System.Windows.Forms.Label();
-            this.labelPreCliAC = new System.Windows.Forms.Label();
-            this.textBoxPreCliAC = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageInfCliAjCmd.SuspendLayout();
             this.tabPageProdCmd.SuspendLayout();
@@ -106,27 +106,46 @@
             this.tabPageInfCliAjCmd.Text = "Informations sur le client";
             this.tabPageInfCliAjCmd.UseVisualStyleBackColor = true;
             // 
-            // tabPageProdCmd
+            // textBoxPreCliAC
             // 
-            this.tabPageProdCmd.Controls.Add(this.buttonEnrACP);
-            this.tabPageProdCmd.Controls.Add(this.buttonCanACP);
-            this.tabPageProdCmd.Controls.Add(this.buttonDelACP);
-            this.tabPageProdCmd.Controls.Add(this.listBoxPanACP);
-            this.tabPageProdCmd.Controls.Add(this.buttonAddProdACP);
-            this.tabPageProdCmd.Controls.Add(this.labelTitreACP);
-            this.tabPageProdCmd.Controls.Add(this.textBoxPrixProdACP);
-            this.tabPageProdCmd.Controls.Add(this.labelPrixProdACP);
-            this.tabPageProdCmd.Controls.Add(this.comboBoxRefProdACP);
-            this.tabPageProdCmd.Controls.Add(this.textBoxNomProdACP);
-            this.tabPageProdCmd.Controls.Add(this.labelRefProdACP);
-            this.tabPageProdCmd.Controls.Add(this.labelNomProdACP);
-            this.tabPageProdCmd.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProdCmd.Name = "tabPageProdCmd";
-            this.tabPageProdCmd.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProdCmd.Size = new System.Drawing.Size(346, 424);
-            this.tabPageProdCmd.TabIndex = 1;
-            this.tabPageProdCmd.Text = "Produits de la commande";
-            this.tabPageProdCmd.UseVisualStyleBackColor = true;
+            this.textBoxPreCliAC.Location = new System.Drawing.Point(195, 156);
+            this.textBoxPreCliAC.Name = "textBoxPreCliAC";
+            this.textBoxPreCliAC.Size = new System.Drawing.Size(143, 20);
+            this.textBoxPreCliAC.TabIndex = 44;
+            // 
+            // labelPreCliAC
+            // 
+            this.labelPreCliAC.AutoSize = true;
+            this.labelPreCliAC.Location = new System.Drawing.Point(7, 156);
+            this.labelPreCliAC.Name = "labelPreCliAC";
+            this.labelPreCliAC.Size = new System.Drawing.Size(52, 13);
+            this.labelPreCliAC.TabIndex = 43;
+            this.labelPreCliAC.Text = "Prénom : ";
+            // 
+            // labelVillCliAC
+            // 
+            this.labelVillCliAC.AutoSize = true;
+            this.labelVillCliAC.Location = new System.Drawing.Point(7, 260);
+            this.labelVillCliAC.Name = "labelVillCliAC";
+            this.labelVillCliAC.Size = new System.Drawing.Size(35, 13);
+            this.labelVillCliAC.TabIndex = 42;
+            this.labelVillCliAC.Text = "Ville : ";
+            // 
+            // textBoxNomCliAC
+            // 
+            this.textBoxNomCliAC.Location = new System.Drawing.Point(195, 124);
+            this.textBoxNomCliAC.Name = "textBoxNomCliAC";
+            this.textBoxNomCliAC.Size = new System.Drawing.Size(143, 20);
+            this.textBoxNomCliAC.TabIndex = 41;
+            // 
+            // labelNomCliAC
+            // 
+            this.labelNomCliAC.AutoSize = true;
+            this.labelNomCliAC.Location = new System.Drawing.Point(7, 124);
+            this.labelNomCliAC.Name = "labelNomCliAC";
+            this.labelNomCliAC.Size = new System.Drawing.Size(38, 13);
+            this.labelNomCliAC.TabIndex = 40;
+            this.labelNomCliAC.Text = "Nom : ";
             // 
             // textBoxNumCMD
             // 
@@ -243,40 +262,62 @@
             this.labelTitreAco.TabIndex = 20;
             this.labelTitreAco.Text = "Enregistrement d\'une commande";
             // 
-            // buttonEnrACP
+            // tabPageProdCmd
             // 
-            this.buttonEnrACP.Location = new System.Drawing.Point(217, 391);
-            this.buttonEnrACP.Name = "buttonEnrACP";
-            this.buttonEnrACP.Size = new System.Drawing.Size(75, 23);
-            this.buttonEnrACP.TabIndex = 23;
-            this.buttonEnrACP.Text = "Enregistrer";
-            this.buttonEnrACP.UseVisualStyleBackColor = true;
+            this.tabPageProdCmd.Controls.Add(this.buttonEnrAC);
+            this.tabPageProdCmd.Controls.Add(this.buttonCanAC);
+            this.tabPageProdCmd.Controls.Add(this.buttonDelAC);
+            this.tabPageProdCmd.Controls.Add(this.listBoxPanAC);
+            this.tabPageProdCmd.Controls.Add(this.buttonAddProdACP);
+            this.tabPageProdCmd.Controls.Add(this.labelTitreACP);
+            this.tabPageProdCmd.Controls.Add(this.textBoxPrixProdAC);
+            this.tabPageProdCmd.Controls.Add(this.labelPrixProdACP);
+            this.tabPageProdCmd.Controls.Add(this.comboBoxNomProdAC);
+            this.tabPageProdCmd.Controls.Add(this.textBoxRefProdAC);
+            this.tabPageProdCmd.Controls.Add(this.labelRefProdACP);
+            this.tabPageProdCmd.Controls.Add(this.labelNomProdACP);
+            this.tabPageProdCmd.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProdCmd.Name = "tabPageProdCmd";
+            this.tabPageProdCmd.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProdCmd.Size = new System.Drawing.Size(346, 424);
+            this.tabPageProdCmd.TabIndex = 1;
+            this.tabPageProdCmd.Text = "Produits de la commande";
+            this.tabPageProdCmd.UseVisualStyleBackColor = true;
             // 
-            // buttonCanACP
+            // buttonEnrAC
             // 
-            this.buttonCanACP.Location = new System.Drawing.Point(6, 391);
-            this.buttonCanACP.Name = "buttonCanACP";
-            this.buttonCanACP.Size = new System.Drawing.Size(75, 23);
-            this.buttonCanACP.TabIndex = 22;
-            this.buttonCanACP.Text = "Annuler";
-            this.buttonCanACP.UseVisualStyleBackColor = true;
+            this.buttonEnrAC.Location = new System.Drawing.Point(241, 391);
+            this.buttonEnrAC.Name = "buttonEnrAC";
+            this.buttonEnrAC.Size = new System.Drawing.Size(75, 23);
+            this.buttonEnrAC.TabIndex = 23;
+            this.buttonEnrAC.Text = "Enregistrer";
+            this.buttonEnrAC.UseVisualStyleBackColor = true;
             // 
-            // buttonDelACP
+            // buttonCanAC
             // 
-            this.buttonDelACP.Location = new System.Drawing.Point(217, 362);
-            this.buttonDelACP.Name = "buttonDelACP";
-            this.buttonDelACP.Size = new System.Drawing.Size(75, 23);
-            this.buttonDelACP.TabIndex = 21;
-            this.buttonDelACP.Text = "Supprimer";
-            this.buttonDelACP.UseVisualStyleBackColor = true;
+            this.buttonCanAC.Location = new System.Drawing.Point(6, 391);
+            this.buttonCanAC.Name = "buttonCanAC";
+            this.buttonCanAC.Size = new System.Drawing.Size(75, 23);
+            this.buttonCanAC.TabIndex = 22;
+            this.buttonCanAC.Text = "Annuler";
+            this.buttonCanAC.UseVisualStyleBackColor = true;
             // 
-            // listBoxPanACP
+            // buttonDelAC
             // 
-            this.listBoxPanACP.FormattingEnabled = true;
-            this.listBoxPanACP.Location = new System.Drawing.Point(6, 287);
-            this.listBoxPanACP.Name = "listBoxPanACP";
-            this.listBoxPanACP.Size = new System.Drawing.Size(286, 69);
-            this.listBoxPanACP.TabIndex = 20;
+            this.buttonDelAC.Location = new System.Drawing.Point(241, 362);
+            this.buttonDelAC.Name = "buttonDelAC";
+            this.buttonDelAC.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelAC.TabIndex = 21;
+            this.buttonDelAC.Text = "Supprimer";
+            this.buttonDelAC.UseVisualStyleBackColor = true;
+            // 
+            // listBoxPanAC
+            // 
+            this.listBoxPanAC.FormattingEnabled = true;
+            this.listBoxPanAC.Location = new System.Drawing.Point(6, 287);
+            this.listBoxPanAC.Name = "listBoxPanAC";
+            this.listBoxPanAC.Size = new System.Drawing.Size(310, 69);
+            this.listBoxPanAC.TabIndex = 20;
             // 
             // buttonAddProdACP
             // 
@@ -290,18 +331,18 @@
             // labelTitreACP
             // 
             this.labelTitreACP.AutoSize = true;
-            this.labelTitreACP.Location = new System.Drawing.Point(139, 3);
+            this.labelTitreACP.Location = new System.Drawing.Point(139, 12);
             this.labelTitreACP.Name = "labelTitreACP";
             this.labelTitreACP.Size = new System.Drawing.Size(45, 13);
             this.labelTitreACP.TabIndex = 18;
             this.labelTitreACP.Text = "Produits";
             // 
-            // textBoxPrixProdACP
+            // textBoxPrixProdAC
             // 
-            this.textBoxPrixProdACP.Location = new System.Drawing.Point(142, 153);
-            this.textBoxPrixProdACP.Name = "textBoxPrixProdACP";
-            this.textBoxPrixProdACP.Size = new System.Drawing.Size(121, 20);
-            this.textBoxPrixProdACP.TabIndex = 17;
+            this.textBoxPrixProdAC.Location = new System.Drawing.Point(142, 153);
+            this.textBoxPrixProdAC.Name = "textBoxPrixProdAC";
+            this.textBoxPrixProdAC.Size = new System.Drawing.Size(174, 20);
+            this.textBoxPrixProdAC.TabIndex = 17;
             // 
             // labelPrixProdACP
             // 
@@ -312,20 +353,21 @@
             this.labelPrixProdACP.TabIndex = 16;
             this.labelPrixProdACP.Text = "Prix du produit : ";
             // 
-            // comboBoxRefProdACP
+            // comboBoxNomProdAC
             // 
-            this.comboBoxRefProdACP.FormattingEnabled = true;
-            this.comboBoxRefProdACP.Location = new System.Drawing.Point(142, 100);
-            this.comboBoxRefProdACP.Name = "comboBoxRefProdACP";
-            this.comboBoxRefProdACP.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxRefProdACP.TabIndex = 15;
+            this.comboBoxNomProdAC.FormattingEnabled = true;
+            this.comboBoxNomProdAC.Location = new System.Drawing.Point(142, 52);
+            this.comboBoxNomProdAC.Name = "comboBoxNomProdAC";
+            this.comboBoxNomProdAC.Size = new System.Drawing.Size(174, 21);
+            this.comboBoxNomProdAC.TabIndex = 15;
+            this.comboBoxNomProdAC.SelectedIndexChanged += new System.EventHandler(this.comboBoxNomProdAC_SelectedIndexChanged);
             // 
-            // textBoxNomProdACP
+            // textBoxRefProdAC
             // 
-            this.textBoxNomProdACP.Location = new System.Drawing.Point(142, 52);
-            this.textBoxNomProdACP.Name = "textBoxNomProdACP";
-            this.textBoxNomProdACP.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNomProdACP.TabIndex = 14;
+            this.textBoxRefProdAC.Location = new System.Drawing.Point(142, 100);
+            this.textBoxRefProdAC.Name = "textBoxRefProdAC";
+            this.textBoxRefProdAC.Size = new System.Drawing.Size(174, 20);
+            this.textBoxRefProdAC.TabIndex = 14;
             // 
             // labelRefProdACP
             // 
@@ -345,56 +387,15 @@
             this.labelNomProdACP.TabIndex = 12;
             this.labelNomProdACP.Text = "Nom du produit :";
             // 
-            // labelNomCliAC
-            // 
-            this.labelNomCliAC.AutoSize = true;
-            this.labelNomCliAC.Location = new System.Drawing.Point(7, 124);
-            this.labelNomCliAC.Name = "labelNomCliAC";
-            this.labelNomCliAC.Size = new System.Drawing.Size(38, 13);
-            this.labelNomCliAC.TabIndex = 40;
-            this.labelNomCliAC.Text = "Nom : ";
-            // 
-            // textBoxNomCliAC
-            // 
-            this.textBoxNomCliAC.Location = new System.Drawing.Point(195, 124);
-            this.textBoxNomCliAC.Name = "textBoxNomCliAC";
-            this.textBoxNomCliAC.Size = new System.Drawing.Size(143, 20);
-            this.textBoxNomCliAC.TabIndex = 41;
-            // 
-            // labelVillCliAC
-            // 
-            this.labelVillCliAC.AutoSize = true;
-            this.labelVillCliAC.Location = new System.Drawing.Point(7, 260);
-            this.labelVillCliAC.Name = "labelVillCliAC";
-            this.labelVillCliAC.Size = new System.Drawing.Size(35, 13);
-            this.labelVillCliAC.TabIndex = 42;
-            this.labelVillCliAC.Text = "Ville : ";
-            // 
-            // labelPreCliAC
-            // 
-            this.labelPreCliAC.AutoSize = true;
-            this.labelPreCliAC.Location = new System.Drawing.Point(7, 156);
-            this.labelPreCliAC.Name = "labelPreCliAC";
-            this.labelPreCliAC.Size = new System.Drawing.Size(52, 13);
-            this.labelPreCliAC.TabIndex = 43;
-            this.labelPreCliAC.Text = "Prénom : ";
-            // 
-            // textBoxPreCliAC
-            // 
-            this.textBoxPreCliAC.Location = new System.Drawing.Point(195, 156);
-            this.textBoxPreCliAC.Name = "textBoxPreCliAC";
-            this.textBoxPreCliAC.Size = new System.Drawing.Size(143, 20);
-            this.textBoxPreCliAC.TabIndex = 44;
-            // 
-            // AjouterCommandeInfoClient
+            // AjouterCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(352, 451);
             this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
-            this.Name = "AjouterCommandeInfoClient";
-            this.Text = "AjouterCommandeInfoClient";
+            this.Name = "AjouterCommande";
+            this.Text = "AjouterCommande";
             this.Load += new System.EventHandler(this.AjouterCommandeInfoClient_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageInfCliAjCmd.ResumeLayout(false);
@@ -424,16 +425,16 @@
         private System.Windows.Forms.Label labelChoiClient;
         private System.Windows.Forms.Label labelTitreAco;
         private System.Windows.Forms.TabPage tabPageProdCmd;
-        private System.Windows.Forms.Button buttonEnrACP;
-        private System.Windows.Forms.Button buttonCanACP;
-        private System.Windows.Forms.Button buttonDelACP;
-        private System.Windows.Forms.ListBox listBoxPanACP;
+        private System.Windows.Forms.Button buttonEnrAC;
+        private System.Windows.Forms.Button buttonCanAC;
+        private System.Windows.Forms.Button buttonDelAC;
+        private System.Windows.Forms.ListBox listBoxPanAC;
         private System.Windows.Forms.Button buttonAddProdACP;
         private System.Windows.Forms.Label labelTitreACP;
-        private System.Windows.Forms.TextBox textBoxPrixProdACP;
+        private System.Windows.Forms.TextBox textBoxPrixProdAC;
         private System.Windows.Forms.Label labelPrixProdACP;
-        private System.Windows.Forms.ComboBox comboBoxRefProdACP;
-        private System.Windows.Forms.TextBox textBoxNomProdACP;
+        private System.Windows.Forms.ComboBox comboBoxNomProdAC;
+        private System.Windows.Forms.TextBox textBoxRefProdAC;
         private System.Windows.Forms.Label labelRefProdACP;
         private System.Windows.Forms.Label labelNomProdACP;
         private System.Windows.Forms.TextBox textBoxNomCliAC;

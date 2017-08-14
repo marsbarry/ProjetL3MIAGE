@@ -49,7 +49,7 @@ namespace WindowsFormsProjetL3MIAGE
         private void ajouterUneCommandeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AjouterCommandeInfoClient objF = new AjouterCommandeInfoClient();
+            AjouterCommande objF = new AjouterCommande();
             objF.Show();
         }
 

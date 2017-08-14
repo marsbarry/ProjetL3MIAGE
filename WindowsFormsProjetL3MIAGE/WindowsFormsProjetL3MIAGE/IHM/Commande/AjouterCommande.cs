@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsProjetL3MIAGE.CLasse;
-using WindowsFormsProjetL3MIAGE.IHM.Ajouter_Commande;
 
 namespace WindowsFormsProjetL3MIAGE.IHM
 {
-    public partial class AjouterCommandeInfoClient : Form
+    public partial class AjouterCommande : Form
     {
-        public AjouterCommandeInfoClient()
+        public AjouterCommande()
         {
             InitializeComponent();
         }
@@ -22,7 +21,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
         private void AjouterCommandeInfoClient_Load(object sender, EventArgs e)
         {
             
-            textBoxNumCMD.Text = GestionCommandeC.MaxCmd().ToString(); //A l'ouverture, le numerod e commande est automatiquement rempli
+            textBoxNumCMD.Text = GestionCommandeC.MaxCmd().ToString(); //A l'ouverture, le numerod de commande est automatiquement rempli
             DataTable objdt = new DataTable();
             string req = "SELECT IDCLI FROM CLIENT";
             ConnexionBD objConn = new ConnexionBD(req);
@@ -31,7 +30,17 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             {
                 comboBoxChoiCli.Items.Add(objdt.Rows[i]["IDCLI"]);
             }
-            
+
+            DataTable objdt1 = new DataTable();
+            string req1 = "SELECT NOMPROD FROM PRODUIT";
+            ConnexionBD objconn1 = new ConnexionBD(req1);
+            objdt1 = objconn1.ExecuteSelect();
+
+            for (int j = 0; j< objdt1.Rows.Count; j++)
+            {
+                comboBoxNomProdAC.Items.Add(objdt1.Rows[j]["NOMPROD"]);
+            }
+
         }
 
         private void comboBoxChoiCli_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,7 +67,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
         private void buttonSuiAco_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AjouterCommandeProduit objF = new AjouterCommandeProduit();
+            AjouterCommande objF = new AjouterCommande();
             objF.Show();
         }
 
@@ -77,6 +86,17 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxVilleAco.Text = objdt.Rows[0]["VILLECLI"].ToString();
             textBoxAdrAco.Text = objdt.Rows[0]["ADRCLI"].ToString();
 
+        }
+
+        private void comboBoxNomProdAC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable objdt = new DataTable();
+            string req = "SELECT IDPRODUIT,PRIXPROD from PRODUIT where NOMPROD = '" + comboBoxNomProdAC.SelectedItem+"'";
+            ConnexionBD objConn = new ConnexionBD(req);
+            objdt = objConn.ExecuteSelect();
+
+            textBoxRefProdAC.Text = objdt.Rows[0]["IDPRODUIT"].ToString();
+            textBoxPrixProdAC.Text = objdt.Rows[0]["PRIXPROD"].ToString();
         }
     }
 }

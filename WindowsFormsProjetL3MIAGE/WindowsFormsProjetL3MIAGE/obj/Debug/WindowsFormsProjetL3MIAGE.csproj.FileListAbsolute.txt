@@ -9,10 +9,9 @@ C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsForms
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.exe
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.pdb
-C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.AjouterCommandeInfoClient.resources
-C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.Ajouter_Commande.AjouterCommandeProduit.resources
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.AjouterUnCLient.resources
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.Client.ConsulterUnClient.resources
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\bin\Debug\Oracle.DataAccess.dll
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.ConsulterCommande.resources
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.SAV.resources
+C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.AjouterCommande.resources
