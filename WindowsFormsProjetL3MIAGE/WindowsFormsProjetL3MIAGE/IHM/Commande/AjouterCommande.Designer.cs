@@ -310,6 +310,7 @@
             this.buttonDelAC.TabIndex = 21;
             this.buttonDelAC.Text = "Supprimer";
             this.buttonDelAC.UseVisualStyleBackColor = true;
+            this.buttonDelAC.Click += new System.EventHandler(this.buttonDelAC_Click);
             // 
             // listBoxPanAC
             // 
@@ -327,6 +328,7 @@
             this.buttonAddProdACP.TabIndex = 19;
             this.buttonAddProdACP.Text = "Ajouter";
             this.buttonAddProdACP.UseVisualStyleBackColor = true;
+            this.buttonAddProdACP.Click += new System.EventHandler(this.buttonAddProdACP_Click);
             // 
             // labelTitreACP
             // 

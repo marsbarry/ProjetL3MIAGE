@@ -98,5 +98,16 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxRefProdAC.Text = objdt.Rows[0]["IDPRODUIT"].ToString();
             textBoxPrixProdAC.Text = objdt.Rows[0]["PRIXPROD"].ToString();
         }
+
+        private void buttonAddProdACP_Click(object sender, EventArgs e)
+        {
+            string produit = textBoxRefProdAC.Text + " " + comboBoxNomProdAC.SelectedItem + " " + textBoxPrixProdAC.Text;
+            listBoxPanAC.Items.Add(produit);
+        }
+
+        private void buttonDelAC_Click(object sender, EventArgs e)
+        {
+            listBoxPanAC.Items.RemoveAt(listBoxPanAC.SelectedIndex);
+        }
     }
 }
