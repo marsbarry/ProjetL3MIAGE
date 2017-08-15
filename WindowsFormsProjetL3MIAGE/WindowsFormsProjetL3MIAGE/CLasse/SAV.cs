@@ -30,9 +30,10 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
        
         public SAV(int unId, string uncomm, string Unenote, string unstatut) // Constructeur pour un litige non existant dans la base de données
         {
-            string ReqAddLit = "INSERT INTO LITIGE (IDLIT,COMMENTAIRE,NOTE,STATUT) values (" + unId + ",'" + uncomm + "','" + Unenote + "','" + unstatut + "')";
-            ConnexionBD ObjLit = new ConnexionBD(ReqAddLit);
-            ObjLit.ExecuteIUD();
+            idLit = unId;
+            commentaire = uncomm;
+            note = Unenote;
+            statut = unstatut;
         }
 
 
@@ -57,5 +58,25 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         {
             return this.idCli;
         }
-    }
+
+        public int getIdlit()
+        {
+            return this.idLit;
+        }
+
+        public string getComm()
+        {
+            return this.commentaire;
+        }
+
+        public string getNote()
+        {
+            return this.note;
+        }
+
+        public string getStatut()
+        {
+            return this.statut;
+        }
+   }
 }

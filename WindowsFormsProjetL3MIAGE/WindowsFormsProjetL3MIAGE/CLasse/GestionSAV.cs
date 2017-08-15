@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using WindowsFormsProjetL3MIAGE.IHM;
 
 namespace WindowsFormsProjetL3MIAGE.CLasse
 {
@@ -19,6 +20,13 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             int MaxId = Convert.ToInt32(dtMaxId.Rows[0]["MAX(idlit)"]);
             MaxId = MaxId + 1;
             return MaxId;
+        }
+
+        public static void AjoutLit(SAV unLit) //Ajoute un litige à la BDD
+        {
+            string ReqAddLit = "INSERT INTO LITIGE (IDLIT,COMMENTAIRE,NOTE,STATUT) values (" + unLit.getIdlit() + ",'" + unLit.getComm() + "','" + unLit.getNote() + "','" + unLit.getStatut() + "')";
+            ConnexionBD ObjLit = new ConnexionBD(ReqAddLit);
+            ObjLit.ExecuteIUD();
         }
 
     }

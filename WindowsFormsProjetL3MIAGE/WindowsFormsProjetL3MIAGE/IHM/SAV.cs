@@ -53,6 +53,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxCPSAV.Text = NewCli.getCpCli().ToString();
             textBoxPreSAV.Text = NewCli.getTelCli().ToString();
             textBoxMailSAV.Text = NewCli.getMailCli().ToString();
+            textBoxTelSAV.Text = NewCli.getTelCli().ToString();
 
             int Idcli = Convert.ToInt32(comboBoxNumSAV.SelectedItem);
             string requete = "Select COMMANDEC_2.IDCMDC from CommandeC, COMMANDEC_2 where COMMANDEC_2.IDCMDC = COMMANDEC.IDCMDC AND COMMANDEC_2.IDCLI =" + Idcli;
@@ -69,12 +70,16 @@ namespace WindowsFormsProjetL3MIAGE.IHM
         private void comboBoxArtSAV_SelectedIndexChanged(object sender, EventArgs e)
         {
             int IdProd = Convert.ToInt32(comboBoxArtSAV.SelectedItem);
-            string ReqNomProd = "select produit.nomprod from produit where produit.idproduit = " + IdProd;
+            string ReqNomProd = "select NOMPROD,PRIXPROD, COULEURPROD from produit where produit.idproduit = " + IdProd;
             DataTable DtArt = new DataTable();
             ConnexionBD ObjArt = new ConnexionBD(ReqNomProd);
             DtArt = ObjArt.ExecuteSelect();
-            Produit ObjProd = new Produit(Convert.ToInt32(comboBoxArtSAV.SelectedItem));
-            textBoxNumProdSAV.Text = ObjProd.GetNomProd().ToString();
+
+            textBoxNomProdSAV.Text = DtArt.Rows[0]["NOMPROD"].ToString();
+            textBoxCouProSAV.Text = DtArt.Rows[0]["COULEURPROD"].ToString();
+            textBoxPrixProdSAV.Text = DtArt.Rows[0]["PRIXPROD"].ToString();
+
+
             textBoxNomCliSAV.Text = textBoxNomSAV.Text;
             NomCliSAV2.Text = textBoxNomSAV.Text;
             GestionSAV OUi = new GestionSAV();
@@ -83,10 +88,20 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
         private void buttonOkSAV_Click(object sender, EventArgs e)
         {
-            SAV NewLit = new SAV(Convert.ToInt32(textBoxNumLitSAV.Text), textBoxCommSAV.Text, textBoxNoteSaV.Text, comboBoxStatSAV.SelectedItem.ToString());
-            this.Close();
-            Accueil Oui = new Accueil();
-            Oui.Show();
+            DialogResult result = MessageBox.Show("Voulez vous ajoutez le litige n° " + textBoxNumLitSAV.Text + " dans la base de données ?", "Confirmer", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                CLasse.SAV NewLit = new CLasse.SAV(Convert.ToInt32(textBoxNumLitSAV.Text), textBoxCommSAV.Text, textBoxNoteSaV.Text, comboBoxStatSAV.SelectedItem.ToString());
+                GestionSAV.AjoutLit(NewLit);
+
+                this.Close();
+                Accueil Oui = new Accueil();
+                Oui.Show();
+            }
+            else
+            {
+                MessageBox.Show("Le litige n° " + textBoxNumLitSAV.Text + " n'a pas était ajouté");
+            }
         }
 
         private void buttonCanSAV_Click(object sender, EventArgs e)
@@ -107,6 +122,11 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             {
                 comboBoxArtSAV.Items.Add(row[0]);
             }
+        }
+
+        private void comboBoxStatSAV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

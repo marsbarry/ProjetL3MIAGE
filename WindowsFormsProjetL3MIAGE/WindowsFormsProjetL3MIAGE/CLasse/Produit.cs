@@ -15,14 +15,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         private string NomProd;
         private double PrixProd;
         private string CouleurProd;
-        private int StockMini;
-        private int StrockOpti;
-        private int StockActuel;
-        private int StockAttenteFourn;
-        private int StockReserv;
-        private int PlaceProd;
-        private int EtagereProd;
-        private int RayonProd;
+
 
         public Produit(int unidprod)
         {
@@ -36,15 +29,6 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             NomProd = dtProd.Rows[0]["NOMPROD"].ToString();
             PrixProd = Convert.ToDouble(dtProd.Rows[0]["PRIXPROD"]);
             CouleurProd = dtProd.Rows[0]["COULEURPROD"].ToString();
-            StockMini = Convert.ToInt32(dtProd.Rows[0]["STOCKMINI"]);
-            StrockOpti = Convert.ToInt32(dtProd.Rows[0]["STOCKOPTI"]);
-            StockActuel = Convert.ToInt32(dtProd.Rows[0]["STOCKACTUEL"]);
-            StockAttenteFourn = Convert.ToInt32(dtProd.Rows[0]["STOCKATTENTEFOURN"]);
-            StockReserv = Convert.ToInt32(dtProd.Rows[0]["STOCKRESERV"]);
-            PlaceProd = Convert.ToInt32(dtProd.Rows[0]["PLACEPROD"]);
-            EtagereProd = Convert.ToInt32(dtProd.Rows[0]["ETAGEREPROD"]);
-            RayonProd = Convert.ToInt32(dtProd.Rows[0]["RAYONPROD"]);
-
 
         }
         public string GetNomProd()

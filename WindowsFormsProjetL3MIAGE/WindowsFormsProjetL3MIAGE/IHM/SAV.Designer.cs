@@ -48,7 +48,7 @@
             this.labelNumSAV = new System.Windows.Forms.Label();
             this.tabPageAL = new System.Windows.Forms.TabPage();
             this.textBoxNomCliSAV = new System.Windows.Forms.TextBox();
-            this.textBoxNumProdSAV = new System.Windows.Forms.TextBox();
+            this.textBoxNomProdSAV = new System.Windows.Forms.TextBox();
             this.comboBoxArtSAV = new System.Windows.Forms.ComboBox();
             this.comboBoxNumCmdSAV = new System.Windows.Forms.ComboBox();
             this.labelNomProdSAV = new System.Windows.Forms.Label();
@@ -68,6 +68,10 @@
             this.labelCommentaireSAV = new System.Windows.Forms.Label();
             this.labelNomCliSAV1 = new System.Windows.Forms.Label();
             this.labelNumLitSAV = new System.Windows.Forms.Label();
+            this.labelCoulProdSAV = new System.Windows.Forms.Label();
+            this.labelPrixProdSAV = new System.Windows.Forms.Label();
+            this.textBoxCouProSAV = new System.Windows.Forms.TextBox();
+            this.textBoxPrixProdSAV = new System.Windows.Forms.TextBox();
             this.tabControlSAV.SuspendLayout();
             this.tabPageIC.SuspendLayout();
             this.tabPageAL.SuspendLayout();
@@ -250,8 +254,12 @@
             // 
             // tabPageAL
             // 
+            this.tabPageAL.Controls.Add(this.textBoxPrixProdSAV);
+            this.tabPageAL.Controls.Add(this.textBoxCouProSAV);
+            this.tabPageAL.Controls.Add(this.labelPrixProdSAV);
+            this.tabPageAL.Controls.Add(this.labelCoulProdSAV);
             this.tabPageAL.Controls.Add(this.textBoxNomCliSAV);
-            this.tabPageAL.Controls.Add(this.textBoxNumProdSAV);
+            this.tabPageAL.Controls.Add(this.textBoxNomProdSAV);
             this.tabPageAL.Controls.Add(this.comboBoxArtSAV);
             this.tabPageAL.Controls.Add(this.comboBoxNumCmdSAV);
             this.tabPageAL.Controls.Add(this.labelNomProdSAV);
@@ -268,19 +276,19 @@
             // 
             // textBoxNomCliSAV
             // 
-            this.textBoxNomCliSAV.Location = new System.Drawing.Point(146, 172);
+            this.textBoxNomCliSAV.Location = new System.Drawing.Point(146, 251);
             this.textBoxNomCliSAV.Name = "textBoxNomCliSAV";
             this.textBoxNomCliSAV.ReadOnly = true;
             this.textBoxNomCliSAV.Size = new System.Drawing.Size(121, 20);
             this.textBoxNomCliSAV.TabIndex = 7;
             // 
-            // textBoxNumProdSAV
+            // textBoxNomProdSAV
             // 
-            this.textBoxNumProdSAV.Location = new System.Drawing.Point(146, 134);
-            this.textBoxNumProdSAV.Name = "textBoxNumProdSAV";
-            this.textBoxNumProdSAV.ReadOnly = true;
-            this.textBoxNumProdSAV.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNumProdSAV.TabIndex = 6;
+            this.textBoxNomProdSAV.Location = new System.Drawing.Point(146, 134);
+            this.textBoxNomProdSAV.Name = "textBoxNomProdSAV";
+            this.textBoxNomProdSAV.ReadOnly = true;
+            this.textBoxNomProdSAV.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNomProdSAV.TabIndex = 6;
             // 
             // comboBoxArtSAV
             // 
@@ -312,7 +320,7 @@
             // labelNomCliSAV
             // 
             this.labelNomCliSAV.AutoSize = true;
-            this.labelNomCliSAV.Location = new System.Drawing.Point(6, 179);
+            this.labelNomCliSAV.Location = new System.Drawing.Point(6, 258);
             this.labelNomCliSAV.Name = "labelNomCliSAV";
             this.labelNomCliSAV.Size = new System.Drawing.Size(81, 13);
             this.labelNomCliSAV.TabIndex = 2;
@@ -380,10 +388,13 @@
             // comboBoxStatSAV
             // 
             this.comboBoxStatSAV.FormattingEnabled = true;
+            this.comboBoxStatSAV.Items.AddRange(new object[] {
+            "En cours"});
             this.comboBoxStatSAV.Location = new System.Drawing.Point(179, 349);
             this.comboBoxStatSAV.Name = "comboBoxStatSAV";
             this.comboBoxStatSAV.Size = new System.Drawing.Size(160, 21);
             this.comboBoxStatSAV.TabIndex = 9;
+            this.comboBoxStatSAV.SelectedIndexChanged += new System.EventHandler(this.comboBoxStatSAV_SelectedIndexChanged);
             // 
             // NomCliSAV2
             // 
@@ -460,6 +471,40 @@
             this.labelNumLitSAV.TabIndex = 0;
             this.labelNumLitSAV.Text = "Numéro Litige :";
             // 
+            // labelCoulProdSAV
+            // 
+            this.labelCoulProdSAV.AutoSize = true;
+            this.labelCoulProdSAV.Location = new System.Drawing.Point(6, 175);
+            this.labelCoulProdSAV.Name = "labelCoulProdSAV";
+            this.labelCoulProdSAV.Size = new System.Drawing.Size(102, 13);
+            this.labelCoulProdSAV.TabIndex = 8;
+            this.labelCoulProdSAV.Text = "Couleur du produit : ";
+            // 
+            // labelPrixProdSAV
+            // 
+            this.labelPrixProdSAV.AutoSize = true;
+            this.labelPrixProdSAV.Location = new System.Drawing.Point(6, 216);
+            this.labelPrixProdSAV.Name = "labelPrixProdSAV";
+            this.labelPrixProdSAV.Size = new System.Drawing.Size(83, 13);
+            this.labelPrixProdSAV.TabIndex = 9;
+            this.labelPrixProdSAV.Text = "Prix du produit : ";
+            // 
+            // textBoxCouProSAV
+            // 
+            this.textBoxCouProSAV.Location = new System.Drawing.Point(146, 175);
+            this.textBoxCouProSAV.Name = "textBoxCouProSAV";
+            this.textBoxCouProSAV.ReadOnly = true;
+            this.textBoxCouProSAV.Size = new System.Drawing.Size(121, 20);
+            this.textBoxCouProSAV.TabIndex = 10;
+            // 
+            // textBoxPrixProdSAV
+            // 
+            this.textBoxPrixProdSAV.Location = new System.Drawing.Point(146, 213);
+            this.textBoxPrixProdSAV.Name = "textBoxPrixProdSAV";
+            this.textBoxPrixProdSAV.ReadOnly = true;
+            this.textBoxPrixProdSAV.Size = new System.Drawing.Size(121, 20);
+            this.textBoxPrixProdSAV.TabIndex = 11;
+            // 
             // SAV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,7 +548,7 @@
         private System.Windows.Forms.Label labelNumSAV;
         private System.Windows.Forms.TabPage tabPageAL;
         private System.Windows.Forms.TextBox textBoxNomCliSAV;
-        private System.Windows.Forms.TextBox textBoxNumProdSAV;
+        private System.Windows.Forms.TextBox textBoxNomProdSAV;
         private System.Windows.Forms.ComboBox comboBoxArtSAV;
         private System.Windows.Forms.ComboBox comboBoxNumCmdSAV;
         private System.Windows.Forms.Label labelNomProdSAV;
@@ -523,5 +568,9 @@
         private System.Windows.Forms.Label labelCommentaireSAV;
         private System.Windows.Forms.Label labelNomCliSAV1;
         private System.Windows.Forms.Label labelNumLitSAV;
+        private System.Windows.Forms.TextBox textBoxPrixProdSAV;
+        private System.Windows.Forms.TextBox textBoxCouProSAV;
+        private System.Windows.Forms.Label labelPrixProdSAV;
+        private System.Windows.Forms.Label labelCoulProdSAV;
     }
 }
