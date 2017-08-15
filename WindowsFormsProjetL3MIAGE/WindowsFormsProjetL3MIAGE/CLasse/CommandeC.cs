@@ -11,9 +11,6 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
     {
         int idcli;
         int IdCmdc; // Le numéro de la commande.
-        int idRegl;
-        int IdLit;
-        string Statut; //Le statut de la commande ("en cours","terminer"...)
         int DateCom; // Date a laquelle la commande à etait effectué.
         int DateLiv; // Date a laquelle la commande fut livré.
 
@@ -27,21 +24,16 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 
             dtTable = uneReq.ExecuteSelect();
 
-            IdCmdc = Convert.ToInt32(dtTable.Rows[0][0]);
-            Statut = Convert.ToString(dtTable.Rows[0][1]);
-            DateCom = Convert.ToInt32(dtTable.Rows[0][2]);
-            DateLiv = Convert.ToInt32(dtTable.Rows[0][3]);
+            IdCmdc = Convert.ToInt32(dtTable.Rows[0]["IDCMDC"]);
+            idcli = Convert.ToInt32(dtTable.Rows[0]["IDCLI"]);
+        //    DateCom = Convert.ToInt32(dtTable.Rows[0]["DATECMDC"]);
+        //    DateLiv = Convert.ToInt32(dtTable.Rows[0]["DATERECEPTC"]);
 
         }
 
         public int GetIdCMDC()
         {
             return this.IdCmdc;
-        }
-
-        public string GetStatut()
-        {
-            return this.Statut;
         }
 
         public int GetDate()

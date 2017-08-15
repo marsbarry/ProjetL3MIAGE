@@ -101,13 +101,12 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
         private void buttonAddProdACP_Click(object sender, EventArgs e)
         {
-            string produit = textBoxRefProdAC.Text + " " + comboBoxNomProdAC.SelectedItem + " " + textBoxPrixProdAC.Text;
-            listBoxPanAC.Items.Add(produit);
+           
         }
 
         private void buttonDelAC_Click(object sender, EventArgs e)
         {
-            listBoxPanAC.Items.RemoveAt(listBoxPanAC.SelectedIndex);
+            
         }
 
         private void buttonCanAC_Click(object sender, EventArgs e)

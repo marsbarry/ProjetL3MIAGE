@@ -34,7 +34,6 @@
             this.gestionDesCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneCommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterLesCommandesDunClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifierUneCommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ouvrirUneRéclamationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterUneRéclamationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,9 +47,9 @@
             // 
             this.menuStripFichier.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fichierToolStripMenuItem,
+            this.clientToolStripMenuItem,
             this.gestionDesCommandesToolStripMenuItem,
-            this.sAVToolStripMenuItem,
-            this.clientToolStripMenuItem});
+            this.sAVToolStripMenuItem});
             this.menuStripFichier.Location = new System.Drawing.Point(0, 0);
             this.menuStripFichier.Name = "menuStripFichier";
             this.menuStripFichier.Size = new System.Drawing.Size(507, 24);
@@ -76,8 +75,7 @@
             // 
             this.gestionDesCommandesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterUneCommandeToolStripMenuItem,
-            this.consulterLesCommandesDunClientToolStripMenuItem,
-            this.modifierUneCommandeToolStripMenuItem});
+            this.consulterLesCommandesDunClientToolStripMenuItem});
             this.gestionDesCommandesToolStripMenuItem.Name = "gestionDesCommandesToolStripMenuItem";
             this.gestionDesCommandesToolStripMenuItem.Size = new System.Drawing.Size(149, 20);
             this.gestionDesCommandesToolStripMenuItem.Text = "Gestion des commandes";
@@ -95,13 +93,6 @@
             this.consulterLesCommandesDunClientToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.consulterLesCommandesDunClientToolStripMenuItem.Text = "Consulter les commandes d\"un client";
             this.consulterLesCommandesDunClientToolStripMenuItem.Click += new System.EventHandler(this.consulterLesCommandesDunClientToolStripMenuItem_Click);
-            // 
-            // modifierUneCommandeToolStripMenuItem
-            // 
-            this.modifierUneCommandeToolStripMenuItem.Name = "modifierUneCommandeToolStripMenuItem";
-            this.modifierUneCommandeToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
-            this.modifierUneCommandeToolStripMenuItem.Text = "Modifier une commande";
-            this.modifierUneCommandeToolStripMenuItem.Click += new System.EventHandler(this.modifierUneCommandeToolStripMenuItem_Click);
             // 
             // sAVToolStripMenuItem
             // 
@@ -177,7 +168,6 @@
         private System.Windows.Forms.ToolStripMenuItem consulterLesCommandesDunClientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sAVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ouvrirUneRéclamationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modifierUneCommandeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consulterUneRéclamationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnClientToolStripMenuItem;
