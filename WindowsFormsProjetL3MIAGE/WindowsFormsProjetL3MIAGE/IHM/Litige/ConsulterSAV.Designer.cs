@@ -54,14 +54,12 @@
             this.labelCoulProdSAVCL = new System.Windows.Forms.Label();
             this.textBoxNomCliSAVCL = new System.Windows.Forms.TextBox();
             this.textBoxNomProdSAVCL = new System.Windows.Forms.TextBox();
-            this.comboBoxArtSAVCL = new System.Windows.Forms.ComboBox();
             this.comboBoxNumCmdSAVCL = new System.Windows.Forms.ComboBox();
             this.labelNomProdSAVCL = new System.Windows.Forms.Label();
             this.labelNomCliSAV = new System.Windows.Forms.Label();
             this.labelArtSAVCL = new System.Windows.Forms.Label();
             this.labelNumCmdSAVCL = new System.Windows.Forms.Label();
             this.buttonTerminerSAVCL = new System.Windows.Forms.Button();
-            this.comboBoxStatSAVCL = new System.Windows.Forms.ComboBox();
             this.NomCliSAV2CL = new System.Windows.Forms.TextBox();
             this.textBoxCommSAVCL = new System.Windows.Forms.TextBox();
             this.textBoxNoteSaVCL = new System.Windows.Forms.TextBox();
@@ -71,6 +69,8 @@
             this.labelCommentaireSAVCL = new System.Windows.Forms.Label();
             this.labelNomCliSAV1CL = new System.Windows.Forms.Label();
             this.labelNumLitSAVCL = new System.Windows.Forms.Label();
+            this.textBoxNumProdCL = new System.Windows.Forms.TextBox();
+            this.textBoxStatSAVCL = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageInfCLiCL.SuspendLayout();
             this.tabPageCMDCLCL.SuspendLayout();
@@ -116,13 +116,13 @@
             // 
             // tabPageCMDCLCL
             // 
+            this.tabPageCMDCLCL.Controls.Add(this.textBoxNumProdCL);
             this.tabPageCMDCLCL.Controls.Add(this.textBoxPrixProdSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.textBoxCouProSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.labelPrixProdSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.labelCoulProdSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.textBoxNomCliSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.textBoxNomProdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.comboBoxArtSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.comboBoxNumCmdSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.labelNomProdSAVCL);
             this.tabPageCMDCLCL.Controls.Add(this.labelNomCliSAV);
@@ -138,8 +138,8 @@
             // 
             // tabPageContTickCL
             // 
+            this.tabPageContTickCL.Controls.Add(this.textBoxStatSAVCL);
             this.tabPageContTickCL.Controls.Add(this.buttonTerminerSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.comboBoxStatSAVCL);
             this.tabPageContTickCL.Controls.Add(this.NomCliSAV2CL);
             this.tabPageContTickCL.Controls.Add(this.textBoxCommSAVCL);
             this.tabPageContTickCL.Controls.Add(this.textBoxNoteSaVCL);
@@ -219,6 +219,7 @@
             this.comboBoxNumSAVCL.Name = "comboBoxNumSAVCL";
             this.comboBoxNumSAVCL.Size = new System.Drawing.Size(149, 21);
             this.comboBoxNumSAVCL.TabIndex = 24;
+            this.comboBoxNumSAVCL.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumSAVCL_SelectedIndexChanged);
             // 
             // labelMailSAVCL
             // 
@@ -342,14 +343,6 @@
             this.textBoxNomProdSAVCL.Size = new System.Drawing.Size(121, 20);
             this.textBoxNomProdSAVCL.TabIndex = 18;
             // 
-            // comboBoxArtSAVCL
-            // 
-            this.comboBoxArtSAVCL.FormattingEnabled = true;
-            this.comboBoxArtSAVCL.Location = new System.Drawing.Point(146, 63);
-            this.comboBoxArtSAVCL.Name = "comboBoxArtSAVCL";
-            this.comboBoxArtSAVCL.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxArtSAVCL.TabIndex = 17;
-            // 
             // comboBoxNumCmdSAVCL
             // 
             this.comboBoxNumCmdSAVCL.FormattingEnabled = true;
@@ -357,6 +350,7 @@
             this.comboBoxNumCmdSAVCL.Name = "comboBoxNumCmdSAVCL";
             this.comboBoxNumCmdSAVCL.Size = new System.Drawing.Size(121, 21);
             this.comboBoxNumCmdSAVCL.TabIndex = 16;
+            this.comboBoxNumCmdSAVCL.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumCmdSAVCL_SelectedIndexChanged);
             // 
             // labelNomProdSAVCL
             // 
@@ -402,16 +396,7 @@
             this.buttonTerminerSAVCL.TabIndex = 23;
             this.buttonTerminerSAVCL.Text = "Valider";
             this.buttonTerminerSAVCL.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxStatSAVCL
-            // 
-            this.comboBoxStatSAVCL.FormattingEnabled = true;
-            this.comboBoxStatSAVCL.Items.AddRange(new object[] {
-            "En cours"});
-            this.comboBoxStatSAVCL.Location = new System.Drawing.Point(180, 337);
-            this.comboBoxStatSAVCL.Name = "comboBoxStatSAVCL";
-            this.comboBoxStatSAVCL.Size = new System.Drawing.Size(160, 21);
-            this.comboBoxStatSAVCL.TabIndex = 21;
+            this.buttonTerminerSAVCL.Click += new System.EventHandler(this.buttonTerminerSAVCL_Click);
             // 
             // NomCliSAV2CL
             // 
@@ -427,6 +412,7 @@
             this.textBoxCommSAVCL.Name = "textBoxCommSAVCL";
             this.textBoxCommSAVCL.Size = new System.Drawing.Size(160, 77);
             this.textBoxCommSAVCL.TabIndex = 19;
+            this.textBoxCommSAVCL.TextChanged += new System.EventHandler(this.textBoxCommSAVCL_TextChanged);
             // 
             // textBoxNoteSaVCL
             // 
@@ -488,14 +474,31 @@
             this.labelNumLitSAVCL.TabIndex = 12;
             this.labelNumLitSAVCL.Text = "Numéro Litige :";
             // 
+            // textBoxNumProdCL
+            // 
+            this.textBoxNumProdCL.Location = new System.Drawing.Point(146, 63);
+            this.textBoxNumProdCL.Name = "textBoxNumProdCL";
+            this.textBoxNumProdCL.ReadOnly = true;
+            this.textBoxNumProdCL.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNumProdCL.TabIndex = 24;
+            // 
+            // textBoxStatSAVCL
+            // 
+            this.textBoxStatSAVCL.Location = new System.Drawing.Point(180, 329);
+            this.textBoxStatSAVCL.Name = "textBoxStatSAVCL";
+            this.textBoxStatSAVCL.Size = new System.Drawing.Size(160, 20);
+            this.textBoxStatSAVCL.TabIndex = 24;
+            // 
             // ConsulterSAV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 438);
+            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Name = "ConsulterSAV";
             this.Text = "ConsulterSAV";
+            this.Load += new System.EventHandler(this.ConsulterSAV_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageInfCLiCL.ResumeLayout(false);
             this.tabPageInfCLiCL.PerformLayout();
@@ -535,14 +538,12 @@
         private System.Windows.Forms.Label labelCoulProdSAVCL;
         private System.Windows.Forms.TextBox textBoxNomCliSAVCL;
         private System.Windows.Forms.TextBox textBoxNomProdSAVCL;
-        private System.Windows.Forms.ComboBox comboBoxArtSAVCL;
         private System.Windows.Forms.ComboBox comboBoxNumCmdSAVCL;
         private System.Windows.Forms.Label labelNomProdSAVCL;
         private System.Windows.Forms.Label labelNomCliSAV;
         private System.Windows.Forms.Label labelArtSAVCL;
         private System.Windows.Forms.Label labelNumCmdSAVCL;
         private System.Windows.Forms.Button buttonTerminerSAVCL;
-        private System.Windows.Forms.ComboBox comboBoxStatSAVCL;
         private System.Windows.Forms.TextBox NomCliSAV2CL;
         private System.Windows.Forms.TextBox textBoxCommSAVCL;
         private System.Windows.Forms.TextBox textBoxNoteSaVCL;
@@ -552,5 +553,7 @@
         private System.Windows.Forms.Label labelCommentaireSAVCL;
         private System.Windows.Forms.Label labelNomCliSAV1CL;
         private System.Windows.Forms.Label labelNumLitSAVCL;
+        private System.Windows.Forms.TextBox textBoxNumProdCL;
+        private System.Windows.Forms.TextBox textBoxStatSAVCL;
     }
 }

@@ -51,7 +51,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxAdrSAV.Text = NewCli.getAdrCli();
             textBoxVilleSAV.Text = NewCli.getVille().ToString();
             textBoxCPSAV.Text = NewCli.getCpCli().ToString();
-            textBoxPreSAV.Text = NewCli.getTelCli().ToString();
+            textBoxTelSAV.Text = NewCli.getTelCli().ToString();
             textBoxMailSAV.Text = NewCli.getMailCli().ToString();
             textBoxTelSAV.Text = NewCli.getTelCli().ToString();
 

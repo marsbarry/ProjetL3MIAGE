@@ -99,10 +99,16 @@
     <Compile Include="IHM\Commande\ConsulterCommande.Designer.cs">
       <DependentUpon>ConsulterCommande.cs</DependentUpon>
     </Compile>
-    <Compile Include="IHM\SAV.cs">
+    <Compile Include="IHM\Litige\ConsulterSAV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IHM\SAV.Designer.cs">
+    <Compile Include="IHM\Litige\ConsulterSAV.Designer.cs">
+      <DependentUpon>ConsulterSAV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHM\Litige\SAV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM\Litige\SAV.Designer.cs">
       <DependentUpon>SAV.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -122,7 +128,10 @@
     <EmbeddedResource Include="IHM\Commande\ConsulterCommande.resx">
       <DependentUpon>ConsulterCommande.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IHM\SAV.resx">
+    <EmbeddedResource Include="IHM\Litige\ConsulterSAV.resx">
+      <DependentUpon>ConsulterSAV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHM\Litige\SAV.resx">
       <DependentUpon>SAV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

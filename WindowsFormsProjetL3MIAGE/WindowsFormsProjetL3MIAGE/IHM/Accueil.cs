@@ -11,6 +11,7 @@ using WindowsFormsProjetL3MIAGE.CLasse;
 using WindowsFormsProjetL3MIAGE.IHM.Client;
 using WindowsFormsProjetL3MIAGE.IHM;
 using Oracle.DataAccess;
+using WindowsFormsProjetL3MIAGE.IHM.Litige;
 
 namespace WindowsFormsProjetL3MIAGE
 {
@@ -74,7 +75,9 @@ namespace WindowsFormsProjetL3MIAGE
 
         private void consulterUneRéclamationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ConsulterSAV objF = new ConsulterSAV();
+            objF.Show();
         }
     }
 }

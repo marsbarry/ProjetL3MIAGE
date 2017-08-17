@@ -15,3 +15,4 @@ C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsForms
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.ConsulterCommande.resources
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.SAV.resources
 C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.AjouterCommande.resources
+C:\Users\Barry\Documents\ProjetFinL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.Litige.ConsulterSAV.resources
