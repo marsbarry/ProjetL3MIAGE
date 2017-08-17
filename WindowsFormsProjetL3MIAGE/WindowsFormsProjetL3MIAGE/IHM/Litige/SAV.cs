@@ -91,7 +91,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             DialogResult result = MessageBox.Show("Voulez vous ajoutez le litige n° " + textBoxNumLitSAV.Text + " dans la base de données ?", "Confirmer", MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                CLasse.SAV NewLit = new CLasse.SAV(Convert.ToInt32(textBoxNumLitSAV.Text), textBoxCommSAV.Text, textBoxNoteSaV.Text, comboBoxStatSAV.SelectedItem.ToString());
+                CLasse.SAV NewLit = new CLasse.SAV(Convert.ToInt32(textBoxNumLitSAV.Text),Convert.ToInt32(comboBoxNumCmdSAV.SelectedItem), textBoxCommSAV.Text, textBoxNoteSaV.Text, comboBoxStatSAV.SelectedItem.ToString());
                 GestionSAV.AjoutLit(NewLit);
 
                 this.Close();

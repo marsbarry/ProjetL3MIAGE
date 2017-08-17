@@ -28,9 +28,10 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         /// <param name="unidcommande">Id de la commande du litige  </param>
         /// <param name="unIdCli">Id du client porant réclamation pour le Litige</param>
        
-        public SAV(int unId, string uncomm, string Unenote, string unstatut) // Constructeur pour un litige non existant dans la base de données
+        public SAV(int unId, int unIdCmdc,string uncomm, string Unenote, string unstatut) // Constructeur pour un litige non existant dans la base de données
         {
             idLit = unId;
+            idcommande = unIdCmdc;
             commentaire = uncomm;
             note = Unenote;
             statut = unstatut;
