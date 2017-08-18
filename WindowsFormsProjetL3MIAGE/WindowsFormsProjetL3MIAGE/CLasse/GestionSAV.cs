@@ -10,6 +10,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 {
     class GestionSAV
     {
+        //Permet de récupérer le numéro maximum de litige pour lui ajouter 1 afin d'être sur qu'il n'existe pas un numéro de litige identique dans la BDD
         public int GetMAxId()
         {
             string req = " SELECT MAX(idlit) from litige";

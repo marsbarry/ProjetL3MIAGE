@@ -48,36 +48,49 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 
         }
 
-        //Fonction get
+        //Permet de récupérer le numéro du Client
         public int getNumCli()
         {
             return numCli;
         }
+
+        //Permet de récupérer le nom du Client
         public string getNomCli()
         {
             return nomCli;
         }
+
+        //Permet de récupérer le prénom du Client
         public string getPrenomCli()
         {
             return prenomCli;
         }
+
+        //Permet de récupérer l'adresse du Client
         public string getAdrCli()
         {
             return adrCli;
         }
+
+        //Permet de récupérer  la ville du Client
         public string getVille()
         {
             return villeCli;
         }
+
+        //Permet de récupérer  le code postal du CLient
         public int getCpCli()
         {
             return cpCli;
         }
+
+        //Permet de récupérer le numéro de téléphone du CLient
         public int getTelCli()
         {
             return telCli;
         }
 
+        //Permet de récupérer  l'adresse mail du Client
         public string getMailCli()
         {
             return mailCli;

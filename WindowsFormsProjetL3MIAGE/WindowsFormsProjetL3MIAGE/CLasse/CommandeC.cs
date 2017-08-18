@@ -9,7 +9,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 {
     class CommandeC
     {
-        int idcli;
+        int idcli; // le numéro du Client
         int IdCmdc; // Le numéro de la commande.
         int DateCom; // Date a laquelle la commande à etait effectué.
         int DateLiv; // Date a laquelle la commande fut livré.
@@ -31,16 +31,19 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 
         }
 
+        //Permet de récupérer le numéro de commande
         public int GetIdCMDC()
         {
             return this.IdCmdc;
         }
 
+        //Permet de récupérer la date de la commande
         public int GetDate()
         {
             return this.DateCom;
         }
 
+        //Permet de récupérer la date de livraison
         public int GetDateLiv()
         {
             return this.DateLiv;

@@ -55,26 +55,31 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 
         }
 
+        //Permet de récupérer  l'identidiant du Client
         public int GetIdCli()
         {
             return this.idCli;
         }
 
+        //Permet de récupérer  l'identifiant du litige
         public int getIdlit()
         {
             return this.idLit;
         }
 
+        //Permet de récupérer  le commentaire du ticket
         public string getComm()
         {
             return this.commentaire;
         }
 
+        //Permet de récupérer  la note du ticket
         public string getNote()
         {
             return this.note;
         }
 
+        //Permet de récupérer  le statut du ticket
         public string getStatut()
         {
             return this.statut;

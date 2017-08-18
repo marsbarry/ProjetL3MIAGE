@@ -11,8 +11,8 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 {
     public class ConnexionBD
     {
-        private string Req;
-        private int Nb1;
+        private string Req; //Requête SQL à executer
+        private int Nb1; 
         private static OracleConnection Conn = new OracleConnection();
         private static bool ConnOk;
         OracleCommand Cmd = new OracleCommand();
@@ -69,7 +69,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             return Nb1;
         }
 
-        public static void Connecter(string IdUtilusateur, string MdpUtilisateur)  //Fonction pour se connecter a la BDD
+        public static void Connecter(string IdUtilusateur, string MdpUtilisateur)  //Fonction pour se connecter à la BDD
         {
             string ChaineConn = "Data Source=(DESCRIPTION=";
             ChaineConn = ChaineConn + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))";

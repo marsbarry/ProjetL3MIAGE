@@ -9,14 +9,15 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 {
     class Produit
     {
-        private int IdProduit;
-        private int IdTypeProd;
-        private int IdFourn;
-        private string NomProd;
-        private double PrixProd;
-        private string CouleurProd;
+        private int IdProduit; //Numéro de produit
+        private int IdTypeProd; // numéro type du produit
+        private int IdFourn; // numéro de fournisseur
+        private string NomProd; // Nom du produit
+        private double PrixProd; //Prix du produit
+        private string CouleurProd; //Couleur du produit
 
 
+        //Permet de récupérer les données d'un produit via son identifiant
         public Produit(int unidprod)
         {
             DataTable dtProd;
@@ -31,6 +32,8 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             CouleurProd = dtProd.Rows[0]["COULEURPROD"].ToString();
 
         }
+
+        //Permet de récupérer le nom du produit
         public string GetNomProd()
         {
             return this.NomProd;

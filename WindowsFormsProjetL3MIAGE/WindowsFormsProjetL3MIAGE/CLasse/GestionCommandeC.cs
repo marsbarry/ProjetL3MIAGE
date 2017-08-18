@@ -9,6 +9,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 {
     class GestionCommandeC
     {
+        //Permet de récupérer le numéro maximu des commandes et lui ajoute 1 pour être sur de ne pas ajouter un numéro de commande existant
         public static int MaxCmd()
         {
             int nbmax;
