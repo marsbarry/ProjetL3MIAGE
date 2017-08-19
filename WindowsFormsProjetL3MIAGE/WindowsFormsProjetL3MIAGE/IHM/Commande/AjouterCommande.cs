@@ -129,6 +129,10 @@ namespace WindowsFormsProjetL3MIAGE.IHM
                 string req1 = "Insert into commandec_2 (IDCLI,IDCMDC,IDPRODUIT,QTECMDC) values (" + comboBoxChoiCli.SelectedItem + "," + textBoxNumCMD.Text + "," + textBoxRefProdAC.Text + "," + textBoxQteProdAC.Text + ")";
                 ConnexionBD objconn1 = new ConnexionBD(req1);
                 objconn1.ExecuteIUD();
+
+                this.Close();
+                Accueil objF = new Accueil();
+                objF.Show();
             }
             else
             {

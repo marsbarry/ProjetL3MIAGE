@@ -63,6 +63,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
             foreach (DataRow row in DtCOns.Rows)
             {
+                comboBoxNumCmdSAV.Items.Clear();
                 comboBoxNumCmdSAV.Items.Add(row[0]);
             }
         }

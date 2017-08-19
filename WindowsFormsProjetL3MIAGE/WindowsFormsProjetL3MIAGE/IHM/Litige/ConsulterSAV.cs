@@ -46,7 +46,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Litige
 
         private void ConsulterSAV_Load(object sender, EventArgs e)
         {
-            string requete = "SELECT IDCLI from client";
+            string requete = "SELECT CLIENT.IDCLI from client,COMMANDEC,LITIGE where client.idcli = commandec.idcli and commandec.idcmdc = litige.idcmdc";
             DataTable DtCOns = new DataTable();
             ConnexionBD ObjCons = new ConnexionBD(requete);
             DtCOns = ObjCons.ExecuteSelect();

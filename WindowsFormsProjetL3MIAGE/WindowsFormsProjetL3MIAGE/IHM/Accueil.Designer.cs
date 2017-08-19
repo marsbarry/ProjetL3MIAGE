@@ -31,15 +31,16 @@
             this.menuStripFichier = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterUnClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consulterLesClientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesCommandesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneCommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterLesCommandesDunClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ouvrirUneRéclamationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterUneRéclamationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterUnClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consulterLesClientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierUneRéclamationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripFichier.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +72,29 @@
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
+            // clientToolStripMenuItem
+            // 
+            this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajouterUnClientToolStripMenuItem,
+            this.consulterLesClientsToolStripMenuItem});
+            this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.clientToolStripMenuItem.Text = "Client";
+            // 
+            // ajouterUnClientToolStripMenuItem
+            // 
+            this.ajouterUnClientToolStripMenuItem.Name = "ajouterUnClientToolStripMenuItem";
+            this.ajouterUnClientToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.ajouterUnClientToolStripMenuItem.Text = "Ajouter un Client";
+            this.ajouterUnClientToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnClientToolStripMenuItem_Click);
+            // 
+            // consulterLesClientsToolStripMenuItem
+            // 
+            this.consulterLesClientsToolStripMenuItem.Name = "consulterLesClientsToolStripMenuItem";
+            this.consulterLesClientsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.consulterLesClientsToolStripMenuItem.Text = "Consulter les clients";
+            this.consulterLesClientsToolStripMenuItem.Click += new System.EventHandler(this.consulterLesClientsToolStripMenuItem_Click);
+            // 
             // gestionDesCommandesToolStripMenuItem
             // 
             this.gestionDesCommandesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -98,9 +122,10 @@
             // 
             this.sAVToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ouvrirUneRéclamationToolStripMenuItem,
-            this.consulterUneRéclamationToolStripMenuItem});
+            this.consulterUneRéclamationToolStripMenuItem,
+            this.modifierUneRéclamationToolStripMenuItem});
             this.sAVToolStripMenuItem.Name = "sAVToolStripMenuItem";
-            this.sAVToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.sAVToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.sAVToolStripMenuItem.Text = "SAV";
             // 
             // ouvrirUneRéclamationToolStripMenuItem
@@ -117,28 +142,12 @@
             this.consulterUneRéclamationToolStripMenuItem.Text = "Consulter une réclamation";
             this.consulterUneRéclamationToolStripMenuItem.Click += new System.EventHandler(this.consulterUneRéclamationToolStripMenuItem_Click);
             // 
-            // clientToolStripMenuItem
+            // modifierUneRéclamationToolStripMenuItem
             // 
-            this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajouterUnClientToolStripMenuItem,
-            this.consulterLesClientsToolStripMenuItem});
-            this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.clientToolStripMenuItem.Text = "Client";
-            // 
-            // ajouterUnClientToolStripMenuItem
-            // 
-            this.ajouterUnClientToolStripMenuItem.Name = "ajouterUnClientToolStripMenuItem";
-            this.ajouterUnClientToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.ajouterUnClientToolStripMenuItem.Text = "Ajouter un Client";
-            this.ajouterUnClientToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnClientToolStripMenuItem_Click);
-            // 
-            // consulterLesClientsToolStripMenuItem
-            // 
-            this.consulterLesClientsToolStripMenuItem.Name = "consulterLesClientsToolStripMenuItem";
-            this.consulterLesClientsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.consulterLesClientsToolStripMenuItem.Text = "Consulter les clients";
-            this.consulterLesClientsToolStripMenuItem.Click += new System.EventHandler(this.consulterLesClientsToolStripMenuItem_Click);
+            this.modifierUneRéclamationToolStripMenuItem.Name = "modifierUneRéclamationToolStripMenuItem";
+            this.modifierUneRéclamationToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.modifierUneRéclamationToolStripMenuItem.Text = "Modifier une réclamation";
+            this.modifierUneRéclamationToolStripMenuItem.Click += new System.EventHandler(this.modifierUneRéclamationToolStripMenuItem_Click);
             // 
             // Accueil
             // 
@@ -172,5 +181,6 @@
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterUnClientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consulterLesClientsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifierUneRéclamationToolStripMenuItem;
     }
 }

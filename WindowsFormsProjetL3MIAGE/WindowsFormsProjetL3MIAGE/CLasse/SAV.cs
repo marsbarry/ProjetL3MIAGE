@@ -50,8 +50,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             note = ObjDTCons.Rows[0]["NOTE"].ToString();
             statut = ObjDTCons.Rows[0]["STATUT"].ToString();
             idcommande = Convert.ToInt32(ObjDTCons.Rows[0]["IDCMDC"]);
-            idArticle = Convert.ToInt32(ObjDTCons.Rows[0]["IDARTICLE"]);
-            idCli = Convert.ToInt32(ObjDTCons.Rows[0]["IDCLIENT"]);
+
 
         }
 
@@ -83,6 +82,12 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
         public string getStatut()
         {
             return this.statut;
+        }
+
+        //Permet de récupérer le numéro de la commande
+        public int getIdCMDC()
+        {
+            return idcommande;
         }
    }
 }

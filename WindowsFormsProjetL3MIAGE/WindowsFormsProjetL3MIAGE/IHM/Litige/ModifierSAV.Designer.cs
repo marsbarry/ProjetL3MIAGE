@@ -416,12 +416,14 @@
             this.buttonCanSAVML.TabIndex = 22;
             this.buttonCanSAVML.Text = "Annuler";
             this.buttonCanSAVML.UseVisualStyleBackColor = true;
+            this.buttonCanSAVML.Click += new System.EventHandler(this.buttonCanSAVML_Click);
             // 
             // comboBoxStatSAVML
             // 
             this.comboBoxStatSAVML.FormattingEnabled = true;
             this.comboBoxStatSAVML.Items.AddRange(new object[] {
-            "En cours"});
+            "En cours",
+            "Terminer"});
             this.comboBoxStatSAVML.Location = new System.Drawing.Point(178, 341);
             this.comboBoxStatSAVML.Name = "comboBoxStatSAVML";
             this.comboBoxStatSAVML.Size = new System.Drawing.Size(160, 21);

@@ -79,5 +79,12 @@ namespace WindowsFormsProjetL3MIAGE
             ConsulterSAV objF = new ConsulterSAV();
             objF.Show();
         }
+
+        private void modifierUneRéclamationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ModifierSAV objF = new ModifierSAV();
+            objF.Show();
+        }
     }
 }

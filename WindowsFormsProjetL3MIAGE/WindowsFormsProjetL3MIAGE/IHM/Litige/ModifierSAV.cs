@@ -20,7 +20,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Litige
 
         private void ModifierSAV_Load(object sender, EventArgs e)
         {
-            string requete = "SELECT IDCLI from client";
+            string requete = "SELECT CLIENT.IDCLI from client,COMMANDEC,LITIGE where client.idcli = commandec.idcli and commandec.idcmdc = litige.idcmdc";
             DataTable DtCOns = new DataTable();
             ConnexionBD ObjCons = new ConnexionBD(requete);
             DtCOns = ObjCons.ExecuteSelect();
@@ -94,17 +94,32 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Litige
         private void buttonEnrSAVML_Click(object sender, EventArgs e)
         {
 
-            DialogResult result = MessageBox.Show("Voulez vous modifier le litige n° " + textBoxNumLitSAVML.Text + " dans la base de données ?", "Confirmer", MessageBoxButtons.OKCancel);
+            DialogResult result = MessageBox.Show("Voulez vous modifier le litige n° " + textBoxNumLitSAVML.Text + "dans la base de données ?", "Confirmer", MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
-                string req = "UPDATE LITIGE SET COMMENTAIRE = '" + textBoxCommSAVML.Text + "',NOTE = '" + textBoxNoteSaVML.Text + "',STATUT ='" + comboBoxStatSAVML.SelectedItem.ToString() + "', WHERE idlit = " + textBoxNumLitSAVML.Text;
+                string req = "UPDATE LITIGE SET COMMENTAIRE = '" + textBoxCommSAVML.Text + "',NOTE = '" + textBoxNoteSaVML.Text + "',STATUT ='" + comboBoxStatSAVML.SelectedItem.ToString() + "' WHERE idlit = " + textBoxNumLitSAVML.Text;
                 ConnexionBD objConn = new ConnexionBD(req);
                 objConn.ExecuteIUD();
+
+                this.Close();
+                Accueil objF = new Accueil();
+                objF.Show();
             }
             else
             {
                 MessageBox.Show("Le litige n° " + textBoxNumLitSAVML.Text + " n'a pas était modifié");
+
+                this.Close();
+                Accueil objF = new Accueil();
+                objF.Show();
             }
+        }
+
+        private void buttonCanSAVML_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Accueil objF = new Accueil();
+            objF.Show();
         }
     }
 }
