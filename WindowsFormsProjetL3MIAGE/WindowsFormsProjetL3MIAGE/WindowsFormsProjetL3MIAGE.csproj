@@ -105,6 +105,12 @@
     <Compile Include="IHM\Litige\ConsulterSAV.Designer.cs">
       <DependentUpon>ConsulterSAV.cs</DependentUpon>
     </Compile>
+    <Compile Include="IHM\Litige\ModifierSAV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM\Litige\ModifierSAV.Designer.cs">
+      <DependentUpon>ModifierSAV.cs</DependentUpon>
+    </Compile>
     <Compile Include="IHM\Litige\SAV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IHM\Litige\ConsulterSAV.resx">
       <DependentUpon>ConsulterSAV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHM\Litige\ModifierSAV.resx">
+      <DependentUpon>ModifierSAV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IHM\Litige\SAV.resx">
       <DependentUpon>SAV.cs</DependentUpon>
