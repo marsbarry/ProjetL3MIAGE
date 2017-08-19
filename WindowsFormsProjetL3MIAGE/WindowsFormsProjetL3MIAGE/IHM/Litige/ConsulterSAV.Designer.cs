@@ -30,8 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInfCLiCL = new System.Windows.Forms.TabPage();
-            this.tabPageCMDCLCL = new System.Windows.Forms.TabPage();
-            this.tabPageContTickCL = new System.Windows.Forms.TabPage();
             this.textBoxMailSAVCL = new System.Windows.Forms.TextBox();
             this.textBoxPreSAVCL = new System.Windows.Forms.TextBox();
             this.textBoxAdrSAVCL = new System.Windows.Forms.TextBox();
@@ -48,6 +46,8 @@
             this.labelPreSAVCL = new System.Windows.Forms.Label();
             this.labelNomSAVCL = new System.Windows.Forms.Label();
             this.labelNumSAVCL = new System.Windows.Forms.Label();
+            this.tabPageCMDCLCL = new System.Windows.Forms.TabPage();
+            this.textBoxNumProdCL = new System.Windows.Forms.TextBox();
             this.textBoxPrixProdSAVCL = new System.Windows.Forms.TextBox();
             this.textBoxCouProSAVCL = new System.Windows.Forms.TextBox();
             this.labelPrixProdSAVCL = new System.Windows.Forms.Label();
@@ -59,6 +59,8 @@
             this.labelNomCliSAV = new System.Windows.Forms.Label();
             this.labelArtSAVCL = new System.Windows.Forms.Label();
             this.labelNumCmdSAVCL = new System.Windows.Forms.Label();
+            this.tabPageContTickCL = new System.Windows.Forms.TabPage();
+            this.textBoxStatSAVCL = new System.Windows.Forms.TextBox();
             this.buttonTerminerSAVCL = new System.Windows.Forms.Button();
             this.NomCliSAV2CL = new System.Windows.Forms.TextBox();
             this.textBoxCommSAVCL = new System.Windows.Forms.TextBox();
@@ -69,8 +71,6 @@
             this.labelCommentaireSAVCL = new System.Windows.Forms.Label();
             this.labelNomCliSAV1CL = new System.Windows.Forms.Label();
             this.labelNumLitSAVCL = new System.Windows.Forms.Label();
-            this.textBoxNumProdCL = new System.Windows.Forms.TextBox();
-            this.textBoxStatSAVCL = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageInfCLiCL.SuspendLayout();
             this.tabPageCMDCLCL.SuspendLayout();
@@ -113,48 +113,6 @@
             this.tabPageInfCLiCL.TabIndex = 0;
             this.tabPageInfCLiCL.Text = "Informations Client";
             this.tabPageInfCLiCL.UseVisualStyleBackColor = true;
-            // 
-            // tabPageCMDCLCL
-            // 
-            this.tabPageCMDCLCL.Controls.Add(this.textBoxNumProdCL);
-            this.tabPageCMDCLCL.Controls.Add(this.textBoxPrixProdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.textBoxCouProSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.labelPrixProdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.labelCoulProdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.textBoxNomCliSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.textBoxNomProdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.comboBoxNumCmdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.labelNomProdSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.labelNomCliSAV);
-            this.tabPageCMDCLCL.Controls.Add(this.labelArtSAVCL);
-            this.tabPageCMDCLCL.Controls.Add(this.labelNumCmdSAVCL);
-            this.tabPageCMDCLCL.Location = new System.Drawing.Point(4, 22);
-            this.tabPageCMDCLCL.Name = "tabPageCMDCLCL";
-            this.tabPageCMDCLCL.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCMDCLCL.Size = new System.Drawing.Size(363, 408);
-            this.tabPageCMDCLCL.TabIndex = 1;
-            this.tabPageCMDCLCL.Text = "Informations Commande";
-            this.tabPageCMDCLCL.UseVisualStyleBackColor = true;
-            // 
-            // tabPageContTickCL
-            // 
-            this.tabPageContTickCL.Controls.Add(this.textBoxStatSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.buttonTerminerSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.NomCliSAV2CL);
-            this.tabPageContTickCL.Controls.Add(this.textBoxCommSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.textBoxNoteSaVCL);
-            this.tabPageContTickCL.Controls.Add(this.textBoxNumLitSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.labelStatSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.labelNoteSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.labelCommentaireSAVCL);
-            this.tabPageContTickCL.Controls.Add(this.labelNomCliSAV1CL);
-            this.tabPageContTickCL.Controls.Add(this.labelNumLitSAVCL);
-            this.tabPageContTickCL.Location = new System.Drawing.Point(4, 22);
-            this.tabPageContTickCL.Name = "tabPageContTickCL";
-            this.tabPageContTickCL.Size = new System.Drawing.Size(363, 408);
-            this.tabPageContTickCL.TabIndex = 2;
-            this.tabPageContTickCL.Text = "Contenu du ticket";
-            this.tabPageContTickCL.UseVisualStyleBackColor = true;
             // 
             // textBoxMailSAVCL
             // 
@@ -293,6 +251,36 @@
             this.labelNumSAVCL.TabIndex = 16;
             this.labelNumSAVCL.Text = "Numéro : ";
             // 
+            // tabPageCMDCLCL
+            // 
+            this.tabPageCMDCLCL.Controls.Add(this.textBoxNumProdCL);
+            this.tabPageCMDCLCL.Controls.Add(this.textBoxPrixProdSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.textBoxCouProSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.labelPrixProdSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.labelCoulProdSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.textBoxNomCliSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.textBoxNomProdSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.comboBoxNumCmdSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.labelNomProdSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.labelNomCliSAV);
+            this.tabPageCMDCLCL.Controls.Add(this.labelArtSAVCL);
+            this.tabPageCMDCLCL.Controls.Add(this.labelNumCmdSAVCL);
+            this.tabPageCMDCLCL.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCMDCLCL.Name = "tabPageCMDCLCL";
+            this.tabPageCMDCLCL.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCMDCLCL.Size = new System.Drawing.Size(363, 408);
+            this.tabPageCMDCLCL.TabIndex = 1;
+            this.tabPageCMDCLCL.Text = "Informations Commande";
+            this.tabPageCMDCLCL.UseVisualStyleBackColor = true;
+            // 
+            // textBoxNumProdCL
+            // 
+            this.textBoxNumProdCL.Location = new System.Drawing.Point(146, 63);
+            this.textBoxNumProdCL.Name = "textBoxNumProdCL";
+            this.textBoxNumProdCL.ReadOnly = true;
+            this.textBoxNumProdCL.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNumProdCL.TabIndex = 24;
+            // 
             // textBoxPrixProdSAVCL
             // 
             this.textBoxPrixProdSAVCL.Location = new System.Drawing.Point(146, 181);
@@ -388,6 +376,34 @@
             this.labelNumCmdSAVCL.TabIndex = 12;
             this.labelNumCmdSAVCL.Text = "Numéro de commande :";
             // 
+            // tabPageContTickCL
+            // 
+            this.tabPageContTickCL.Controls.Add(this.textBoxStatSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.buttonTerminerSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.NomCliSAV2CL);
+            this.tabPageContTickCL.Controls.Add(this.textBoxCommSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.textBoxNoteSaVCL);
+            this.tabPageContTickCL.Controls.Add(this.textBoxNumLitSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.labelStatSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.labelNoteSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.labelCommentaireSAVCL);
+            this.tabPageContTickCL.Controls.Add(this.labelNomCliSAV1CL);
+            this.tabPageContTickCL.Controls.Add(this.labelNumLitSAVCL);
+            this.tabPageContTickCL.Location = new System.Drawing.Point(4, 22);
+            this.tabPageContTickCL.Name = "tabPageContTickCL";
+            this.tabPageContTickCL.Size = new System.Drawing.Size(363, 408);
+            this.tabPageContTickCL.TabIndex = 2;
+            this.tabPageContTickCL.Text = "Contenu du ticket";
+            this.tabPageContTickCL.UseVisualStyleBackColor = true;
+            // 
+            // textBoxStatSAVCL
+            // 
+            this.textBoxStatSAVCL.Location = new System.Drawing.Point(180, 329);
+            this.textBoxStatSAVCL.Name = "textBoxStatSAVCL";
+            this.textBoxStatSAVCL.ReadOnly = true;
+            this.textBoxStatSAVCL.Size = new System.Drawing.Size(160, 20);
+            this.textBoxStatSAVCL.TabIndex = 24;
+            // 
             // buttonTerminerSAVCL
             // 
             this.buttonTerminerSAVCL.Location = new System.Drawing.Point(126, 379);
@@ -402,6 +418,7 @@
             // 
             this.NomCliSAV2CL.Location = new System.Drawing.Point(180, 62);
             this.NomCliSAV2CL.Name = "NomCliSAV2CL";
+            this.NomCliSAV2CL.ReadOnly = true;
             this.NomCliSAV2CL.Size = new System.Drawing.Size(160, 20);
             this.NomCliSAV2CL.TabIndex = 20;
             // 
@@ -410,6 +427,7 @@
             this.textBoxCommSAVCL.Location = new System.Drawing.Point(180, 109);
             this.textBoxCommSAVCL.Multiline = true;
             this.textBoxCommSAVCL.Name = "textBoxCommSAVCL";
+            this.textBoxCommSAVCL.ReadOnly = true;
             this.textBoxCommSAVCL.Size = new System.Drawing.Size(160, 77);
             this.textBoxCommSAVCL.TabIndex = 19;
             this.textBoxCommSAVCL.TextChanged += new System.EventHandler(this.textBoxCommSAVCL_TextChanged);
@@ -419,6 +437,7 @@
             this.textBoxNoteSaVCL.Location = new System.Drawing.Point(180, 216);
             this.textBoxNoteSaVCL.Multiline = true;
             this.textBoxNoteSaVCL.Name = "textBoxNoteSaVCL";
+            this.textBoxNoteSaVCL.ReadOnly = true;
             this.textBoxNoteSaVCL.Size = new System.Drawing.Size(160, 78);
             this.textBoxNoteSaVCL.TabIndex = 18;
             // 
@@ -426,6 +445,7 @@
             // 
             this.textBoxNumLitSAVCL.Location = new System.Drawing.Point(180, 23);
             this.textBoxNumLitSAVCL.Name = "textBoxNumLitSAVCL";
+            this.textBoxNumLitSAVCL.ReadOnly = true;
             this.textBoxNumLitSAVCL.Size = new System.Drawing.Size(160, 20);
             this.textBoxNumLitSAVCL.TabIndex = 17;
             // 
@@ -473,21 +493,6 @@
             this.labelNumLitSAVCL.Size = new System.Drawing.Size(78, 13);
             this.labelNumLitSAVCL.TabIndex = 12;
             this.labelNumLitSAVCL.Text = "Numéro Litige :";
-            // 
-            // textBoxNumProdCL
-            // 
-            this.textBoxNumProdCL.Location = new System.Drawing.Point(146, 63);
-            this.textBoxNumProdCL.Name = "textBoxNumProdCL";
-            this.textBoxNumProdCL.ReadOnly = true;
-            this.textBoxNumProdCL.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNumProdCL.TabIndex = 24;
-            // 
-            // textBoxStatSAVCL
-            // 
-            this.textBoxStatSAVCL.Location = new System.Drawing.Point(180, 329);
-            this.textBoxStatSAVCL.Name = "textBoxStatSAVCL";
-            this.textBoxStatSAVCL.Size = new System.Drawing.Size(160, 20);
-            this.textBoxStatSAVCL.TabIndex = 24;
             // 
             // ConsulterSAV
             // 

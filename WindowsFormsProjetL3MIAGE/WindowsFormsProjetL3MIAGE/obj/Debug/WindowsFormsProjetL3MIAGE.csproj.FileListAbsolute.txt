@@ -33,3 +33,4 @@ C:\Users\barry\Documents\ProjetL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsPro
 C:\Users\barry\Documents\ProjetL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.csproj.CoreCompileInputs.cache
 C:\Users\barry\Documents\ProjetL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.exe
 C:\Users\barry\Documents\ProjetL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.pdb
+C:\Users\barry\Documents\ProjetL3MIAGE\WindowsFormsProjetL3MIAGE\WindowsFormsProjetL3MIAGE\obj\Debug\WindowsFormsProjetL3MIAGE.IHM.Litige.ModifierSAV.resources

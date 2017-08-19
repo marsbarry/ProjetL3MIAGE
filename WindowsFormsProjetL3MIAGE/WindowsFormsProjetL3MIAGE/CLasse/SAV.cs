@@ -49,7 +49,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             commentaire = ObjDTCons.Rows[0]["COMMENTAIRE"].ToString();
             note = ObjDTCons.Rows[0]["NOTE"].ToString();
             statut = ObjDTCons.Rows[0]["STATUT"].ToString();
-            idcommande = Convert.ToInt32(ObjDTCons.Rows[0]["IDCOMM"]);
+            idcommande = Convert.ToInt32(ObjDTCons.Rows[0]["IDCMDC"]);
             idArticle = Convert.ToInt32(ObjDTCons.Rows[0]["IDARTICLE"]);
             idCli = Convert.ToInt32(ObjDTCons.Rows[0]["IDCLIENT"]);
 

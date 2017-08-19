@@ -79,10 +79,10 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
             Conn.ConnectionString = ChaineConn;
             try
             {
-                Conn.Open();
-                Conn.Close();
+                Conn.Open();              
                 ConnOk = true;
                 MessageBox.Show("Connection marche");
+                Conn.Close();
             }
             catch (Exception e)
             {

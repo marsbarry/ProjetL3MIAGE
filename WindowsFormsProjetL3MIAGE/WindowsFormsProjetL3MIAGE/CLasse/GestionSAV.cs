@@ -25,7 +25,7 @@ namespace WindowsFormsProjetL3MIAGE.CLasse
 
         public static void AjoutLit(SAV unLit) //Ajoute un litige à la BDD
         {
-            string ReqAddLit = "INSERT INTO LITIGE (IDLIT,COMMENTAIRE,NOTE,STATUT) values (" + unLit.getIdlit() + ",'" + unLit.getComm() + "','" + unLit.getNote() + "','" + unLit.getStatut() + "')";
+            string ReqAddLit = "INSERT INTO LITIGE values (" + unLit.getIdlit() + ",'" + unLit.getComm() + "','" + unLit.getNote() + "','" + unLit.getStatut() + "',"+ unLit.getComm()+")";
             ConnexionBD ObjLit = new ConnexionBD(ReqAddLit);
             ObjLit.ExecuteIUD();
         }

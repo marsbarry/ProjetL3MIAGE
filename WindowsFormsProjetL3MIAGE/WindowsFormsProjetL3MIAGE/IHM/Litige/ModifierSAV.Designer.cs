@@ -30,7 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInfCliML = new System.Windows.Forms.TabPage();
-            this.tabPageInfCMDCML = new System.Windows.Forms.TabPage();
             this.textBoxMailSAVML = new System.Windows.Forms.TextBox();
             this.textBoxPreSAVML = new System.Windows.Forms.TextBox();
             this.textBoxAdrSAVML = new System.Windows.Forms.TextBox();
@@ -47,6 +46,19 @@
             this.labelPreSAV = new System.Windows.Forms.Label();
             this.labelNomSAVML = new System.Windows.Forms.Label();
             this.labelNumSAVML = new System.Windows.Forms.Label();
+            this.tabPageInfCMDCML = new System.Windows.Forms.TabPage();
+            this.textBoxNumProdML = new System.Windows.Forms.TextBox();
+            this.textBoxPrixProdSAVML = new System.Windows.Forms.TextBox();
+            this.textBoxCouProSAVML = new System.Windows.Forms.TextBox();
+            this.labelPrixProdSAVML = new System.Windows.Forms.Label();
+            this.labelCoulProdSAVML = new System.Windows.Forms.Label();
+            this.textBoxNomCliSAVML = new System.Windows.Forms.TextBox();
+            this.textBoxNomProdSAVML = new System.Windows.Forms.TextBox();
+            this.comboBoxNumCmdSAVML = new System.Windows.Forms.ComboBox();
+            this.labelNomProdSAVML = new System.Windows.Forms.Label();
+            this.labelNomCliSAVML = new System.Windows.Forms.Label();
+            this.labelArtSAVML = new System.Windows.Forms.Label();
+            this.labelNumCmdSAVML = new System.Windows.Forms.Label();
             this.tabPageConLitML = new System.Windows.Forms.TabPage();
             this.buttonEnrSAVML = new System.Windows.Forms.Button();
             this.buttonCanSAVML = new System.Windows.Forms.Button();
@@ -60,18 +72,6 @@
             this.labelCommentaireSAVML = new System.Windows.Forms.Label();
             this.labelNomCliSAV1ML = new System.Windows.Forms.Label();
             this.labelNumLitSAVML = new System.Windows.Forms.Label();
-            this.textBoxNumProdML = new System.Windows.Forms.TextBox();
-            this.textBoxPrixProdSAVML = new System.Windows.Forms.TextBox();
-            this.textBoxCouProSAVML = new System.Windows.Forms.TextBox();
-            this.labelPrixProdSAVML = new System.Windows.Forms.Label();
-            this.labelCoulProdSAVML = new System.Windows.Forms.Label();
-            this.textBoxNomCliSAVML = new System.Windows.Forms.TextBox();
-            this.textBoxNomProdSAVML = new System.Windows.Forms.TextBox();
-            this.comboBoxNumCmdSAVML = new System.Windows.Forms.ComboBox();
-            this.labelNomProdSAVML = new System.Windows.Forms.Label();
-            this.labelNomCliSAVML = new System.Windows.Forms.Label();
-            this.labelArtSAVML = new System.Windows.Forms.Label();
-            this.labelNumCmdSAVML = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageInfCliML.SuspendLayout();
             this.tabPageInfCMDCML.SuspendLayout();
@@ -114,28 +114,6 @@
             this.tabPageInfCliML.TabIndex = 0;
             this.tabPageInfCliML.Text = "Informations sur le Client";
             this.tabPageInfCliML.UseVisualStyleBackColor = true;
-            // 
-            // tabPageInfCMDCML
-            // 
-            this.tabPageInfCMDCML.Controls.Add(this.textBoxNumProdML);
-            this.tabPageInfCMDCML.Controls.Add(this.textBoxPrixProdSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.textBoxCouProSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.labelPrixProdSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.labelCoulProdSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.textBoxNomCliSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.textBoxNomProdSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.comboBoxNumCmdSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.labelNomProdSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.labelNomCliSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.labelArtSAVML);
-            this.tabPageInfCMDCML.Controls.Add(this.labelNumCmdSAVML);
-            this.tabPageInfCMDCML.Location = new System.Drawing.Point(4, 22);
-            this.tabPageInfCMDCML.Name = "tabPageInfCMDCML";
-            this.tabPageInfCMDCML.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageInfCMDCML.Size = new System.Drawing.Size(427, 454);
-            this.tabPageInfCMDCML.TabIndex = 1;
-            this.tabPageInfCMDCML.Text = "Informations sur la commande";
-            this.tabPageInfCMDCML.UseVisualStyleBackColor = true;
             // 
             // textBoxMailSAVML
             // 
@@ -200,6 +178,7 @@
             this.comboBoxNumSAVML.Name = "comboBoxNumSAVML";
             this.comboBoxNumSAVML.Size = new System.Drawing.Size(149, 21);
             this.comboBoxNumSAVML.TabIndex = 24;
+            this.comboBoxNumSAVML.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumSAVML_SelectedIndexChanged);
             // 
             // labelMailSAVML
             // 
@@ -273,6 +252,131 @@
             this.labelNumSAVML.TabIndex = 16;
             this.labelNumSAVML.Text = "Numéro : ";
             // 
+            // tabPageInfCMDCML
+            // 
+            this.tabPageInfCMDCML.Controls.Add(this.textBoxNumProdML);
+            this.tabPageInfCMDCML.Controls.Add(this.textBoxPrixProdSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.textBoxCouProSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.labelPrixProdSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.labelCoulProdSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.textBoxNomCliSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.textBoxNomProdSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.comboBoxNumCmdSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.labelNomProdSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.labelNomCliSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.labelArtSAVML);
+            this.tabPageInfCMDCML.Controls.Add(this.labelNumCmdSAVML);
+            this.tabPageInfCMDCML.Location = new System.Drawing.Point(4, 22);
+            this.tabPageInfCMDCML.Name = "tabPageInfCMDCML";
+            this.tabPageInfCMDCML.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageInfCMDCML.Size = new System.Drawing.Size(427, 454);
+            this.tabPageInfCMDCML.TabIndex = 1;
+            this.tabPageInfCMDCML.Text = "Informations sur la commande";
+            this.tabPageInfCMDCML.UseVisualStyleBackColor = true;
+            // 
+            // textBoxNumProdML
+            // 
+            this.textBoxNumProdML.Location = new System.Drawing.Point(146, 60);
+            this.textBoxNumProdML.Name = "textBoxNumProdML";
+            this.textBoxNumProdML.ReadOnly = true;
+            this.textBoxNumProdML.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNumProdML.TabIndex = 36;
+            // 
+            // textBoxPrixProdSAVML
+            // 
+            this.textBoxPrixProdSAVML.Location = new System.Drawing.Point(146, 178);
+            this.textBoxPrixProdSAVML.Name = "textBoxPrixProdSAVML";
+            this.textBoxPrixProdSAVML.ReadOnly = true;
+            this.textBoxPrixProdSAVML.Size = new System.Drawing.Size(121, 20);
+            this.textBoxPrixProdSAVML.TabIndex = 35;
+            // 
+            // textBoxCouProSAVML
+            // 
+            this.textBoxCouProSAVML.Location = new System.Drawing.Point(146, 140);
+            this.textBoxCouProSAVML.Name = "textBoxCouProSAVML";
+            this.textBoxCouProSAVML.ReadOnly = true;
+            this.textBoxCouProSAVML.Size = new System.Drawing.Size(121, 20);
+            this.textBoxCouProSAVML.TabIndex = 34;
+            // 
+            // labelPrixProdSAVML
+            // 
+            this.labelPrixProdSAVML.AutoSize = true;
+            this.labelPrixProdSAVML.Location = new System.Drawing.Point(6, 181);
+            this.labelPrixProdSAVML.Name = "labelPrixProdSAVML";
+            this.labelPrixProdSAVML.Size = new System.Drawing.Size(83, 13);
+            this.labelPrixProdSAVML.TabIndex = 33;
+            this.labelPrixProdSAVML.Text = "Prix du produit : ";
+            // 
+            // labelCoulProdSAVML
+            // 
+            this.labelCoulProdSAVML.AutoSize = true;
+            this.labelCoulProdSAVML.Location = new System.Drawing.Point(6, 140);
+            this.labelCoulProdSAVML.Name = "labelCoulProdSAVML";
+            this.labelCoulProdSAVML.Size = new System.Drawing.Size(102, 13);
+            this.labelCoulProdSAVML.TabIndex = 32;
+            this.labelCoulProdSAVML.Text = "Couleur du produit : ";
+            // 
+            // textBoxNomCliSAVML
+            // 
+            this.textBoxNomCliSAVML.Location = new System.Drawing.Point(146, 216);
+            this.textBoxNomCliSAVML.Name = "textBoxNomCliSAVML";
+            this.textBoxNomCliSAVML.ReadOnly = true;
+            this.textBoxNomCliSAVML.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNomCliSAVML.TabIndex = 31;
+            // 
+            // textBoxNomProdSAVML
+            // 
+            this.textBoxNomProdSAVML.Location = new System.Drawing.Point(146, 99);
+            this.textBoxNomProdSAVML.Name = "textBoxNomProdSAVML";
+            this.textBoxNomProdSAVML.ReadOnly = true;
+            this.textBoxNomProdSAVML.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNomProdSAVML.TabIndex = 30;
+            // 
+            // comboBoxNumCmdSAVML
+            // 
+            this.comboBoxNumCmdSAVML.FormattingEnabled = true;
+            this.comboBoxNumCmdSAVML.Location = new System.Drawing.Point(146, 22);
+            this.comboBoxNumCmdSAVML.Name = "comboBoxNumCmdSAVML";
+            this.comboBoxNumCmdSAVML.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxNumCmdSAVML.TabIndex = 29;
+            this.comboBoxNumCmdSAVML.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumCmdSAVML_SelectedIndexChanged);
+            // 
+            // labelNomProdSAVML
+            // 
+            this.labelNomProdSAVML.AutoSize = true;
+            this.labelNomProdSAVML.Location = new System.Drawing.Point(6, 99);
+            this.labelNomProdSAVML.Name = "labelNomProdSAVML";
+            this.labelNomProdSAVML.Size = new System.Drawing.Size(88, 13);
+            this.labelNomProdSAVML.TabIndex = 28;
+            this.labelNomProdSAVML.Text = "Nom du produit : ";
+            // 
+            // labelNomCliSAVML
+            // 
+            this.labelNomCliSAVML.AutoSize = true;
+            this.labelNomCliSAVML.Location = new System.Drawing.Point(6, 223);
+            this.labelNomCliSAVML.Name = "labelNomCliSAVML";
+            this.labelNomCliSAVML.Size = new System.Drawing.Size(81, 13);
+            this.labelNomCliSAVML.TabIndex = 27;
+            this.labelNomCliSAVML.Text = "Nom du client : ";
+            // 
+            // labelArtSAVML
+            // 
+            this.labelArtSAVML.AutoSize = true;
+            this.labelArtSAVML.Location = new System.Drawing.Point(6, 60);
+            this.labelArtSAVML.Name = "labelArtSAVML";
+            this.labelArtSAVML.Size = new System.Drawing.Size(45, 13);
+            this.labelArtSAVML.TabIndex = 26;
+            this.labelArtSAVML.Text = "Article : ";
+            // 
+            // labelNumCmdSAVML
+            // 
+            this.labelNumCmdSAVML.AutoSize = true;
+            this.labelNumCmdSAVML.Location = new System.Drawing.Point(6, 22);
+            this.labelNumCmdSAVML.Name = "labelNumCmdSAVML";
+            this.labelNumCmdSAVML.Size = new System.Drawing.Size(120, 13);
+            this.labelNumCmdSAVML.TabIndex = 25;
+            this.labelNumCmdSAVML.Text = "Numéro de commande :";
+            // 
             // tabPageConLitML
             // 
             this.tabPageConLitML.Controls.Add(this.buttonEnrSAVML);
@@ -302,6 +406,7 @@
             this.buttonEnrSAVML.TabIndex = 23;
             this.buttonEnrSAVML.Text = "Enregistrer";
             this.buttonEnrSAVML.UseVisualStyleBackColor = true;
+            this.buttonEnrSAVML.Click += new System.EventHandler(this.buttonEnrSAVML_Click);
             // 
             // buttonCanSAVML
             // 
@@ -399,108 +504,6 @@
             this.labelNumLitSAVML.TabIndex = 12;
             this.labelNumLitSAVML.Text = "Numéro Litige :";
             // 
-            // textBoxNumProdML
-            // 
-            this.textBoxNumProdML.Location = new System.Drawing.Point(146, 60);
-            this.textBoxNumProdML.Name = "textBoxNumProdML";
-            this.textBoxNumProdML.ReadOnly = true;
-            this.textBoxNumProdML.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNumProdML.TabIndex = 36;
-            // 
-            // textBoxPrixProdSAVML
-            // 
-            this.textBoxPrixProdSAVML.Location = new System.Drawing.Point(146, 178);
-            this.textBoxPrixProdSAVML.Name = "textBoxPrixProdSAVML";
-            this.textBoxPrixProdSAVML.ReadOnly = true;
-            this.textBoxPrixProdSAVML.Size = new System.Drawing.Size(121, 20);
-            this.textBoxPrixProdSAVML.TabIndex = 35;
-            // 
-            // textBoxCouProSAVML
-            // 
-            this.textBoxCouProSAVML.Location = new System.Drawing.Point(146, 140);
-            this.textBoxCouProSAVML.Name = "textBoxCouProSAVML";
-            this.textBoxCouProSAVML.ReadOnly = true;
-            this.textBoxCouProSAVML.Size = new System.Drawing.Size(121, 20);
-            this.textBoxCouProSAVML.TabIndex = 34;
-            // 
-            // labelPrixProdSAVML
-            // 
-            this.labelPrixProdSAVML.AutoSize = true;
-            this.labelPrixProdSAVML.Location = new System.Drawing.Point(6, 181);
-            this.labelPrixProdSAVML.Name = "labelPrixProdSAVML";
-            this.labelPrixProdSAVML.Size = new System.Drawing.Size(83, 13);
-            this.labelPrixProdSAVML.TabIndex = 33;
-            this.labelPrixProdSAVML.Text = "Prix du produit : ";
-            // 
-            // labelCoulProdSAVML
-            // 
-            this.labelCoulProdSAVML.AutoSize = true;
-            this.labelCoulProdSAVML.Location = new System.Drawing.Point(6, 140);
-            this.labelCoulProdSAVML.Name = "labelCoulProdSAVML";
-            this.labelCoulProdSAVML.Size = new System.Drawing.Size(102, 13);
-            this.labelCoulProdSAVML.TabIndex = 32;
-            this.labelCoulProdSAVML.Text = "Couleur du produit : ";
-            // 
-            // textBoxNomCliSAVML
-            // 
-            this.textBoxNomCliSAVML.Location = new System.Drawing.Point(146, 216);
-            this.textBoxNomCliSAVML.Name = "textBoxNomCliSAVML";
-            this.textBoxNomCliSAVML.ReadOnly = true;
-            this.textBoxNomCliSAVML.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNomCliSAVML.TabIndex = 31;
-            // 
-            // textBoxNomProdSAVML
-            // 
-            this.textBoxNomProdSAVML.Location = new System.Drawing.Point(146, 99);
-            this.textBoxNomProdSAVML.Name = "textBoxNomProdSAVML";
-            this.textBoxNomProdSAVML.ReadOnly = true;
-            this.textBoxNomProdSAVML.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNomProdSAVML.TabIndex = 30;
-            // 
-            // comboBoxNumCmdSAVML
-            // 
-            this.comboBoxNumCmdSAVML.FormattingEnabled = true;
-            this.comboBoxNumCmdSAVML.Location = new System.Drawing.Point(146, 22);
-            this.comboBoxNumCmdSAVML.Name = "comboBoxNumCmdSAVML";
-            this.comboBoxNumCmdSAVML.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxNumCmdSAVML.TabIndex = 29;
-            // 
-            // labelNomProdSAVML
-            // 
-            this.labelNomProdSAVML.AutoSize = true;
-            this.labelNomProdSAVML.Location = new System.Drawing.Point(6, 99);
-            this.labelNomProdSAVML.Name = "labelNomProdSAVML";
-            this.labelNomProdSAVML.Size = new System.Drawing.Size(88, 13);
-            this.labelNomProdSAVML.TabIndex = 28;
-            this.labelNomProdSAVML.Text = "Nom du produit : ";
-            // 
-            // labelNomCliSAVML
-            // 
-            this.labelNomCliSAVML.AutoSize = true;
-            this.labelNomCliSAVML.Location = new System.Drawing.Point(6, 223);
-            this.labelNomCliSAVML.Name = "labelNomCliSAVML";
-            this.labelNomCliSAVML.Size = new System.Drawing.Size(81, 13);
-            this.labelNomCliSAVML.TabIndex = 27;
-            this.labelNomCliSAVML.Text = "Nom du client : ";
-            // 
-            // labelArtSAVML
-            // 
-            this.labelArtSAVML.AutoSize = true;
-            this.labelArtSAVML.Location = new System.Drawing.Point(6, 60);
-            this.labelArtSAVML.Name = "labelArtSAVML";
-            this.labelArtSAVML.Size = new System.Drawing.Size(45, 13);
-            this.labelArtSAVML.TabIndex = 26;
-            this.labelArtSAVML.Text = "Article : ";
-            // 
-            // labelNumCmdSAVML
-            // 
-            this.labelNumCmdSAVML.AutoSize = true;
-            this.labelNumCmdSAVML.Location = new System.Drawing.Point(6, 22);
-            this.labelNumCmdSAVML.Name = "labelNumCmdSAVML";
-            this.labelNumCmdSAVML.Size = new System.Drawing.Size(120, 13);
-            this.labelNumCmdSAVML.TabIndex = 25;
-            this.labelNumCmdSAVML.Text = "Numéro de commande :";
-            // 
             // ModifierSAV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -509,6 +512,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "ModifierSAV";
             this.Text = "Gestion du Ticket de SAV";
+            this.Load += new System.EventHandler(this.ModifierSAV_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageInfCliML.ResumeLayout(false);
             this.tabPageInfCliML.PerformLayout();
