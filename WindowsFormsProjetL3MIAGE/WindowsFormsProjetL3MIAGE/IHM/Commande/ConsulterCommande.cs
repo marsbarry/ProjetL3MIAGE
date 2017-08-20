@@ -26,6 +26,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
         private void ConsulterCommande_Load(object sender, EventArgs e)
         {
+            //Création d'une datatable qui va contenir les numéro de commande disponible dans la BDD
             DataTable ObjDt = new DataTable();
             string req = "SELECT IDCMDC FROM COMMANDEC";
             CLasse.ConnexionBD objConn = new CLasse.ConnexionBD(req);
@@ -39,6 +40,8 @@ namespace WindowsFormsProjetL3MIAGE.IHM
 
         private void comboBoxCoCo_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            //Création d'une datatable qui va contenir les informations du client ayant effectué la commande séléctionné dans la combobox
             DataTable objdt1 = new DataTable();
             string unereq = "SELECT * FROM CLIENT,COMMANDEC WHERE COMMANDEC.IDCLI = CLIENT.IDCLI AND COMMANDEC.IDCMDC =" + comboBoxNumCLiCoCo.Text;
             CLasse.ConnexionBD objConn1 = new CLasse.ConnexionBD(unereq);
@@ -47,6 +50,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             CLasse.CommandeC objCMDC = new CLasse.CommandeC(Convert.ToInt32(comboBoxNumCLiCoCo.Text));
             textBoxNumCMDCCoCo.Text = objCMDC.GetIdCMDC().ToString();
 
+            //Affichage dans les textbox des informations client via la datatable
             textBoxRechNomCliCoCo.Text = objdt1.Rows[0]["NOMCLI"].ToString();
             textBoxTeCoCo.Text = objdt1.Rows[0]["TELCLI"].ToString();
             textBoxCpCoCo.Text = objdt1.Rows[0]["CPCLI"].ToString();
@@ -54,11 +58,13 @@ namespace WindowsFormsProjetL3MIAGE.IHM
             textBoxAdrCoCo.Text = objdt1.Rows[0]["ADRCLI"].ToString();
             textBoxVilleCoCo.Text = objdt1.Rows[0]["VILLECLI"].ToString();
 
+            //Création d'une datatable qui va contenir le nom du produit 
             DataTable objdt2 = new DataTable();
             string unereq1 = "SELECT NOMPROD FROM PRODUIT,COMMANDEC_2 where PRODUIT.IDPRODUIT = commandec_2.idproduit and commandec_2.idcmdc = " + Convert.ToInt32(comboBoxNumCLiCoCo.Text);
             CLasse.ConnexionBD objConn2 = new CLasse.ConnexionBD(unereq1);
             objdt2 = objConn2.ExecuteSelect();
 
+            //Affichage des données de la datatable dans la listbox
             for (int i = 0; i < objdt2.Rows.Count; i++)
             {
                 listBoxPanACP.Items.Clear();
@@ -67,6 +73,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
                  
         }
 
+        //Retour vers l'accueil
         private void buttonValCoCo_Click(object sender, EventArgs e)
         {
             this.Close();
