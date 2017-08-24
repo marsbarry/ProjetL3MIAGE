@@ -20,8 +20,14 @@ namespace WindowsFormsProjetL3MIAGE
         //Coonexion à la BDD
         public Accueil()
         {
-            ConnexionBD.Connecter("userprojl3", "manager");
+            bool verifConn = ConnexionBD.GetConnOK();
+            
             InitializeComponent();
+            if(verifConn == false)
+            {
+                ConnexionBD.Connecter("userprojl3", "manager");
+            }
+            
         }
 
         //Permet de quitter le projet
