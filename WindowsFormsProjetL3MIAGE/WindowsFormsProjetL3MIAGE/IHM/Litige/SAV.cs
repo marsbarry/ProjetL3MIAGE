@@ -34,7 +34,7 @@ namespace WindowsFormsProjetL3MIAGE.IHM
         private void SAV_Load(object sender, EventArgs e)
         {
             //Création de la datatable contenant les id de tous les clients de la BDD
-            string requete = "SELECT IDCLI from client";
+            string requete = "SELECT distinct CLIENT.IDCLI from client, commandeC where CommandeC.Idcli = client.idcli";
             DataTable DtCOns = new DataTable();
             ConnexionBD ObjCons = new ConnexionBD(requete);
             DtCOns = ObjCons.ExecuteSelect();

@@ -61,20 +61,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CLasse\CommandeC.cs" />
-    <Compile Include="CLasse\GestionCommandeC.cs" />
-    <Compile Include="CLasse\GestionSAV.cs" />
-    <Compile Include="CLasse\Produit.cs" />
-    <Compile Include="CLasse\SAV.cs" />
+    <Compile Include="Classe\CommandeC.cs" />
+    <Compile Include="Classe\GestionCommandeC.cs" />
+    <Compile Include="Classe\GestionSAV.cs" />
+    <Compile Include="Classe\Produit.cs" />
+    <Compile Include="Classe\SAV.cs" />
     <Compile Include="IHM\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IHM\Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLasse\Client.cs" />
-    <Compile Include="CLasse\ConnexionBD.cs" />
-    <Compile Include="CLasse\GestionClient.cs" />
+    <Compile Include="Classe\Client.cs" />
+    <Compile Include="Classe\ConnexionBD.cs" />
+    <Compile Include="Classe\GestionClient.cs" />
     <Compile Include="IHM\Commande\AjouterCommande.cs">
       <SubType>Form</SubType>
     </Compile>
