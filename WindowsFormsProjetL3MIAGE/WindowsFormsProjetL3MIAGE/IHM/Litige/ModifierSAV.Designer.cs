@@ -511,6 +511,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 482);
+            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Name = "ModifierSAV";
             this.Text = "Gestion du Ticket de SAV";

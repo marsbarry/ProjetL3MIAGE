@@ -135,7 +135,9 @@ namespace WindowsFormsProjetL3MIAGE.IHM.Litige
 
         private void buttonCanSAVML_Click(object sender, EventArgs e)
         {
-         
+            this.Close();
+            Accueil ObjF = new Accueil();
+            ObjF.Show();
         }
     }
 }
